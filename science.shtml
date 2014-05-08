@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--#include virtual="inc/head.html" -->
-    <title>VPHAS+: Science applications</title>
+    <title>IPHAS: Science applications</title>
   </head>
   <body>
     <!--#include virtual="inc/navbar.html" -->

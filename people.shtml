@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="inc/head.html" -->
+    <title>IPHAS: Contact Details</title>
+  </head>
+  <body>
+    <!--#include virtual="inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>Contact Details</h1>
+    </div>
+
+<address>
+  <strong>PI: Janet Drew</strong><br>
+  Centre for Astrophysics Research, STRI<br />
+  University of Hertfordshire<br />
+  College Lane Campus<br />
+  Hatfield AL10 9AB<br />
+  United Kingdom<br/><br/>
+  Phone: 44-(0)1707-286576<br/>
+  Fax: 44-(0)1707-284514<br/>
+  E-mail: j.drew at herts.ac.uk
+</address>
+
+    <div class="page-header">
+      <h1>Survey members</h1>
+    </div>
+
+  <p>(alphabetically, by institution )</p>
+<ul>
+    <li><b>Armagh Observatory, Northern Ireland</b>: Jorick Vink</li>
+    <li><b>Bristol University, UK</b>: Steve Phillipps, Rhys Morris</li>
+    <li><b>Harvard-Smithsonian Center for Astrophysics, USA</b>: Jeremy Drake</li>
+    <li><b>Imperial College London, UK</b>: Yvonne Unruh</li>
+    <li><b>Institute of Astronomy, Cambridge, UK</b>: Mike Irwin, Nic Walton, Eduardo Gonzalez-Solares</li>
+    <li><b>Instituto de Astrofisica de Canarias, Spain</b> : Romano Corradi, Antonio Mampaso, Eduardo Martin, Pablo Rodriguez-Gil</li>
+    <li><b>Macquarie University, Australia</b>: Quentin Parker,
+    David Frew</li>
+    <li><b>Radboud University Nijmegen, The Netherlands</b>: Paul Groot</li>
+    <li><b>Royal Observatory Edinburgh, UK</b>: Chris Evans</li>
+    <li><b>Southampton University, UK</b>: Christian Knigge</li>
+    <li><b>Space Telescope Science Institute, USA</b>: Danny Lennon</li>
+    <li><b>Thueringer Landessternwarte, Germany</b>: Jochen Eisloeffel, Bringfried Stecklum</li>
+    <li><b>Universidad de Valencia, Spain</b>: Juan Fabregat</li>
+    <li><b>University College London, UK</b>: Mike Barlow</li>
+    <li><b>University of Graz, Austria</b>: Robert Greimel</li>
+    <li><b>University of Hertfordshire, UK</b>: Geert Barentsen,
+    Janet Drew, Ralf Napiwotzki, Nick Wright</li>
+    <li><b>University of Manchester, UK</b>: Albert Zijlstra</li>
+    <li><b>University of Oxford, UK</b>: Stuart Sale</li>
+    <li><b>Warwick University, UK</b>: Boris Gaensicke, Roberto
+    Raddi, Danny Steeghs</li>
+</ul>
+
+
+    <!-- Content ends here -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+  </body>
+</html>
