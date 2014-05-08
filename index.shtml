@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="inc/head.html" -->
+    <title>IPHAS: The INT/WFC Photometric H&alpha; Survey of the Northern Galactic Plane</title>
+  </head>
+
+  <body>
+    <!--#include virtual="inc/navbar.html" -->
+    <div class="container">
+    
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide visible-sm visible-md visible-lg" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <img src="assets/images/carousel-ic1396.jpg" alt="IC1396 in IPHAS" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>The INT/WFC Photometric H&alpha; Survey (IPHAS)</h1>
+          <p class="lead">
+            <a class="btn btn-primary pull-right" href="survey.shtml">Read the survey description &raquo;</a>
+            IPHAS is imaging the Northern Milky Way in the H&alpha;, r and i filters down to &gt;20th magnitude, using the Isaac Newton Telescope in La Palma.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-credit">
+        <p>Image: IC1396 in IPHAS (N. Wright)</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="assets/images/carousel-sabin2013.jpg" alt="New Galactic Supernova Remnants" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>News: new supernova remnants discovered with IPHAS</h1>
+          <p class="lead">
+            <a class="btn btn-primary pull-right" href="http://arxiv.org/abs/1402.7024">Read the paper on ADS &raquo;</a>
+            Five new supernova remnants have been discovered in our Galaxy 
+            using IPHAS H-alpha images and follow-up spectroscopy. The results are published in Sabin et al. 2013 (MNRAS).
+          </p>
+        </div>
+      </div>
+    </div>   
+
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- / carousel -->
+
+<!-- Mobile phones see a text description instead of the carousel-->
+<div class="row visible-xs">
+  <div class="col-xs-12" style='padding-top: 30px; padding-bottom: 10px;'>
+    The INT Photometric H-Alpha Survey (IPHAS) is imaging the Northern Milky Way in visible light using the Isaac Newton Telescope (INT) in La Palma.
+  </div>
+</div>
+
+
+      <div class="row about">
+        <div class="col-sm-4">
+          <a class="about" href="survey.shtml"><i class="icon-info-sign"></i> Survey</a>
+          <p>IPHAS surveys the Galactic Plane at -5&deg;&nbsp;&lt;&nbsp;b&nbsp;&lt;&nbsp;+5&deg; and 29&deg;&nbsp;&lt;&nbsp;l&nbsp;&lt;&nbsp;215&deg;
+          in r, i, and Hα down to &gt;20th magnitude.</p>
+          <p><a class="btn btn-default" href="survey.shtml">More &raquo;</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a class="about" href="science.shtml"><i class="icon-beaker"></i> Science</a>
+          <p>The IPHAS (r-H&alpha;, r-i) colour-colour plane allows a range of rare and short-lived object types to be identified.</p>
+          <p><a class="btn btn-default" href="science.shtml">More &raquo;</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a class="about" href="data.shtml"><i class="icon-download-alt"></i> Data</a>
+          <p>The imaging data and a photometric catalogue containing 219 million unique sources are available to the public.</p>
+          <p><a class="btn btn-default" href="data.shtml">More &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="row about">
+        <div class="col-sm-4">
+          <a class="about" href="gallery.shtml"><i class="icon-film"></i> Gallery</a>
+          <p>Our images can be used to construct wide-area mosaics of star-forming regions and extended objects.</p>
+          <p><a class="btn btn-default" href="gallery.shtml">More &raquo;</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a class="about" href="publications.shtml"><i class="icon-book"></i> Publications</a>
+          <p>59 ADS entries have IPHAS mentioned in the title, 108 ADS entries mention IPHAS in the abstract.</p>
+          <p><a class="btn btn-default" href="publications.shtml">More &raquo;</a></p>
+        </div>
+        <div class="col-sm-4">
+          <a class="about" href="people.shtml"><i class="icon-group"></i> People</a>
+          <p>IPHAS is an international collaboration, mainly involving institutes from the UK, Spain, the Netherlands, USA and Australia.</p>
+          <p><a class="btn btn-default" href="people.shtml">More &raquo;</a></p>
+        </div>
+      </div>
+
+<!-- Content ends here -->
+
+    </div><!-- /container -->
+    
+    <!--#include virtual="inc/footer.html" -->
+
+    <script>
+      !function ($) {
+        $(function(){
+          $('#myCarousel').carousel({
+            interval: 8000
+            })
+        })
+      }(window.jQuery)
+    </script>
+
+  </body>
+</html>
