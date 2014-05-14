@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="inc/head.html" -->
+    <title>IPHAS DR2</title>
+  </head>
+  <body>
+    <!--#include virtual="inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+      <div class="row">
+        <nav class="col-sm-3 visible-sm visible-md visible-lg bs-docs-sidebar" id="sidebarCol">
+          <div class="fixed">
+            <ul class="nav nav-stacked fixed" id="sidebar">
+                <li>
+                    <a href="#overview">Overview</a>
+                </li>
+                <li>
+                    <a href="#catalogue">Source catalogue</a>
+                    <ul class="nav nav-stacked">
+                        <li><a href="#versions">Light and full version</a></li>
+                        <li><a href="#columns">Column definitions</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#images">Imaging data</a>
+                </li>
+                <li>
+                    <a href="#source">Source code</a>
+                </li>
+                <li>
+                    <a href="#acknowledging">Acknowledging IPHAS</a>
+                </li>
+                <li>
+                  <a class="back-to-top" href="#top">
+                    Back to top
+                  </a>
+                </li>
+            </ul>
+
+          </div>
+        </nav>
+
+        <div class="col-sm-9">
+
+<h1>IPHAS Data Release 2</h1>
+
+<section id="overview">
+  <div class="page-header">
+    <h2>Overview</h2>
+  </div>
+  <p>
+    IPHAS DR2 provides r, i and H&alpha;-band photometry for 219 million unique sources, observed across the Northern Galactic Plane between 2003 and 2013.
+    The catalogue is described in detail in 
+    an accompanying paper (Barentsen et al. 2014).
+    In brief, the catalogue has been constructed by cross-matching 
+    the detections from the individual bands using a maximum matching 
+    distance of 1 arcsec. All objects which were detected 
+    at at signal-to-noise ratio of 5 or better in at least one band
+    are included. The catalogue is uniformly calibrated with
+    an accuracy of 0.03 mag (rms).
+  </p> 
+</section>
+
+<section id="catalogue">
+  <div class="page-header">
+    <h2>Source catalogue</h2>
+  </div>
+  <div id="versions">
+       <h3>Light and full version</h3>
+
+        <p>
+          The DR2 source catalogue is made available in two flavours.
+          The light version has a size of 8 GB (10 columns)
+          and contains only the basic information on each source,
+          namely:
+        </p>
+        <ul>
+          <li>equatorial coordinates (columns <a href="#ra-light">ra</a>, <a href="#dec-light">dec</a>);</li>
+          <li>r, i and H&alpha; magnitudes measured using the default 2.3-arcsec-diameter circular aperture (columns <a href="#r-light">r</a>, <a href="#i-light">i</a>, <a href="#ha-light">ha</a>, <a href="#rErr-light">rErr</a>, <a href="#iErr-light">iErr</a>, <a href="#haErr-light">haErr</a>);</li>
+          <li>a morphological classification flag (<a href="#mergedClass-light">mergedClass</a>);</li>
+          <li>error flags warning for source blending, bright neighbours and saturation (<a href="#errBits-light">errBits</a>).</li>
+        </ul>
+         
+        <p>
+          The full version has a size of 50 GB (97 columns) and adds:
+        </p>
+        <ul>
+          <li>magnitudes at a second epoch in the same night, if available;</li>
+          <li>magnitudes measured using different aperture sizes;</li>
+          <li>detailed morphological parameters;</li>
+          <li>information on the observation (date, seeing, run number);</li>
+          <li>object positions measured in the CCD reference frame (pixel x/y);</li>
+          <li>additional quality warning flags.</li>
+        </ul>
+
+        <p>
+          A table detailing the <a href="#columns">column definitions</a> is given below.
+        </p>  
+  </div>
+
+    <div id="columns">
+        <h3>Column definitions</h3>
+ 
+        <table class="table table-striped iphas-columns">
+          <thead>
+            <tr><th>Column</th><th>Type</th><th>Unit</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr id="name">
+              <td>name</td>
+              <td>string</td>
+              <td></td>
+              <td>Sexagesimal, equatorial position-based source name in the form: JHHMMSS.ss+DDMMSS.s. The full naming convention for IPHAS DR2 sources has the form "IPHAS2 JHHMMSS.ss+DDMMSS.s", where "J" indicates the position is J2000. The "IPHAS2" prefix is not included in the column.</td>
+            </tr>
+            <tr id="ra">
+              <td>ra</td>
+              <td>double</td>
+              <td>degrees</td>
+              <td>J2000 Right Ascension with respect to the 2MASS PSC reference frame (which is consistent with ICRS to within 0.1 arcsec). The coordinate given is obtained from the astrometric measurement in the r'-band exposure. If the source is undetected in r', then the i' or H&alpha;-band coordinate is given.</td>
+            </tr>
+            <tr id="dec">
+              <td>dec</td>
+              <td>double</td>
+              <td>degrees</td>
+              <td>J2000 Declination. See comments above.</td>
+            </tr>
+            <tr id="sourceID">
+              <td>sourceID</td>
+              <td>string</td>
+              <td></td>
+              <td>Unique identification number of the detection. Identical to <a href="#rDetectionID">rDetectionID</a> if the source was detected in the r-band; identical to <a href="#iDetectionID">iDetectionID</a> or <a href="#haDetectionID">haDetectionID</a> otherwise.</td>
+            </tr>
+            <tr id="posErr">
+              <td>posErr</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Astrometric fit error (RMS). Be aware that the error might be significantly larger than the RMS near CCD edges.</td>
+            </tr>
+            <tr id="l">
+              <td>l</td>
+              <td>double</td>
+              <td>degrees</td>
+              <td>Galactic longitude $\ell$ converted from ra/dec (IAU 1958 system).</td>
+            </tr>
+            <tr id="b">
+              <td>b</td>
+              <td>double</td>
+              <td>degrees</td>
+              <td>Galactic latitude $b$ converted from ra/dec (IAU 1958 system).</td>
+            </tr>
+            <tr id="mergedClass">
+              <td>mergedClass</td>
+              <td>short</td>
+              <td></td>
+              <td>Image classification flag based on all bands (1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated). Computed using the <a href="http://surveys.roe.ac.uk/wsa/www/gloss_m.html#gpssource_mergedclass">UKIDSS scheme</a>.</td>
+            </tr>
+            <tr id="mergedClassStat">
+              <td>mergedClassStat</td>
+              <td>float</td>
+              <td></td>
+              <td>Merged N(0,1) stellarness-of-profile statistic. Computed using the <a href="http://surveys.roe.ac.uk/wsa/www/gloss_m.html#gpssource_mergedclassstat">UKIDSS scheme</a>.</td>
+            </tr>
+            <tr id="pStar">
+              <td>pStar</td>
+              <td>float</td>
+              <td></td>
+              <td>Probability that the source is a star (value between 0 and 1).</td>
+            </tr>
+            <tr id="pGalaxy">
+              <td>pGalaxy</td>
+              <td>float</td>
+              <td></td>
+              <td>Probability that the source is a galaxy (value between 0 and 1).</td>
+            </tr>
+            <tr id="pNoise">
+              <td>pNoise</td>
+              <td>float</td>
+              <td></td>
+              <td>Probability that the source is noise (value between 0 and 1).</td>
+            </tr>
+            <tr id="pSaturated">
+              <td>pSaturated</td>
+              <td>float</td>
+              <td></td>
+              <td>Probability that the source is saturated (value between 0 and 1).</td>
+            </tr>
+            <tr id="rmi">
+              <td>rmi</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>($r$ - $i$) colour, formed by subtracting columns <a href="#r">r</a> and <a href="#i">i</a>. Included in the catalogue for convenience only. To obtain the uncertainty, take the root of the sum of the squares of columns <a href="#rErr">rErr</a> and <a href="#iErr">iErr</a>.</td>
+            </tr>
+            <tr id="rmha">
+              <td>rmha</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>($r$ - H&alpha;) colour, formed by subtracting columns <a href="#r">r</a> and <a href="#ha">ha</a>. See comments above.</td>
+            </tr>
+            <tr id="r">
+              <td>r</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Default r-band magnitude using a 2.3 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="rErr">
+              <td>rErr</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty for r. Does not include systematic errors.</td>
+            </tr>
+            <tr id="rPeakMag">
+              <td>rPeakMag</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative r-band magnitude derived from the peak pixel height (i.e. a 0.3x0.3 arcsec square aperture). Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="rPeakMagErr">
+              <td>rPeakMagErr</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in rPeakMag. Does not include systematics.</td>
+            </tr>
+            <tr id="rAperMag1">
+              <td>rAperMag1</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative r-band magnitude using a 1.2 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="rAperMag1err">
+              <td>rAperMag1err</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in rAperMag1. Does not include systematics.</td>
+            </tr>
+            <tr id="rAperMag3">
+              <td>rAperMag3</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative r-band magnitude using a 3.3 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="rAperMag3err">
+              <td>rAperMag3err</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in rAperMag3. Does not include systematics.</td>
+            </tr>
+            <tr id="rGauSig">
+              <td>rGauSig</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>RMS of axes of ellipse fit in r.</td>
+            </tr>
+            <tr id="rEll">
+              <td>rEll</td>
+              <td>float</td>
+              <td></td>
+              <td>Ellipticity in the r-band.</td>
+            </tr>
+            <tr id="rPA">
+              <td>rPA</td>
+              <td>float</td>
+              <td>degrees</td>
+              <td>Position angle in the r-band.</td>
+            </tr>
+            <tr id="rClass">
+              <td>rClass</td>
+              <td>short</td>
+              <td></td>
+              <td>Discrete image classification flag (1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated).</td>
+            </tr>
+            <tr id="rClassStat">
+              <td>rClassStat</td>
+              <td>float</td>
+              <td></td>
+              <td>N(0,1) stellarness-of-profile statistic.</td>
+            </tr>
+            <tr id="rErrBits">
+              <td>rErrBits</td>
+              <td>short</td>
+              <td></td>
+              <td>Bitmask used to flag a bright neighbour (1), source blending (2) and saturation (8).</td>
+            </tr>
+            <tr id="rMJD">
+              <td>rMJD</td>
+              <td>double</td>
+              <td>days</td>
+              <td>Modified Julian Date at the start of the r-band exposure.</td>
+            </tr>
+            <tr id="rSeeing">
+              <td>rSeeing</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Average Full Width at Half Maximum (FWHM) of stars in the same CCD frame.</td>
+            </tr>
+            <tr id="rDetectionID">
+              <td>rDetectionID</td>
+              <td>string</td>
+              <td></td>
+              <td>Unique identifier of the r-band detection in the format "#run-#ccd-#number", i.e. composed of the INT telescope run number, the CCD number and a sequential source detection number.</td>
+            </tr>
+            <tr id="rX">
+              <td>rX</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>Pixel coordinate of the source in the r-band exposure, in the coordinate system of the CCD.</td>
+            </tr>
+            <tr id="rY">
+              <td>rY</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>Pixel coordinate of the source in the r-band exposure, in the coordinate system of the CCD.</td>
+            </tr>
+            <tr id="i">
+              <td>i</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Default i-band magnitude using a 2.3 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="iErr">
+              <td>iErr</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty for i. Does not include systematic errors.</td>
+            </tr>
+            <tr id="iPeakMag">
+              <td>iPeakMag</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative i-band magnitude derived from the peak pixel height (i.e. a 0.3x0.3 arcsec square aperture). Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="iPeakMagErr">
+              <td>iPeakMagErr</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in iPeakMag. Does not include systematics.</td>
+            </tr>
+            <tr id="iAperMag1">
+              <td>iAperMag1</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative i-band magnitude using a 1.2 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="iAperMag1err">
+              <td>iAperMag1err</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in iAperMag1. Does not include systematics.</td>
+            </tr>
+            <tr id="iAperMag3">
+              <td>iAperMag3</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative i-band magnitude using a 3.3 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="iAperMag3err">
+              <td>iAperMag3err</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in iAperMag3. Does not include systematics.</td>
+            </tr>
+            <tr id="iGauSig">
+              <td>iGauSig</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>RMS of axes of ellipse fit.</td>
+            </tr>
+            <tr id="iEll">
+              <td>iEll</td>
+              <td>float</td>
+              <td></td>
+              <td>Ellipticity.</td>
+            </tr>
+            <tr id="iPA">
+              <td>iPA</td>
+              <td>float</td>
+              <td>degrees</td>
+              <td>Position angle.</td>
+            </tr>
+            <tr id="iClass">
+              <td>iClass</td>
+              <td>short</td>
+              <td></td>
+              <td>Discrete image classification flag (1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated).</td>
+            </tr>
+            <tr id="iClassStat">
+              <td>iClassStat</td>
+              <td>float</td>
+              <td></td>
+              <td>N(0,1) stellarness-of-profile statistic.</td>
+            </tr>
+            <tr id="iErrBits">
+              <td>iErrBits</td>
+              <td>short</td>
+              <td></td>
+              <td>Bitmask used to flag a bright neighbour (1), source blending (2) and saturation (8).</td>
+            </tr>
+            <tr id="iMJD">
+              <td>iMJD</td>
+              <td>double</td>
+              <td>days</td>
+              <td>Modified Julian Date at the start of the single-band exposure.</td>
+            </tr>
+            <tr id="iSeeing">
+              <td>iSeeing</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Average Full Width at Half Maximum (FWHM) of stars in the same CCD frame.</td>
+            </tr>
+            <tr id="iDetectionID">
+              <td>iDetectionID</td>
+              <td>string</td>
+              <td></td>
+              <td>Unique identifier of the r-band detection in the format "#run-#ccd-#number", i.e. composed of the INT telescope run number, the CCD number and a sequential source detection number.</td>
+            </tr>
+            <tr id="iX">
+              <td>iX</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>Pixel coordinate of the source, in the coordinate system of the CCD.</td>
+            </tr>
+            <tr id="iY">
+              <td>iY</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>Pixel coordinate of the source, in the coordinate system of the CCD.</td>
+            </tr>
+            <tr id="iXi">
+              <td>iXi</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Position offset of the i-band detection relative to the <a href="#ra">ra</a> column. The original i-band coordinates can be obtained by computing (ra+iXi/3600, dec+iEta/3600).</td>
+            </tr>
+            <tr id="iEta">
+              <td>iEta</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Position offset of the i-band detection relative to the <a href="#dec">dec</a> column. See comments above.</td>
+            </tr>
+            <tr id="ha">
+              <td>ha</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Default H-alpha magnitude using a 2.3 arcsec aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="haErr">
+              <td>haErr</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty for ha. Does not include systematic errors.</td>
+            </tr>
+            <tr id="haPeakMag">
+              <td>haPeakMag</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative H-alpha magnitude derived from the peak pixel height (i.e. a 0.3x0.3 arcsec square aperture). Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="haPeakMagErr">
+              <td>haPeakMagErr</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in haPeakMag. Does not include systematics.</td>
+            </tr>
+            <tr id="haAperMag1">
+              <td>haAperMag1</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative H-alpha magnitude using a 1.2 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="haAperMag1err">
+              <td>haAperMag1err</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in haAperMag1. Does not include systematics.</td>
+            </tr>
+            <tr id="haAperMag3">
+              <td>haAperMag3</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Alternative H-alpha magnitude using a 3.3 arcsec diameter aperture. Calibrated in the Vega system.</td>
+            </tr>
+            <tr id="haAperMag3err">
+              <td>haAperMag3err</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty in haAperMag3. Does not include systematics.</td>
+            </tr>
+            <tr id="haGauSig">
+              <td>haGauSig</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>RMS of axes of ellipse fit.</td>
+            </tr>
+            <tr id="haEll">
+              <td>haEll</td>
+              <td>float</td>
+              <td></td>
+              <td>Ellipticity</td>
+            </tr>
+            <tr id="haPA">
+              <td>haPA</td>
+              <td>float</td>
+              <td>degrees</td>
+              <td>Position angle.</td>
+            </tr>
+            <tr id="haClass">
+              <td>haClass</td>
+              <td>short</td>
+              <td></td>
+              <td>Discrete image classification flag (1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated).</td>
+            </tr>
+            <tr id="haClassStat">
+              <td>haClassStat</td>
+              <td>float</td>
+              <td></td>
+              <td>N(0,1) stellarness-of-profile statistic.</td>
+            </tr>
+            <tr id="haErrBits">
+              <td>haErrBits</td>
+              <td>short</td>
+              <td></td>
+              <td>Bitmask used to flag a bright neighbour (1), source blending (2) and saturation (8).</td>
+            </tr>
+            <tr id="haMJD">
+              <td>haMJD</td>
+              <td>double</td>
+              <td>days</td>
+              <td>Modified Julian Date at the start of the single-band exposure.</td>
+            </tr>
+            <tr id="haSeeing">
+              <td>haSeeing</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Average Full Width at Half Maximum (FWHM) of stars in the same CCD frame.</td>
+            </tr>
+            <tr id="haDetectionID">
+              <td>haDetectionID</td>
+              <td>string</td>
+              <td></td>
+              <td>Unique identifier of the r-band detection in the format "#run-#ccd-#number", i.e. composed of the INT telescope run number, the CCD number and a sequential source detection number.</td>
+            </tr>
+            <tr id="haX">
+              <td>haX</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>Pixel coordinate of the source, in the coordinate system of the CCD.</td>
+            </tr>
+            <tr id="haY">
+              <td>haY</td>
+              <td>float</td>
+              <td>pixels</td>
+              <td>Pixel coordinate of the source, in the coordinate system of the CCD.</td>
+            </tr>
+            <tr id="haXi">
+              <td>haXi</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Position offset of the H-alpha detection relative to the <a href="#ra">ra</a> column. The original Ha-band coordinates can be obtained by computing (ra+haXi/3600, dec+haEta/3600).</td>
+            </tr>
+            <tr id="haEta">
+              <td>haEta</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Position offset of the H-alpha relative to the <a href="#dec">ra</a> column. See comments above.</td>
+            </tr>
+            <tr id="brightNeighb">
+              <td>brightNeighb</td>
+              <td>boolean</td>
+              <td></td>
+              <td>True if a very bright star is nearby (i.e. <a href="#errBits">errBits</a> &ge; 1). This indicates that the source might be spurious, or the photometry unreliable.</td>
+            </tr>
+            <tr id="deblend">
+              <td>deblend</td>
+              <td>boolean</td>
+              <td></td>
+              <td>True if the source was blended with a nearby neighbour due to crowding (i.e. <a href="#errBits">errBits</a> &ge; 2). Although a deblending procedure is applied when measuring the photometry, the result may be unreliable (e.g. colours should not be trusted).</td>
+            </tr>
+            <tr id="saturated">
+              <td>saturated</td>
+              <td>boolean</td>
+              <td></td>
+              <td>True if the source is saturated (i.e. peak pixel &gt; 55000 counts) in one or more bands (i.e. <a href="#errBits">errBits</a> &ge; 8). The photometry of saturated stars is affected by systematic errors.</td>
+            </tr>
+            <tr id="errBits">
+              <td>errBits</td>
+              <td>short</td>
+              <td></td>
+              <td>Maximum value of (<a href="#rErrBits">rErrBits</a>, <a href="#iErrBits">iErrBits</a>, <a href="#haErrBits">haErrBits</a>).</td>
+            </tr>
+            <tr id="nBands">
+              <td>nBands</td>
+              <td>short</td>
+              <td></td>
+              <td>Number of bands in which the source is detected (equals 1, 2 or 3).</td>
+            </tr>
+            <tr id="reliable">
+              <td>reliable</td>
+              <td>boolean</td>
+              <td></td>
+              <td>True if: <a href="#errBits">errBits</a>&thinsp;&le;&thinsp;2 &amp; <a href="#nBands">nBands</a>&thinsp;==&thinsp;3 &amp; r&thinsp;&gt;&thinsp;13 &amp; i&thinsp;&gt;&thinsp;12 &amp; ha&thinsp;&gt;&thinsp;12.5 &amp; <a href="#rErr">rErr</a>&thinsp;&lt;&thinsp;0.1 &amp; <a href="#iErr">iErr</a>&thinsp;&lt;&thinsp;0.1 &amp; <a href="#haErr">haErr</a>&thinsp;&lt;&thinsp;0.1 &amp; (abs(r-rAperMag1)&thinsp;&lt;&thinsp;3*hypot(rErr,rAperMag1Err)+0.03) &amp; (abs(i-iAperMag1)&thinsp;&lt;&thinsp;3*hypot(iErr,iAperMag1Err)+0.03) &amp; (abs(ha-haAperMag1)&thinsp;&lt;&thinsp;3*hypot(haErr,haAperMag1Err)+0.03).</td>
+            </tr>
+            <tr id="veryReliable">
+              <td>veryReliable</td>
+              <td>boolean</td>
+              <td></td>
+              <td>True if: <a href="#reliable">reliable</a> &amp; <a href="#pStar">pStar</a>&thinsp;&gt;&thinsp;0.9 &amp; <a href="#errBits">errBits</a>&thinsp;=&thinsp;0.</td>
+            </tr>
+            <tr id="fieldID">
+              <td>fieldID</td>
+              <td>string</td>
+              <td></td>
+              <td>Human-readable IPHAS field number and observing run (e.g. 0001o_aug2003).</td>
+            </tr>
+            <tr id="fieldGrade">
+              <td>fieldGrade</td>
+              <td>string</td>
+              <td></td>
+              <td>Internal quality control score of the field. One of A, B, C or D.</td>
+            </tr>
+            <tr id="night">
+              <td>night</td>
+              <td>integer</td>
+              <td></td>
+              <td>Night of the observation (YYYYMMDD). Refers to the UT date at the start of the night.</td>
+            </tr>
+            <tr id="seeing">
+              <td>seeing</td>
+              <td>float</td>
+              <td>arcsec</td>
+              <td>Maximum value of (<a href="#rSeeing">rSeeing</a>, <a href="#iSeeing">iSeeing</a>, <a href="#haSeeing">haSeeing</a>).</td>
+            </tr>
+            <tr id="ccd">
+              <td>ccd</td>
+              <td>short</td>
+              <td></td>
+              <td>CCD-chip number on the Wide Field Camera (WFC) of the Isaac Newton Telescope (INT). 1, 2, 3 or 4.</td>
+            </tr>
+            <tr id="nObs">
+              <td>nObs</td>
+              <td>short</td>
+              <td></td>
+              <td>Number of repeat observations of this source in the survey.</td>
+            </tr>
+            <tr id="sourceID2">
+              <td>sourceID2</td>
+              <td>string</td>
+              <td></td>
+              <td>SourceID of the object in the partner exposure (if obtained within 10 minutes of the primary detection).</td>
+            </tr>
+            <tr id="fieldID2">
+              <td>fieldID2</td>
+              <td>string</td>
+              <td></td>
+              <td>FieldID of the partner detection (e.g. 0001o_aug2003).</td>
+            </tr>
+            <tr id="r2">
+              <td>r2</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>r-band magnitude in the dithered partner field, i.e. the dithered repeat measurement obtained within 10 minutes (if available).</td>
+            </tr>
+            <tr id="rErr2">
+              <td>rErr2</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty for r2.</td>
+            </tr>
+            <tr id="i2">
+              <td>i2</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>i-band magnitude in the dithered partner field, i.e. the dithered repeat measurement obtained within 10 minutes (if available).</td>
+            </tr>
+            <tr id="iErr2">
+              <td>iErr2</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty for i2.</td>
+            </tr>
+            <tr id="ha2">
+              <td>ha2</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>H-alpha magnitude in the dithered partner field, i.e. the dithered repeat measurement obtained within 10 minutes (if available).</td>
+            </tr>
+            <tr id="haErr2">
+              <td>haErr2</td>
+              <td>float</td>
+              <td>mag</td>
+              <td>Uncertainty for ha2.</td>
+            </tr>
+            <tr id="errBits2">
+              <td>errBits2</td>
+              <td>integer</td>
+              <td></td>
+              <td>Error bitmask for the partner detection. Used to flag a bright neighbour (1), source blending (2), saturation (8), vignetting (64), truncation (128) and bad pixels (32768).</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div id="download">
+        <h3>Download instructions</h3>
+        <p>The IPHAS DR2 Source Catalogue is distributed as a series of 
+        binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
+        At present the catalogue cannot be queried online,
+        but it will likely be made available through the Vizier
+        catalogue tool soon.</p>
+        <p>Download instructions will be added as soon as the accompanying paper is accepted for publication.</p>
+    </div>
+
+</section>
+
+
+<section id="images">
+  <div class="page-header">
+    <h2>Imaging data</h2>
+  </div>
+</section>
+
+<section id="source">
+  <div class="page-header">
+    <h2>Source code</h2>
+  </div>
+  <p>
+    In the spirit of reproducibility,
+    the source code that was used to generate
+    the catalogue is made available on GitHub:
+  </p>
+  <p>
+    <a href="https://www.github.com/barentsen/iphas-dr2">https://www.github.com/barentsen/iphas-dr2</a>
+  </p>
+</section>
+
+<section id="acknowledging">
+  <div class="page-header">
+    <h2>Acknowledging IPHAS</h2>
+  </div>
+
+  <p>Publications arising from IPHAS data should cite and acknowledge the survey. The primary reference for defining the survey is <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a> [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>]. Where the data have come from the present data release, DR2, Barentsen et al 2014 [submitted] should be cited as well.</p>
+
+  <p>Here is text to be used in acknowledgment sections of papers:</p>
+
+<blockquote>
+  <p style='font-size:0.8em;'><i>This paper makes use of data obtained as part of the INT Photometric Hα Survey of the Northern Galactic Plane (IPHAS, www.iphas.org) carried out at the Isaac Newton Telescope (INT). The INT is operated on the island of La Palma by the Isaac Newton Group in the Spanish Observatorio del Roque de los Muchachos of the Instituto de Astrofisica de Canarias. All IPHAS data are processed by the Cambridge Astronomical Survey Unit, at the Institute of Astronomy in Cambridge.  The bandmerged DR2 catalogue was assembled at the Centre for Astrophysics Research, University of Hertfordshire, supported by STFC grant ST/J001333/1.</i></p>
+</blockquote>
+
+
+</section>
+
+        </div><!-- /col-sm-9 -->
+      </div><!-- /row -->
+
+    <!-- CONTENT ENDS HERE -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+
+    <script>
+      $('#sidebar').affix({
+            offset: {
+              top: 20
+            }
+      });
+      $('body').scrollspy({
+          target: '#sidebar',
+          offset: 0
+      });
+    </script>
+  </body>
+</html>
