@@ -1,4 +1,4 @@
-vphas-website
+iphas-website
 =============
 
 Website for the [IPHAS](http://www.iphas.org) (IPHAS) astronomical survey project.
