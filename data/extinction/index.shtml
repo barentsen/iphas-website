@@ -33,7 +33,7 @@
         <p>
           In <a href="http://arxiv.org/archive/astro-ph">Sale et al (2014)</a> we present a new 3D extinction map of the
           entire Northern Galactic Plane (|<a href="#" rel="tooltip" data-original-title="Galactic latitude">b</a>| &lt; 5&deg;)
-          based on a method previously described in <a href="http://adsabs.harvard.edu/abs/2012MNRAS.427.2119S">Sale (2012)</a>
+          based on an algorithm H-MEAD, previously described in <a href="http://adsabs.harvard.edu/abs/2012MNRAS.427.2119S">Sale (2012)</a>,
           and IPHAS DR2 photometry.
         </p> 
         

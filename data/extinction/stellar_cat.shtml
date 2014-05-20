@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="../../inc/head.html" -->
+    <title>IPHAS: Stellar parameter catalogue </title>
+  </head>
+  <body>
+    <!--#include virtual="../../inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>A catalogue of stellar parameters </h1>
+    </div>
+    
+
+
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Warning</h4>
+      The catalogue linked on this page is likely to be the final product,
+      to be made public when the accompanying paper is accepted,
+      but minor changes remain possible.
+      <br /><b>Last update: 2014-05-20</b>
+    </div>
+    
+
+        <div class="page-header">
+          <h2>Summary</h2>
+        </div>
+      
+        <p>
+          In adition to estimating the three dimensional distribution of extinction, H-MEAD also infers the fundamental parameters of stars in the catalogue employed.
+        </p>
+        
+        <p>
+          By publishing only expectations and one dimensional standard deviations we are passing on only a relatively crude depiction of the posterior probability distribution.
+          Consequently features such as multimodality of the posterior and covariance between parameters will not be apparent. 
+          Additionally, the calculation of the stellar parameters has been subject to both a set of priors and a survey selection function, both of which have heavily shaped the results obtained.
+          Any further analysis of these data will also be inevitably subject to these same priors and selection function.
+          In light of these factors, we caution the reader that great care must be taken not to over-interpret or mistake patterns which appear in this catalogue.
+          These data are provided in the spirit that they may be a useful resource for e.g. target selection for spectroscopic programmes or for the interested reader to gain insight into the origin of features in the extinction map.
+        </p>
+        
+        <div class="page-header">
+          <h2>Download</h2>
+        </div>
+        
+        <p>
+          Some details on how to download, once decided.
+        </p>
+        
+      <section id="columns">
+        <div class="page-header">
+          <h2>Column definitions</h2>
+        </div>
+        
+        <table class="table table-striped iphas-columns">
+          <thead>
+            <tr><th>Column</th><th>Unit</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr id="name">
+              <td>name</td>
+              <td></td>
+              <td>Sexagesimal, equatorial position-based source name in the form: JHHMMSS.ss+DDMMSS.s. The full naming convention for IPHAS DR2 sources has the form "IPHAS2 JHHMMSS.ss+DDMMSS.s", where "J" indicates the position is J2000. The "IPHAS2" prefix is not included in the column.</td>
+            </tr>
+            <tr id="glon">
+              <td>l</td>
+              <td>degrees</td>
+              <td>Galactic longitude.</td>
+            </tr>
+            <tr id="glat">
+              <td>b</td>
+              <td>degrees</td>
+              <td>Galactic latitude.</td>
+            </tr>
+            <tr id="dist">
+              <td>s</td>
+              <td>parsecs</td>
+              <td>Mean of the marginal posterior distribution of the distance to the star.</td>
+            </tr>
+            <tr id="ddist">
+              <td>ds</td>
+              <td>parsecs</td>
+              <td>Standard deviation of the marginal posterior distribution of the distance to the star.</td>
+            </tr>    
+            <tr id="A">
+              <td>A</td>
+              <td></td>
+              <td>Mean of the marginal posterior distribution of the extinction to the star. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="dA">
+              <td>dA</td>
+              <td></td>
+              <td>Standard deviation of the marginal posterior distribution of the extinction to the star. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="logT">
+              <td>logT</td>
+              <td></td>
+              <td>Mean of the marginal posterior distribution of the base-10 logarithm of the star's effective temperature, in Kelvin.</td>
+            </tr>
+            <tr id="dlogT">
+              <td>dlogT</td>
+              <td></td>
+              <td>Standard deviation of the marginal posterior distribution of the base-10 logarithm of the star's effective temperature, in Kelvin</td>
+            </tr>   
+            <tr id="logg">
+              <td>logg</td>
+              <td></td>
+              <td>Mean of the marginal posterior distribution of the star's surface gravity.</td>
+            </tr>
+            <tr id="dlogg">
+              <td>dlogg</td>
+              <td></td>
+              <td>Standard deviation of the marginal posterior distribution of the star's surface gravity.</td>
+            </tr>   
+            <tr id="M">
+              <td>M</td>
+              <td>M<sub>&#9737;</sub></td>
+              <td>Mean of the marginal posterior distribution of the star's initial mass.</td>
+            </tr>
+            <tr id="dM">
+              <td>dM</td>
+              <td>M<sub>&#9737;</sub></td>
+              <td>Standard deviation of the marginal posterior distribution of the star's initial mass.</td>
+            </tr>                                                              
+          </tbody>
+        </table>                    
+
+
+    <!-- Content ends here -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+  </body>
+</html>
