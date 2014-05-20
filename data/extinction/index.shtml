@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="../../inc/head.html" -->
+    <title>IPHAS: 3D extinction map </title>
+  </head>
+  <body>
+    <!--#include virtual="../../inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>A 3D extinction map of the Northern Galactic Plane based on IPHAS photometry </h1>
+    </div>
+    
+
+
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Warning</h4>
+      The map and catalogue linked on this page are likely to be the final product,
+      to be made public when the accompanying paper is accepted,
+      but minor changes remain possible.
+      <br /><b>Last update: 2014-05-20</b>
+    </div>
+    
+    <p><img class="img-responsive center-block" alt="A 3D map of extinction" src="../../assets/images/A_map.gif" /></p>
+
+        <div class="page-header">
+          <h2>Summary</h2>
+        </div>
+      
+        <p>
+          In <a href="http://arxiv.org/archive/astro-ph">Sale et al (2014)</a> we present a new 3D extinction map of the
+          entire Northern Galactic Plane (|<a href="#" rel="tooltip" data-original-title="Galactic latitude">b</a>| &lt; 5&deg;)
+          based on a method previously described in <a href="http://adsabs.harvard.edu/abs/2012MNRAS.427.2119S">Sale (2012)</a>
+          and IPHAS DR2 photometry.
+        </p> 
+        
+        <p>
+          There are two main products available for download: the 3D extinction map itself and a catalogue of stellar 
+          parameters for the &#126;38 million stars employed to build the map.
+        </p>
+        
+        <div class="page-header">
+          <h2>Download</h2>
+        </div>
+        
+        <a href="map.shtml"> <h3> 3D extinction map. </h3> </a> 
+        
+        <a href="stellar_cat.shtml"> <h3> Stellar parameter catalogue. </h3> </a> 
+        
+        <p>
+          In addition, both products will be available for download from the CDS.
+        </p>
+
+
+    <!-- Content ends here -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+  </body>
+</html>
