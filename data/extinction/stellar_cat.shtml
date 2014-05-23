@@ -63,7 +63,7 @@
             <tr id="name">
               <td>name</td>
               <td></td>
-              <td>Sexagesimal, equatorial position-based source name in the form: JHHMMSS.ss+DDMMSS.s. The full naming convention for IPHAS DR2 sources has the form "IPHAS2 JHHMMSS.ss+DDMMSS.s", where "J" indicates the position is J2000. The "IPHAS2" prefix is not included in the column.</td>
+              <td>Sexagesimal, equatorial position-based source name in the form: JHHMMSS.ss+DDMMSS.s. The full naming convention for IPHAS DR2 sources has the form "IPHAS2 JHHMMSS.ss+DDMMSS.s", where "J" indicates the position is J2000.</td>
             </tr>
             <tr id="glon">
               <td>l</td>
@@ -80,7 +80,7 @@
               <td>parsecs</td>
               <td>Mean of the marginal posterior distribution of the distance to the star.</td>
             </tr>
-            <tr id="ddist">
+            <tr id="d&#95;dist">
               <td>ds</td>
               <td>parsecs</td>
               <td>Standard deviation of the marginal posterior distribution of the distance to the star.</td>
@@ -90,7 +90,7 @@
               <td></td>
               <td>Mean of the marginal posterior distribution of the extinction to the star. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
             </tr>
-            <tr id="dA">
+            <tr id="d&#95;A">
               <td>dA</td>
               <td></td>
               <td>Standard deviation of the marginal posterior distribution of the extinction to the star. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
@@ -100,7 +100,7 @@
               <td></td>
               <td>Mean of the marginal posterior distribution of the base-10 logarithm of the star's effective temperature, in Kelvin.</td>
             </tr>
-            <tr id="dlogT">
+            <tr id="d&#95;logT">
               <td>dlogT</td>
               <td></td>
               <td>Standard deviation of the marginal posterior distribution of the base-10 logarithm of the star's effective temperature, in Kelvin</td>
@@ -110,7 +110,7 @@
               <td></td>
               <td>Mean of the marginal posterior distribution of the star's surface gravity.</td>
             </tr>
-            <tr id="dlogg">
+            <tr id="d&#95;logg">
               <td>dlogg</td>
               <td></td>
               <td>Standard deviation of the marginal posterior distribution of the star's surface gravity.</td>
@@ -120,7 +120,7 @@
               <td>M<sub>&#9737;</sub></td>
               <td>Mean of the marginal posterior distribution of the star's initial mass.</td>
             </tr>
-            <tr id="dM">
+            <tr id="d&#95;M">
               <td>dM</td>
               <td>M<sub>&#9737;</sub></td>
               <td>Standard deviation of the marginal posterior distribution of the star's initial mass.</td>
