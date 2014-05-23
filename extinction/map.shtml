@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--#include virtual="../../inc/head.html" -->
+    <!--#include virtual="../inc/head.html" -->
     <title>IPHAS: 3D extinction map </title>
   </head>
   <body>
-    <!--#include virtual="../../inc/navbar.html" -->
+    <!--#include virtual="../inc/navbar.html" -->
     <div class="container">
     <!-- CONTENT STARTS HERE -->
 

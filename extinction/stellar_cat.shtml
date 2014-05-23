@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--#include virtual="../../inc/head.html" -->
+    <!--#include virtual="../inc/head.html" -->
     <title>IPHAS: Stellar parameter catalogue </title>
   </head>
   <body>
-    <!--#include virtual="../../inc/navbar.html" -->
+    <!--#include virtual="../inc/navbar.html" -->
     <div class="container">
     <!-- CONTENT STARTS HERE -->
 
@@ -47,7 +47,10 @@
         </div>
         
         <p>
-          Some details on how to download, once decided.
+          We provide one file containing the entire catalogue .....
+          We also split the catalogue up into files corresponding to each sightline analysed.
+          These files detail the Galactic longitude and latitudes covered in the file header.
+          The individual files are organised into archives covering 10&#176; wide strips of the Glactic plane.       
         </p>
         
       <section id="columns">
