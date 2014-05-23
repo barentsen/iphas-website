@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="../../inc/head.html" -->
+    <title>IPHAS: 3D extinction map </title>
+  </head>
+  <body>
+    <!--#include virtual="../../inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>A 3D map of extinction </h1>
+    </div>
+    
+
+
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Warning</h4>
+      The map linked on this page is likely to be the final product,
+      to be made public when the accompanying paper is accepted,
+      but minor changes remain possible.
+      <br /><b>Last update: 2014-05-20</b>
+    </div>
+    
+
+        <div class="page-header">
+          <h2>Summary</h2>
+        </div>
+      
+        <p>
+          The extinction map is presented in two forms. First, we publish the posterior expectations of mean extinction and differential extinction for every voxel in the map.
+          These expectations are accompanied by measurements of the half-widths of 68.3 per cent credible intervals centred on the expectation for both mean extinction and differential extinction. 
+          In addition we also make available 20 samples from the posterior distribution on the mean extinction.
+        </p>
+        
+        <div class="page-header">
+           <h2>Expectations and uncertainties</h2>
+        </div>           
+        <p>
+          The posterior expectations and uncertainties are availible in one large file covering the entire sky, in this form the values all voxels beyond the maximum relaible distance are set to null.
+          The README accompanying this file contains column definitions.
+        </p>  
+           
+        <p>  
+          Alternatively the same data are available with one file per sightline.
+          In this format the final column says wheter a voxel is considered 'trustworty' or not, i.e. if it is within or beyond the maximum reliable distance for the sightline.
+          The limits of the voxel in Galactic longitude and latitude are given in the file header.
+          Column definitions for these files follow after download details.
+        </p>
+        
+        
+
+        <h3>Download</h3>
+
+        
+        <p>
+          Some details on how to download, once decided.
+        </p>
+        
+      <section id="columns">
+          <h3>Column definitions</h3>
+
+
+        <table class="table table-striped iphas-columns">
+          <thead>
+            <tr><th>Column</th><th>Unit</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr id="dist">
+              <td>dist</td>
+              <td>parsec</td>
+              <td>The distance to the midpoint of the voxel.</td>
+            </tr>
+            <tr id="mean_A0">
+              <td>mean_A0</td>
+              <td></td>
+              <td>The mean extinction to points within the voxel. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="sigma_A0">
+              <td>sigma_A0</td>
+              <td></td>
+              <td>The differential extinction to the voxel, i.e. the standard deviation of extinction to points within the voxel. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="d_mean">
+              <td>mean_A0</td>
+              <td></td>
+              <td> The halfwidth of a symetric 68.3&#37; credible interval on mean extinction, centred on the expectation value. This serves as an estimate of the uncertainty on the mean extinction. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="d_sigma">
+              <td>mean_A0</td>
+              <td></td>
+              <td> The halfwidth of a symetric 68.3&#37; credible interval on differential extinction, centred on the expectation value. This serves as an estimate of the uncertainty on the differntial extinction. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="trustworty">
+              <td>trustworty</td>
+              <td></td>
+              <td>Indicates whether a voxel is within or beyond the maximum relaible distance. A value of 1 indicates that the voxel is within this distance and can be considered to be trustworty. A value of 0 indicates that the voxel is beyond this distance and so should not be relied upon. </td>
+            </tr>            
+          </tbody>
+        </table>     
+  
+        <div class="page-header">        
+           <h2>Samples from posterior</h2>
+        </div>    
+        
+        <p>
+           We also make availbe 20 sample from the posterior distribution on mean extinction.
+           For many purposes this might be a more useful representation of the poserior than that given by the expectation and halfwidth of the credible interval.
+           We provide one file for each sightline, where the filename gives the Galactic longitude and latitude at the centre of the line of sight.
+           The first column of each file gives the midpoint distance of a voxel, whilst the subsequent columns each give a value sampled from the posterior on mean extinction.
+           The sample were all taken at the same iteration in the MCMC chain and so each column is itself a sample from the posterior on the entire distance extinction relationship.
+        </p>
+        
+        <h3>Download</h3>
+        
+        <p>
+          Some details on how to download, once decided.
+        </p>
+
+
+    <!-- Content ends here -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+  </body>
+</html>
