@@ -39,7 +39,7 @@
            <h2>Expectations and uncertainties</h2>
         </div>           
         <p>
-          The posterior expectations and uncertainties are availible in one large file covering the entire sky, in this form the values all voxels beyond the maximum relaible distance are set to null.
+          The posterior expectations and uncertainties are availible in <a href="">one large file</a> covering the entire sky, in this form the values all voxels beyond the maximum relaible distance are set to null.
           The README accompanying this file contains column definitions.
         </p>  
            
@@ -56,8 +56,260 @@
 
         
         <p>
-          Some details on how to download, once decided.
+          The entire map is made available in <a href="">one file</a>. 
         </p>
+
+	<p>
+          We also split the map up into files corresponding to each sightline analysed.
+          These files detail the Galactic longitude and latitudes covered in the file header.
+          The individual files are organised into archives covering 10&#176; wide strips of the Glactic plane.    
+          Column definitions for these files follow.   
+        </p>
+
+
+        <table class="table table-condensed iphas-download">
+          <thead>
+            <tr>
+              <td>Gal. Lon.</td>
+              <td>
+                Download Catalogue
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                30&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;40&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_030.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                40&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;50&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_040.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                50&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;60&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_050.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                60&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;70&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_060.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                70&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;80&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_070.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                80&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;90&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_080.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                90&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;100&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_090.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                100&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;110&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_100.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                110&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;120&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_110.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                120&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;130&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_120.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                130&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;140&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_130.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                140&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;150&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_140.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                150&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;160&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_150.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                160&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;170&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_160.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                170&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;180&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_170.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                180&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;190&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_180.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                190&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;200&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_190.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                200&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;210&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_200.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                210&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;215&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_map_210.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+   
+          </tbody>
+        </table>
+      </section>
         
       <section id="columns">
           <h3>Column definitions</h3>
@@ -116,8 +368,254 @@
         <h3>Download</h3>
         
         <p>
-          Some details on how to download, once decided.
+          There is one file for each sightline.
+          These files detail the Galactic longitude and latitudes covered in the file header.
+          The individual files are organised into archives covering 10&#176; wide strips of the Glactic plane. 
         </p>
+
+       <table class="table table-condensed iphas-download">
+          <thead>
+            <tr>
+              <td>Gal. Lon.</td>
+              <td>
+                Download Catalogue
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                30&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;40&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_030.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                40&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;50&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_040.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                50&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;60&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_050.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                60&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;70&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_060.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                70&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;80&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_070.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                80&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;90&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_080.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                90&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;100&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_090.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                100&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;110&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_100.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                110&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;120&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_110.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                120&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;130&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_120.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                130&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;140&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_130.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                140&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;150&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_140.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                150&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;160&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_150.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                160&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;170&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_160.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                170&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;180&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_170.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                180&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;190&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_180.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                190&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;200&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_190.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                200&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;210&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_200.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                210&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;215&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  A_samp_210.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+   
+          </tbody>
+        </table>
+      </section>
 
 
     <!-- Content ends here -->
