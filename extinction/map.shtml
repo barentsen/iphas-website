@@ -336,12 +336,12 @@
               <td>The differential extinction to the voxel, i.e. the standard deviation of extinction to points within the voxel. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
             </tr>
             <tr id="d_mean">
-              <td>mean_A0</td>
+              <td>d_mean</td>
               <td></td>
               <td> The halfwidth of a symetric 68.3&#37; credible interval on mean extinction, centred on the expectation value. This serves as an estimate of the uncertainty on the mean extinction. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
             </tr>
             <tr id="d_sigma">
-              <td>mean_A0</td>
+              <td>d_sigma</td>
               <td></td>
               <td> The halfwidth of a symetric 68.3&#37; credible interval on differential extinction, centred on the expectation value. This serves as an estimate of the uncertainty on the differntial extinction. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
             </tr>
