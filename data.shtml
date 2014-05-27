@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="inc/head.html" -->
+    <title>IPHAS: Data</title>
+  </head>
+  <body>
+    <!--#include virtual="inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>IPHAS Data Access</h1>
+    </div>
+
+    <p>IPHAS provides globally-calibrated catalogues and images, along with derived data products such as a 3D extinction map and lists of special objects. The primary data products are:</p>
+
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr><th>Product</th><th>Website</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Catalogue</td>
+        <td><a href='/dr2'>www.iphas.org/dr2</a></td>
+        <td>Globally-calibrated source catalogue.</td>
+      </tr>
+      <tr>
+        <td>Images</td>
+        <td><a href='/images'>www.iphas.org/images</a></td>
+        <td>Pipeline-reduced images.</td>
+      </tr>
+      <tr>
+        <td>Extinction map</td>
+        <td><a href='/extinction'>www.iphas.org/extinction</a></td>
+        <td>A 3D extinction map derived from the catalogue.</td>
+      </tr>
+      <tr>
+        <td>Catalogue of H&alpha; emitters</td>
+        <td><a href='/emitters'>www.iphas.org/emitters</a></td>
+        <td>A list of H&alpha; emission-line objects detected by IPHAS.</td>
+      </tr>
+      <tr>
+        <td>Catalogue of symbiotic stars</td>
+        <td><a href='/symbiotics'>www.iphas.org/symbiotics</a></td>
+        <td>A list of symbiotic stars discovered by IPHAS.</td>
+      </tr>
+    </tbody>
+    </table>
+
+    <div class="page-header">
+      <h3>Acknowledging IPHAS</h3>
+    </div>
+
+    <p>Publications arising from IPHAS data should cite and acknowledge the survey. The primary reference for defining the survey is <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a> [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>]. Where the data have come from <a href='/dr2'>DR2</a>, Barentsen et al 2014 [submitted] should be cited as well.</p>
+
+    <p>Here is text to be used in acknowledgment sections of papers:</p>
+
+    <blockquote>
+      <p style='font-size:0.8em;'><i>This paper makes use of data obtained as part of the INT Photometric Hα Survey of the Northern Galactic Plane (IPHAS, www.iphas.org) carried out at the Isaac Newton Telescope (INT). The INT is operated on the island of La Palma by the Isaac Newton Group in the Spanish Observatorio del Roque de los Muchachos of the Instituto de Astrofisica de Canarias. All IPHAS data are processed by the Cambridge Astronomical Survey Unit, at the Institute of Astronomy in Cambridge.  The bandmerged DR2 catalogue was assembled at the Centre for Astrophysics Research, University of Hertfordshire, supported by STFC grant ST/J001333/1.</i></p>
+    </blockquote>
+
+    <!-- CONTENT ENDS HERE -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+
+    <script>
+      $('#sidebar').affix({
+            offset: {
+              top: 100
+            }
+      });
+      var $body = $(document.body);
+      $body.scrollspy({
+        target: '#sidebarCol',
+        offset: 200
+      });
+    </script>
+  </body>
+</html>

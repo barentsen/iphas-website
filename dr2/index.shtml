@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--#include virtual="inc/head.html" -->
+    <!--#include virtual="../inc/head.html" -->
     <title>IPHAS DR2</title>
   </head>
   <body>
-    <!--#include virtual="inc/navbar.html" -->
+    <!--#include virtual="../inc/navbar.html" -->
     <div class="container">
     <!-- CONTENT STARTS HERE -->
 
@@ -17,21 +17,16 @@
                     <a href="#overview">Overview</a>
                 </li>
                 <li>
-                    <a href="#catalogue">Source catalogue</a>
-                    <ul class="nav nav-stacked">
-                        <li><a href="#versions">Light and full version</a></li>
-                        <li><a href="#columns">Column definitions</a></li>
-                        <li><a href="#download">Download</a></li>
-                    </ul>
+                    <a href="#versions">Light and full version</a>
                 </li>
                 <li>
-                    <a href="#images">Imaging data</a>
+                    <a href="#columns">Column definitions</a>
+                </li>
+                <li>
+                    <a href="#download">Download</a>
                 </li>
                 <li>
                     <a href="#source">Source code</a>
-                </li>
-                <li>
-                    <a href="#acknowledging">Acknowledging IPHAS</a>
                 </li>
                 <li>
                   <a class="back-to-top" href="#top">
@@ -45,7 +40,7 @@
 
         <div class="col-sm-9">
 
-<h1>IPHAS Data Release 2</h1>
+<h1>The IPHAS Data Release 2 Source Catalogue</h1>
 
 <section id="overview">
   <div class="page-header">
@@ -64,46 +59,47 @@
   </p> 
 </section>
 
-<section id="catalogue">
+<section id="versions">
   <div class="page-header">
-    <h2>Source catalogue</h2>
-  </div>
-  <div id="versions">
-       <h3>Light and full version</h3>
-
-        <p>
-          The DR2 source catalogue is made available in two flavours.
-          The light version has a size of 8 GB (10 columns)
-          and contains only the basic information on each source,
-          namely:
-        </p>
-        <ul>
-          <li>equatorial coordinates (columns <a href="#ra-light">ra</a>, <a href="#dec-light">dec</a>);</li>
-          <li>r, i and H&alpha; magnitudes measured using the default 2.3-arcsec-diameter circular aperture (columns <a href="#r-light">r</a>, <a href="#i-light">i</a>, <a href="#ha-light">ha</a>, <a href="#rErr-light">rErr</a>, <a href="#iErr-light">iErr</a>, <a href="#haErr-light">haErr</a>);</li>
-          <li>a morphological classification flag (<a href="#mergedClass-light">mergedClass</a>);</li>
-          <li>error flags warning for source blending, bright neighbours and saturation (<a href="#errBits-light">errBits</a>).</li>
-        </ul>
-         
-        <p>
-          The full version has a size of 50 GB (97 columns) and adds:
-        </p>
-        <ul>
-          <li>magnitudes at a second epoch in the same night, if available;</li>
-          <li>magnitudes measured using different aperture sizes;</li>
-          <li>detailed morphological parameters;</li>
-          <li>information on the observation (date, seeing, run number);</li>
-          <li>object positions measured in the CCD reference frame (pixel x/y);</li>
-          <li>additional quality warning flags.</li>
-        </ul>
-
-        <p>
-          A table detailing the <a href="#columns">column definitions</a> is given below.
-        </p>  
+    <h2>Light and full version</h2>
   </div>
 
-    <div id="columns">
-        <h3>Column definitions</h3>
- 
+  <p>
+    The DR2 source catalogue is made available in two flavours.
+    The light version has a size of 8 GB (10 columns)
+    and contains only the basic information on each source,
+    namely:
+  </p>
+  <ul>
+    <li>equatorial coordinates (columns <a href="#ra-light">ra</a>, <a href="#dec-light">dec</a>);</li>
+    <li>r, i and H&alpha; magnitudes measured using the default 2.3-arcsec-diameter circular aperture (columns <a href="#r-light">r</a>, <a href="#i-light">i</a>, <a href="#ha-light">ha</a>, <a href="#rErr-light">rErr</a>, <a href="#iErr-light">iErr</a>, <a href="#haErr-light">haErr</a>);</li>
+    <li>a morphological classification flag (<a href="#mergedClass-light">mergedClass</a>);</li>
+    <li>error flags warning for source blending, bright neighbours and saturation (<a href="#errBits-light">errBits</a>).</li>
+  </ul>
+   
+  <p>
+    The full version has a size of 50 GB (97 columns) and adds:
+  </p>
+  <ul>
+    <li>magnitudes at a second epoch in the same night, if available;</li>
+    <li>magnitudes measured using different aperture sizes;</li>
+    <li>detailed morphological parameters;</li>
+    <li>information on the observation (date, seeing, run number);</li>
+    <li>object positions measured in the CCD reference frame (pixel x/y);</li>
+    <li>additional quality warning flags.</li>
+  </ul>
+
+  <p>
+    A table detailing the <a href="#columns">column definitions</a> is given below.
+  </p>  
+</section>
+
+
+<section id="columns">
+  <div class="page-header">
+    <h2>Column definitions</h2>
+  </div>
+
         <table class="table table-striped iphas-columns">
           <thead>
             <tr><th>Column</th><th>Type</th><th>Unit</th><th>Description</th></tr>
@@ -699,24 +695,20 @@
             </tr>
           </tbody>
         </table>
-    </div>
-    <div id="download">
-        <h3>Download instructions</h3>
-        <p>The IPHAS DR2 Source Catalogue is distributed as a series of 
-        binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
-        At present the catalogue cannot be queried online,
-        but it will likely be made available through the Vizier
-        catalogue tool soon.</p>
-        <p>Download instructions will be added as soon as the accompanying paper is accepted for publication.</p>
-    </div>
-
 </section>
 
-
-<section id="images">
+<section id="download">
   <div class="page-header">
-    <h2>Imaging data</h2>
+    <h2>Download instructions</h2>
   </div>
+
+  <p>The IPHAS DR2 Source Catalogue is distributed as a series of 
+  binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
+  At present the catalogue cannot be queried online,
+  but it will likely be made available through the Vizier
+  catalogue tool soon.</p>
+  <p>Download instructions will be added as soon as the accompanying paper is accepted for publication.</p>
+
 </section>
 
 <section id="source">
@@ -733,28 +725,12 @@
   </p>
 </section>
 
-<section id="acknowledging">
-  <div class="page-header">
-    <h2>Acknowledging IPHAS</h2>
-  </div>
-
-  <p>Publications arising from IPHAS data should cite and acknowledge the survey. The primary reference for defining the survey is <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a> [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>]. Where the data have come from the present data release, DR2, Barentsen et al 2014 [submitted] should be cited as well.</p>
-
-  <p>Here is text to be used in acknowledgment sections of papers:</p>
-
-<blockquote>
-  <p style='font-size:0.8em;'><i>This paper makes use of data obtained as part of the INT Photometric Hα Survey of the Northern Galactic Plane (IPHAS, www.iphas.org) carried out at the Isaac Newton Telescope (INT). The INT is operated on the island of La Palma by the Isaac Newton Group in the Spanish Observatorio del Roque de los Muchachos of the Instituto de Astrofisica de Canarias. All IPHAS data are processed by the Cambridge Astronomical Survey Unit, at the Institute of Astronomy in Cambridge.  The bandmerged DR2 catalogue was assembled at the Centre for Astrophysics Research, University of Hertfordshire, supported by STFC grant ST/J001333/1.</i></p>
-</blockquote>
-
-
-</section>
-
         </div><!-- /col-sm-9 -->
       </div><!-- /row -->
 
     <!-- CONTENT ENDS HERE -->
     </div><!-- /container -->
-    <!--#include virtual="inc/footer.html" -->
+    <!--#include virtual="../inc/footer.html" -->
 
     <script>
       $('#sidebar').affix({
