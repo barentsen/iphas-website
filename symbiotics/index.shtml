@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--#include virtual="../inc/head.html" -->
+    <title>IPHAS: Symbiotic Stars</title>
+  </head>
+  <body>
+    <!--#include virtual="../inc/navbar.html" -->
+    <div class="container">
+
+<!-- Content starts here -->
+<div class="page-header">
+  <h1>Symbiotic stars discovered by IPHAS</h1>
+</div>
+
+<p>This page contains the updated list of symbiotic stars discovered
+with the IPHAS survey. The table lists the name/coordinates of the
+sources, their r' magnitude, finding charts (size: 3 arcmin x 3
+arcmin, North at the top and East to the left), spectra, and the
+reference to the discovery article. The spectrum of the source is
+available in FITS format and can be downloaded by clicking in the
+corresponding column. Spectra can be retrieved provided that the
+original source is properly referenced in any publication that results
+from their use. More details on each object, on
+the searching technique, and on the overall results of the project,
+can be found in the references.</p>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Name (IPHASJ...)</td>
+      <td>r [mag]</td>
+      <td>Finding chart</td> 
+      <td>Spectrum</td>
+      <td>Reference</td>
+    </tr>
+  </thead>
+    <tbody>
+    <tr>
+      <td>182906.08+003457.2</td>
+      <td>17.5</td> 
+      <td><a href="18290608_0034572.jpg"><img src="finding_chart.jpg" width="100"></a></td>
+      <td><a href="S18290608_0034572.fits"><img src="spectrum.jpg" width="100"></a></td>
+      <td><a href="#r2">2</a></td>
+    </tr>
+    <tr>
+      <td>183501.83+014656.0</td>
+      <td>16.3</td> 
+      <td><a href="18350183_0146560.jpg"><img src="finding_chart.jpg" width="100"></a></td>
+      <td><a href="S18350183_0146560.fits"><img src="spectrum.jpg" width="100"></a></td>
+      <td><a href="#r2">2</a></td>
+     </tr>
+    <tr>
+      <td>184144.00-012839.5</td>
+      <td>17.6</td> 
+      <td><a href="18414400_0128395.gif"><img src="finding_chart.jpg" width="100"></a></td>
+      <td><a href="S18414400_0128395.tar"><img src="spectrum.jpg" width="100"></a></td>
+      <td><a href="#r6">6</a></td>
+    </tr>
+    <tr>
+      <td>184446.08+060703.5</td>
+      <td>14.7</td> 
+      <td><a href="18444608_0607035.jpg"><img src="finding_chart.jpg" width="100"></a></td>
+      <td><a href="S18444608_0607035.fits"><img src="spectrum.jpg" width="100"></a></td>
+      <td><a href="#r2">2</a></td>
+    </tr>
+    <tr>
+      <td>184733.03+032554.3</td>
+      <td>18.6</td> 
+      <td><a href="18473303_0325543.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S18473303_0325543.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r2">2</a> </td>
+    </tr>
+    <tr>
+      <td>185323.58+084955.1</td>
+      <td>16.5</td> 
+      <td><a href="18532358_0849551.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S18532358_0849551.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r2">2</a></td>
+    </tr>
+    <tr>
+      <td>185704.44+002631.7</td>
+      <td>18.3</td> 
+      <td><a href="18570444_0026317.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S18570444_0026317.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r1">1</a></td>
+    </tr>
+    <tr>
+      <td>190742.36+000251.1</td>
+      <td>15.3</td> 
+      <td><a href="19074236_0002511.gif"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19074236_0002511.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r6">6</a></td>
+    </tr>
+    <tr>
+      <td>190832.31+051226.6</td>
+      <td>17.8</td> 
+      <td><a href="19083231_0512266.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19083231_0512266.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r3">3</a></td>
+    </tr>
+    <tr>
+      <td>190924.64+010910.2</td>
+      <td>17.2</td> 
+      <td><a href="19092464_0109102.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19092464_0109102.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r1">1</a></td>
+    </tr>
+    <tr>
+      <td>190926.60+120044.6</td>
+      <td>16.9</td> 
+      <td><a href="19092660_1200446.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19092660_1200446.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r4">4</a></td>
+    </tr>
+    <tr>
+      <td>193436.06+163128.9</td>
+      <td>16.8</td> 
+      <td><a href="19343606_1631289.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19343606_1631289.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r2">2</a></td>
+    </tr>
+    <tr>
+      <td>193501.31+135427.5</td>
+      <td>14.0</td> 
+      <td><a href="19350131_1354275.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19350131_1354275.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r2">2</a></td>
+    </tr>
+    <tr>
+      <td>193830.62+235438.4</td>
+      <td>17.8</td> 
+      <td><a href="19383062_2354384.gif"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19383062_2354384.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r6">6</a></td>
+    </tr>
+    <tr>
+      <td>193943.36+262933.1</td>
+      <td>15.3</td> 
+      <td><a href="19394336_2629331.gif"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19394336_2629331.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r6">6</a></td>
+    </tr>
+    <tr>
+      <td>194607.52+223112.3</td>
+      <td>17.5</td> 
+      <td><a href="19460752_2231123.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S19460752_2231123.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r2">2</a></td>
+    </tr>
+    <tr>
+      <td>202510.58+435233.0</td>
+      <td>15.3</td> 
+      <td><a href="20251058_4352330.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S20251058_4352330.fits"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r1">1</a></td>
+    </tr>
+    <tr>
+      <td>205836.43+503307.2</td>
+      <td>18.9</td>
+      <td><a href="20583643_5033072.jpg"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S20583643_5033072.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r5">5</a></td>
+    </tr>
+    <tr>
+      <td>224834.32+582908.4</td>
+      <td>17.7</td>
+      <td><a href="22483432_5829084.gif"><img src="finding_chart.jpg" width="100"></a> </td>
+      <td><a href="S22483432_5829084.tar"><img src="spectrum.jpg" width="100"></a> </td>
+      <td><a href="#r6">6</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>References:</p>
+
+<ol>
+  <li>
+    <a name="r1"></a>
+    "IPHAS and the symbiotic stars. I. Selection method and first discoveries", 
+    Corradi et al. 2008, A&A, 480, 409
+    (<a href="http://adsabs.harvard.edu/abs/2008A%26A...480..409C">ADS</a>)
+  </li>
+  <li>
+    <a name="r2"></a>
+    "IPHAS and the symbiotic stars . II. New discoveries and a sample of the most common mimics", Corradi et al. 2010, A&A, 509, A41
+    (<a href="http://adsabs.harvard.edu/abs/2010A%26A...509A..41C">ADS</a>)
+  </li>
+  <li>
+    <a name="r3"></a>
+    "The ongoing outburst of the new symbiotic star IPHASJ190832.31+051226.6"
+    Corradi et al. 2010, A&A, 509, L9
+    (<a href="http://adsabs.harvard.edu/abs/2010A%26A...509L...9C">ADS</a>)
+  </li>
+  <li>
+    <a name="r4"></a>
+      "K 3-22: a D-type symbiotic star"
+      Corradi and Giammanco 2010, A&A, 520, A99
+      (<a href="http://adsabs.harvard.edu/abs/2010A%26A...520A..99C">ADS</a>)
+  </li>
+  <li>
+    <a name="r5"></a>
+    "The new carbon symbiotic star IPHAS J205836.43+503307.2"
+    Corradi et al. 2011, A&A, 529, A56
+    (<a href="http://adsabs.harvard.edu/abs/2010A%26A...529A..56C">ADS</a>)
+  </li>
+  <li>
+    <a name="r6"></a>
+    "IPHAS and the symbiotic stars III. New discoveries and their IR spectral energy distributions"
+    Rodriguez-Flores et al., submitted to A&A
+    (<a href="http://adsabs.harvard.edu/abs/">ADS</a>)
+  </li>
+</ol>
+
+<p>
+Last updated: February 2014
+<br/>
+Authors: Ernesto Rodriguez-Flores
+(<a href="mailto:erflores@iga.cu">erflores at iga.cu</a>),
+Romano Corradi
+(<a href="mailto:rcorradi@iac.es">rcorradi at iac.es</a>)
+</p>
+
+<!-- Content ends here -->
+
+    </div><!-- /container -->
+    
+    <!--#include virtual="../inc/footer.html" -->
+  </body>
+</html>

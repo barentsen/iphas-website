@@ -17,13 +17,10 @@
                     <a href="#overview">Overview</a>
                 </li>
                 <li>
-                    <a href="#versions">Light and full version</a>
+                    <a href="#download">Download</a>
                 </li>
                 <li>
                     <a href="#columns">Column definitions</a>
-                </li>
-                <li>
-                    <a href="#download">Download</a>
                 </li>
                 <li>
                     <a href="#source">Source code</a>
@@ -40,67 +37,51 @@
 
         <div class="col-sm-9">
 
-<h1>The IPHAS Data Release 2 Source Catalogue</h1>
+<h1>The IPHAS DR2 Source Catalogue</h1>
 
 <section id="overview">
   <div class="page-header">
     <h2>Overview</h2>
   </div>
   <p>
-    IPHAS DR2 provides r, i and H&alpha;-band photometry for 219 million unique sources, observed across the Northern Galactic Plane between 2003 and 2013.
+    IPHAS DR2 provides r, i and H&alpha;-band photometry
+    for 219 million unique sources, observed across the
+    Northern Galactic Plane between 2003 and 2012.
     The catalogue is described in detail in 
     an accompanying paper (Barentsen et al. 2014).
     In brief, the catalogue has been constructed by cross-matching 
     the detections from the individual bands using a maximum matching 
     distance of 1 arcsec. All objects which were detected 
     at at signal-to-noise ratio of 5 or better in at least one band
-    are included. The catalogue is uniformly calibrated with
+    are included. The catalogue is uniformly calibrated to
     an accuracy of 0.03 mag (rms).
   </p> 
-</section>
-
-<section id="versions">
-  <div class="page-header">
-    <h2>Light and full version</h2>
-  </div>
 
   <p>
-    The DR2 source catalogue is made available in two flavours.
-    The light version has a size of 8 GB (10 columns)
-    and contains only the basic information on each source,
-    namely:
-  </p>
-  <ul>
-    <li>equatorial coordinates (columns <a href="#ra-light">ra</a>, <a href="#dec-light">dec</a>);</li>
-    <li>r, i and H&alpha; magnitudes measured using the default 2.3-arcsec-diameter circular aperture (columns <a href="#r-light">r</a>, <a href="#i-light">i</a>, <a href="#ha-light">ha</a>, <a href="#rErr-light">rErr</a>, <a href="#iErr-light">iErr</a>, <a href="#haErr-light">haErr</a>);</li>
-    <li>a morphological classification flag (<a href="#mergedClass-light">mergedClass</a>);</li>
-    <li>error flags warning for source blending, bright neighbours and saturation (<a href="#errBits-light">errBits</a>).</li>
-  </ul>
-   
-  <p>
-    The full version has a size of 50 GB (97 columns) and adds:
-  </p>
-  <ul>
-    <li>magnitudes at a second epoch in the same night, if available;</li>
-    <li>magnitudes measured using different aperture sizes;</li>
-    <li>detailed morphological parameters;</li>
-    <li>information on the observation (date, seeing, run number);</li>
-    <li>object positions measured in the CCD reference frame (pixel x/y);</li>
-    <li>additional quality warning flags.</li>
-  </ul>
-
-  <p>
-    A table detailing the <a href="#columns">column definitions</a> is given below.
+    For each unique source, the catalogue provides r, i and H&alpha; magnitudes measured using a series of apertures, along with coordinates and quality warning flags. Where available, magnitudes at a second epoch in the same night are given as well. A table detailing the <a href="#columns">column definitions</a> is given below.
   </p>  
 </section>
 
+<section id="download">
+  <div class="page-header">
+    <h2>Download</h2>
+  </div>
+
+  <p>The IPHAS DR2 Source Catalogue is distributed as a series of 
+  binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
+  At present the catalogue cannot be queried online,
+  but it will likely be made available through the Vizier
+  catalogue tool soon.</p>
+  <p>Download instructions will be added as soon as the accompanying paper is accepted for publication.</p>
+
+</section>
 
 <section id="columns">
   <div class="page-header">
     <h2>Column definitions</h2>
   </div>
 
-        <table class="table table-striped iphas-columns">
+        <table class="table table-striped table-hover iphas-columns">
           <thead>
             <tr><th>Column</th><th>Type</th><th>Unit</th><th>Description</th></tr>
           </thead>
@@ -697,20 +678,6 @@
         </table>
 </section>
 
-<section id="download">
-  <div class="page-header">
-    <h2>Download instructions</h2>
-  </div>
-
-  <p>The IPHAS DR2 Source Catalogue is distributed as a series of 
-  binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
-  At present the catalogue cannot be queried online,
-  but it will likely be made available through the Vizier
-  catalogue tool soon.</p>
-  <p>Download instructions will be added as soon as the accompanying paper is accepted for publication.</p>
-
-</section>
-
 <section id="source">
   <div class="page-header">
     <h2>Source code</h2>
@@ -739,8 +706,8 @@
             }
       });
       $('body').scrollspy({
-          target: '#sidebar',
-          offset: 0
+          target: '#sidebarCol',
+          offset: 200
       });
     </script>
   </body>
