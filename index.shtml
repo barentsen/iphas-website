@@ -76,9 +76,9 @@
           <p><a class="btn btn-default" href="science.shtml">More &raquo;</a></p>
         </div>
         <div class="col-sm-4">
-          <a class="about" href="dr2.shtml"><i class="icon-download-alt"></i> Data</a>
+          <a class="about" href="data.shtml"><i class="icon-download-alt"></i> Data</a>
           <p>The imaging data and a photometric catalogue containing 219 million unique sources are available to the public.</p>
-          <p><a class="btn btn-default" href="dr2.shtml">More &raquo;</a></p>
+          <p><a class="btn btn-default" href="data.shtml">More &raquo;</a></p>
         </div>
       </div>
 
