@@ -23,6 +23,7 @@ Authors
 -------
 * Geert Barentsen
 * Janet Drew
+* Stuart Sale
 * IPHAS team
 
 License
