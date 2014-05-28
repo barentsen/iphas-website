@@ -144,8 +144,7 @@
           in the file header. Column definitions for these files
           follow after download details.</p>
 
-          <table class=
-          "table table-striped table-hover table-condensed iphas-download">
+          <table class="table table-striped table-hover table-condensed">
           <thead>
               <tr>
                 <th>Gal. Lon.</th>
@@ -332,7 +331,7 @@
             <h3>Column definitions</h3>
           </div>
 
-          <table class="table table-striped iphas-columns">
+          <table class="table table-striped table-hover">
             <thead>
               <tr>
                 <th>Column</th>
@@ -440,8 +439,7 @@
           archives covering 10° wide strips of the Glactic
           plane.</p>
 
-          <table class=
-          "table table-striped table-hover table-condensed iphas-download">
+          <table class="table table-striped table-hover table-condensed">
           <thead>
               <tr>
                 <td>Gal. Lon.</td>
@@ -668,8 +666,7 @@
           archives covering 10° wide strips of the Glactic
           plane.</p>
 
-          <table class=
-          "table table-striped table-hover table-condensed iphas-download">
+          <table class="table table-striped table-hover table-condensed">
           <thead>
               <tr>
                 <td>Gal. Lon.</td>
@@ -856,8 +853,7 @@
             <h3>Column definitions</h3>
           </div>
 
-          <table class=
-          "table table-striped table-hover iphas-columns">
+          <table class="table table-striped table-hover">
             <thead>
               <tr>
                 <th>Column</th>
