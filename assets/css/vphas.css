@@ -315,6 +315,12 @@ a.about:hover {
     padding-top: 2em;
 }
 
+#sidebar.affix {
+    position: fixed;
+    top:25px;
+
+  }
+
 /* ###########
    HACKS
    ########### */
@@ -322,4 +328,8 @@ a.about:hover {
 /* Avoid a vertical scrollbar in the collapsed navbar */
 .navbar-collapse.in {
     overflow-y: visible;
+}
+
+h1 {
+    line-height: 1.32em;
 }

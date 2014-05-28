@@ -22,19 +22,20 @@
     <tbody>
       <tr>
         <td>Catalogue</td>
-        <td><a href='/dr2'>www.iphas.org/dr2</a></td>
+        <td><a href='/dr2'>iphas.org/dr2</a></td>
         <td>Globally-calibrated source catalogue.</td>
       </tr>
       <tr>
         <td>Images</td>
-        <td><a href='/images'>www.iphas.org/images</a></td>
+        <td><i>coming soon</i></td>
         <td>Pipeline-reduced images.</td>
       </tr>
       <tr>
         <td>Extinction map</td>
-        <td><a href='/extinction'>www.iphas.org/extinction</a></td>
-        <td>A 3D extinction map derived from the catalogue.</td>
+        <td><a href='/extinction'>iphas.org/extinction</a></td>
+        <td>A 3D extinction map derived from the catalogue data.</td>
       </tr>
+      <!--
       <tr>
         <td>Catalogue of H&alpha; emitters</td>
         <td><a href='/emitters'>www.iphas.org/emitters</a></td>
@@ -45,6 +46,7 @@
         <td><a href='/symbiotics'>www.iphas.org/symbiotics</a></td>
         <td>A list of symbiotic stars discovered by IPHAS.</td>
       </tr>
+      -->
     </tbody>
     </table>
 
