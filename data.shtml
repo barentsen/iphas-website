@@ -22,7 +22,7 @@
     <tbody>
       <tr>
         <td>Catalogue</td>
-        <td><a href='/dr2'>iphas.org/dr2</a></td>
+        <td><i>coming soon</i></td>
         <td>Globally-calibrated source catalogue.</td>
       </tr>
       <tr>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
         <td>Extinction map</td>
-        <td><a href='/extinction'>iphas.org/extinction</a></td>
+        <td><i>coming soon</i></td>
         <td>A 3D extinction map derived from the catalogue data.</td>
       </tr>
       <!--
