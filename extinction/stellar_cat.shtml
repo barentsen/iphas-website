@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="../inc/head.html" -->
+    <title>IPHAS: Stellar parameter catalogue </title>
+  </head>
+  <body>
+    <!--#include virtual="../inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>A catalogue of stellar parameters </h1>
+    </div>
+    
+
+
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Warning</h4>
+      The catalogue linked on this page is likely to be the final product,
+      to be made public when the accompanying paper is accepted,
+      but minor changes remain possible.
+      <br /><b>Last update: 2014-05-20</b>
+    </div>
+    
+
+        <div class="page-header">
+          <h2>Summary</h2>
+        </div>
+      
+        <p>
+          In adition to estimating the three dimensional distribution of extinction, H-MEAD also infers the fundamental parameters of stars in the catalogue employed.
+        </p>
+        
+        <p>
+          By publishing only expectations and one dimensional standard deviations we are passing on only a relatively crude depiction of the posterior probability distribution.
+          Consequently features such as multimodality of the posterior and covariance between parameters will not be apparent. 
+          Additionally, the calculation of the stellar parameters has been subject to both a set of priors and a survey selection function, both of which have heavily shaped the results obtained.
+          Any further analysis of these data will also be inevitably subject to these same priors and selection function.
+          In light of these factors, we caution the reader that great care must be taken not to over-interpret or mistake patterns which appear in this catalogue.
+          These data are provided in the spirit that they may be a useful resource for e.g. target selection for spectroscopic programmes or for the interested reader to gain insight into the origin of features in the extinction map.
+        </p>
+        
+        <div class="page-header">
+          <h2>Download</h2>
+        </div>
+        
+        <p>
+          We provide one file that contains the <a href="">entire catalogue</a>.
+        </p>
+
+        <p>
+          We also split the catalogue up into files corresponding to each sightline analysed.
+          These files detail the Galactic longitude and latitudes covered in the file header.
+          The individual files are organised into archives covering 10&#176; wide strips of the Glactic plane.       
+        </p>
+
+        <table class="table table-condensed iphas-download">
+          <thead>
+            <tr>
+              <td>Gal. Lon.</td>
+              <td>
+                Download Catalogue
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>
+                30&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;40&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_030.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                40&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;50&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_040.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                50&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;60&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_050.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                60&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;70&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_060.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                70&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;80&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_070.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                80&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;90&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_080.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                90&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;100&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_090.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                100&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;110&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_100.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                110&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;120&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_110.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                120&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;130&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_120.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                130&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;140&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_130.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                140&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;150&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_140.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                150&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;160&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_150.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                160&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;170&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_160.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                170&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;180&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_170.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                180&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;190&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_180.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                190&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;200&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_190.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                200&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;210&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_200.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                210&deg;&thinsp;&le;&thinsp;<i>l</i>&thinsp;&lt;&thinsp;215&deg;
+              </td>
+
+              <td>
+                <a href="">
+                  star_cat_210.tar.gz
+                </a> (<small>XX&thinsp;MB</small>)
+              </td>
+            </tr>
+
+   
+          </tbody>
+        </table>
+      </section>
+        
+      <section id="columns">
+        <div class="page-header">
+          <h2>Column definitions</h2>
+        </div>
+        
+        <table class="table table-striped iphas-columns">
+          <thead>
+            <tr><th>Column</th><th>Unit</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr id="name">
+              <td>name</td>
+              <td></td>
+              <td>Sexagesimal, equatorial position-based source name in the form: JHHMMSS.ss+DDMMSS.s. The full naming convention for IPHAS DR2 sources has the form "IPHAS2 JHHMMSS.ss+DDMMSS.s", where "J" indicates the position is J2000.</td>
+            </tr>
+            <tr id="glon">
+              <td>l</td>
+              <td>degrees</td>
+              <td>Galactic longitude.</td>
+            </tr>
+            <tr id="glat">
+              <td>b</td>
+              <td>degrees</td>
+              <td>Galactic latitude.</td>
+            </tr>
+            <tr id="dist">
+              <td>s</td>
+              <td>parsecs</td>
+              <td>Mean of the marginal posterior distribution of the distance to the star.</td>
+            </tr>
+            <tr id="d&#95;dist">
+              <td>d&#95;s</td>
+              <td>parsecs</td>
+              <td>Standard deviation of the marginal posterior distribution of the distance to the star.</td>
+            </tr>    
+            <tr id="A">
+              <td>A</td>
+              <td></td>
+              <td>Mean of the marginal posterior distribution of the extinction to the star. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="d&#95;A">
+              <td>d&#95;A</td>
+              <td></td>
+              <td>Standard deviation of the marginal posterior distribution of the extinction to the star. Expressed in terms of <i>A</i><sub>0</sub>, the monochromatic extinction at 5495 &#8491;.</td>
+            </tr>
+            <tr id="logT">
+              <td>logT</td>
+              <td></td>
+              <td>Mean of the marginal posterior distribution of the base-10 logarithm of the star's effective temperature, in Kelvin.</td>
+            </tr>
+            <tr id="d&#95;logT">
+              <td>d&#95;logT</td>
+              <td></td>
+              <td>Standard deviation of the marginal posterior distribution of the base-10 logarithm of the star's effective temperature, in Kelvin</td>
+            </tr>   
+            <tr id="logg">
+              <td>logg</td>
+              <td></td>
+              <td>Mean of the marginal posterior distribution of the star's surface gravity.</td>
+            </tr>
+            <tr id="d&#95;logg">
+              <td>d&#95;logg</td>
+              <td></td>
+              <td>Standard deviation of the marginal posterior distribution of the star's surface gravity.</td>
+            </tr>   
+            <tr id="M">
+              <td>M</td>
+              <td>M<sub>&#9737;</sub></td>
+              <td>Mean of the marginal posterior distribution of the star's initial mass.</td>
+            </tr>
+            <tr id="d&#95;M">
+              <td>d&#95;M</td>
+              <td>M<sub>&#9737;</sub></td>
+              <td>Standard deviation of the marginal posterior distribution of the star's initial mass.</td>
+            </tr>                                                              
+          </tbody>
+        </table>                    
+
+
+    <!-- Content ends here -->
+    </div><!-- /container -->
+    <!--#include virtual="inc/footer.html" -->
+  </body>
+</html>
