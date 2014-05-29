@@ -428,8 +428,8 @@
           sight. The first column of each file gives the midpoint
           distance of a voxel, whilst the subsequent columns each
           give a value sampled from the posterior on mean
-          extinction. The sample were all taken at the same
-          iteration in the MCMC chain and so each column is itself
+          extinction. The samples were all taken from the same set of
+          iterations in the MCMC chain and so each column is itself
           a sample from the posterior on the entire distance
           extinction relationship.</p>
 
