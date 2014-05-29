@@ -127,9 +127,10 @@
           </div>
 
           <p>The posterior expectations and uncertainties are
-          available in <a href="">one large file</a> covering the
-          entire sky, in this form the values all voxels beyond the
-          maximum relaible distance are set to null. The README
+          available in <a href="http://www.iphas.org/data/extinction/Amap.tar.gz">one large file</a> 
+          (<small>107MB</small>) covering the
+          entire sky, in this form the maximum reliable distance 
+          is indicated in the seventh column. The README
           accompanying this file contains column definitions.</p>
 
           <p>Alternatively the same data are available with one
@@ -657,7 +658,8 @@
           </div>
 
           <p>We provide one file that contains the <a href=
-          "">entire catalogue</a>.</p>
+          "http://www.iphas.org/data/extinction/Acat.tar.gz">
+          entire catalogue</a> (<small>1.5GB</small>).</p> 
 
           <p>We also split the catalogue up into files
           corresponding to each sightline analysed. These files
