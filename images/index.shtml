@@ -10,25 +10,25 @@
     <!-- CONTENT STARTS HERE -->
 
     <div class="page-header">
-      <h1>Accessing IPHAS Images</h1>
+      <h1>Accessing IPHAS images</h1>
     </div>
 
-    <p>This webserver provides access to the entire collection of pipeline-processed imaging data that has been produced as part of the IPHAS survey between 2003 and 2012.
+    <p>This server provides access to the entire collection of pipeline-reduced imaging data that has been produced as part of the IPHAS survey of the Northern Galactic Plane, between 2003 and 2012.
     The data set consists of 268&thinsp;180 CCD frames,
     observed during 67&thinsp;045 individual exposures.
     The data volume is 1.6 TB.<p>
 
     <p>All the images were obtained by the
-    4-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) of the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were originally pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), though the FITS headers have been updated as part of <a href="/dr2">DR2</a> to include globally re-calibrated photometric zeropoints.</p>
+    4-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were originally pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), but the FITS headers have been updated as part of <a href="/dr2">DR2</a> to include the latest, globally re-calibrated photometric zeropoints.</p>
 
     <p>
-    Note that the raw data and the calibration frames telescope are not available here. They may be downloaded from the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
+    Note that the raw data and the calibration frames are not available from this page. They may be downloaded from the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
 
     <div class="page-header">
       <h2>Downloading images</h2>
     </div>
 
-    <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector in the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (1, 2, 3 or 4). A desired run number may be looked up using the table provided at the bottom of this page, or may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+    <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector in the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (either 1, 2, 3 or 4). The run numbers may be looked up using the table provided at the bottom of this page, and may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
 
     <p>When the run and CCD number of a desired frame is known, the URL of the image may be composed as follows:</p>
 
@@ -38,27 +38,26 @@
 
     <pre>http://www.iphas.org/data/images/r534/r534002-2.fits.fz</pre> 
 
-    <p>Note that all our images are Rice-compressed. Although this compression scheme is supported by most astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
+    <p>Note that all our images are Rice-compressed. Although this format is widely supported by astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
 
 
    <div class="alert alert-warning">
       <h4>Warning</h4>
-      This server provides access to the <i>entire</i> set of the pipeline-reduced images, including any data that was obtained under poor observing conditions (e.g. clouds, poor seeing, electronic noise).
-      <b>Do not use this data without verifying the quality (see below).</b>
+      This server provides access to the complete set of images, including any data that were obtained under poor conditions (e.g. clouds, poor seeing, electronic noise). <b>Do not use this data without verifying the quality (see instructions below).</b>
    </div>
 
     <div class="page-header">
       <h2>Run numbers and quality information</h2>
     </div>
 
-    <p>A table detailing the run numbers, sky coordinates, observing dates, and quality control information is available here:</p>
+    <p>A table detailing the run numbers, sky coordinates, observing dates, and quality information is available in FITS and ASCII format:</p>
 
     <ul>
-      <li><a href="/data/images/iphas-images.fits.gz">iphas-images.fits.gz</a> (20 MB)</li>
-      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB, limited subset of columns).</li>
+      <li><a href="/data/images/iphas-images.fits.gz">iphas-images.fits.gz</a> (20 MB FITS);</li>
+      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB ASCII, limited set of columns).</li>
     </ul>
 
-    <p>The quality of an image is summarised by the <a href="#qcgrade">qcgrade</a> column, which can be one of "A++", "A+", "A", "B", "C", or "D". Images graded "D" were generally obtained under very poor conditions and should be avoided, though they may be useful for some science cases.</p>
+    <p>The quality of an image is summarised by the table's <a href="#qcgrade">qcgrade</a> column, which can be one of "A++", "A+", "A", "B", "C", or "D". All the images that are graded "D" were excluded from <a href="/dr2">DR2</a> and their use is discouraged, though they may be adequate for some science cases. For many of the "B" and "C"-graded images, the data set includes a repeat observation at a later date. Note that the <a href="#in_dr2">in_dr2</a> columns flags the <i>best-available</i> data for each field in the survey footprint.</p>
 
     <p>The columns in the table are as follows:</p>
 
