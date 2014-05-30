@@ -13,70 +13,81 @@
       <h1>Accessing IPHAS Images</h1>
     </div>
 
-    <p>IPHAS provides images.</p>
+    <p>This webserver provides access to the entire collection of pipeline-processed imaging data that has been produced as part of the IPHAS survey between 2003 and 2012.
+    The data set consists of 268&thinsp;180 CCD frames,
+    observed during 67&thinsp;045 individual exposures.
+    The data volume is 1.6 TB.<p>
 
-
-    <div class="page-header">
-      <h2>Downloading IPHAS images</h2>
-    </div>
+    <p>All the images were obtained by the
+    4-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) of the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were originally pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), though the FITS headers have been updated as part of <a href="/dr2">DR2</a> to include globally re-calibrated photometric zeropoints.</p>
 
     <p>
-    http://www.iphas.org/data/images/rXXX/r{RUN}-{CCD}.fits.fz
-    </p>
-
-   
-
-   <div class="well">
-  <h4>Example</h4>
-  <p>
-    The frame observed by CCD#2 in exposure number 534002 is located at
-    <a href="http://www.iphas.org/data/images/r534/r534002-2.fits.fz">http://www.iphas.org/data/images/r534/r534002-2.fits.fz</a>
-    </p>
-</div>
+    Note that the raw data and the calibration frames telescope are not available here. They may be downloaded from the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
 
     <div class="page-header">
-      <h2>Catalogue of IPHAS images</h2>
+      <h2>Downloading images</h2>
     </div>
 
+    <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector in the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (1, 2, 3 or 4). A desired run number may be looked up using the table provided at the bottom of this page, or may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
 
-          <h3>Metadata columns</h3>
+    <p>When the run and CCD number of a desired frame is known, the URL of the image may be composed as follows:</p>
 
+    <pre>http://www.iphas.org/data/images/r<b>{first 3 digits of RUN}</b>/r<b>{RUN}</b>-<b>{CCD}</b>.fits.fz</b></pre>
+
+    <p>For example, the image observed by CCD #2 in run number 534002 is located at:</p>
+
+    <pre>http://www.iphas.org/data/images/r534/r534002-2.fits.fz</pre> 
+
+    <p>Note that all our images are Rice-compressed. Although this compression scheme is supported by most astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
+
+
+   <div class="alert alert-warning">
+      <h4>Warning</h4>
+      This server provides access to the <i>entire</i> set of the pipeline-reduced images, including any data that was obtained under poor observing conditions (e.g. clouds, poor seeing, electronic noise).
+      <b>Do not use this data without verifying the quality (see below).</b>
+   </div>
+
+    <div class="page-header">
+      <h2>Run numbers and quality information</h2>
+    </div>
+
+    <p>A table detailing the run numbers, sky coordinates, observing dates, and quality control information is available here:</p>
+
+    <ul>
+      <li><a href="/data/images/iphas-images.fits.gz">iphas-images.fits.gz</a> (20 MB)</li>
+      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB, limited subset of columns).</li>
+    </ul>
+
+    <p>The quality of an image is summarised by the <a href="#qcgrade">qcgrade</a> column, which can be one of "A++", "A+", "A", "B", "C", or "D". Images graded "D" were generally obtained under very poor conditions and should be avoided, though they may be useful for some science cases.</p>
+
+    <p>The columns in the table are as follows:</p>
 
           <table class="table table-striped table-hover">
             <thead>
               <tr>
                 <th>Column</th>
-
                 <th>Unit</th>
-
                 <th>Description</th>
               </tr>
             </thead>
 
             <tbody>
-              <tr id="filename">
-                <td><i>filename</i></td>
-                <td></td>
-                <td>Filename of the CCD frame, e.g. "r358863-1.fits.fz".</td>
-              </tr>
-
               <tr id="run">
                 <td><i>run</i></td>
                 <td></td>
-                <td>Number of the exposure, corresponding to the run number found in the <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">observing logs</a> of the Isaac Newton Telescope.</td>
+                <td>Number of the exposure, corresponding to the run number found in the <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">observing logs</a> of the Isaac Newton Telescope (INT).</td>
               </tr>
 
               <tr id="ccd">
                 <td><i>ccd</i></td>
                 <td></td>
-                <td>Number of the CCD (1, 2, 3, or 4).</td>
+                <td>Number of the CCD of the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">INT Wide Field Camera</a> (1, 2, 3, or 4).</td>
               </tr>
 
-              <tr id="in_dr2">
-                <td><i>in_dr2</i></td>
+              <tr id="url">
+                <td><i>url</i></td>
                 <td></td>
-                <td>Boolean column, true if the exposure passed all the quality control criteria and was selected for inclusion in <a href="/dr2">IPHAS Data Release 2</a> (DR2).
-                When this column is set to false, then it is likely that the frame suffers from severe quality problems (e.g. clouds).</td>
+                <td>URL of the FITS file containing the image, e.g. "www.iphas.org/data/images/r534/r534002-2.fits.fz".</td>
               </tr>
 
               <tr id="ra">
@@ -91,30 +102,6 @@
                 <td>Declination (J2000) in the centre of the frame, i.e. at pixel position (x,y)=(1024,2048).</td>
               </tr>
 
-              <tr id="ra_min">
-                <td><i>ra_min</i></td>
-                <td>degrees</td>
-                <td>Right Ascension (J2000) in the western-most corner of the CCD frame.</td>
-              </tr>
-
-              <tr id="ra_max">
-                <td><i>ra_max</i></td>
-                <td>degrees</td>
-                <td>Right Ascension (J2000) in the eastern-most corner of the CCD frame.</td>
-              </tr>
-
-              <tr id="dec_min">
-                <td><i>dec_min</i></td>
-                <td>degrees</td>
-                <td>Declination (J2000) in the southern-most corner of the CCD frame.</td>
-              </tr>
-
-              <tr id="dec_max">
-                <td><i>dec_max</i></td>
-                <td>degrees</td>
-                <td>Declination (J2000) in the northern-most corner of the CCD frame.</td>
-              </tr>
-
               <tr id="band">
                 <td><i>band</i></td>
                 <td></td>
@@ -127,7 +114,26 @@
                 <td>Universal Time (UTC) at the start of the exposure, given as a ISO 8601 timestamp (e.g. "2003-08-08T22:07:10.4").</td>
               </tr>
 
-              <tr id="exptime">
+              <tr id="fieldid">
+                <td><i>fieldid</i></td>
+                <td></td>
+                <td>Internal IPHAS identifier for the observation composed of the field number and the observing month, e.g. "0001o_aug2003".</td>
+              </tr>              
+
+              <tr id="qcgrade">
+                <td><i>qcgrade</i></td>
+                <td></td>
+                <td>IPHAS DR2 quality score. One of "A++", "A+", "A", "B", "C" or "D". D-graded data is generally unsuited for scientific use due to e.g. clouds or electronic noise in the image.</td>
+              </tr>   
+
+              <tr id="in_dr2">
+                <td><i>in_dr2</i></td>
+                <td></td>
+                <td>Boolean column, true if the exposure passed all the quality control criteria and was selected for inclusion in <a href="/dr2">IPHAS Data Release 2</a> (DR2).
+                When this column is set to false, then it is likely that the frame suffers from severe quality problems (e.g. clouds).</td>
+              </tr>
+
+             <tr id="exptime">
                 <td><i>exptime</i></td>
                 <td>seconds</td>
                 <td>Exposure time adopted in DR2.</td>
@@ -160,12 +166,6 @@ ie. = MAD x 1.48, after removing large scale sky background variations.
 MAD = Median of the Absolute Deviations about the median.</td>
               </tr>
 
-              <tr id="airmass">
-                <td><i>airmass</i></td>
-                <td></td>
-                <td>Effective mean airmass.</td>
-              </tr>
-
               <tr id="photzp">
                 <td><i>photzp</i></td>
                 <td></td>
@@ -176,6 +176,30 @@ MAD = Median of the Absolute Deviations about the median.</td>
                 <td><i>confmap</i></td>
                 <td></td>
                 <td>Filename of the confidence map. Note that the confidence maps are located under <a href="http://www.iphas.org/data/images/confmaps">http://www.iphas.org/data/images/confmaps</a></td>
+              </tr>
+
+              <tr id="ra_min">
+                <td><i>ra_min</i></td>
+                <td>degrees</td>
+                <td>Right Ascension (J2000) in the western-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="ra_max">
+                <td><i>ra_max</i></td>
+                <td>degrees</td>
+                <td>Right Ascension (J2000) in the eastern-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="dec_min">
+                <td><i>dec_min</i></td>
+                <td>degrees</td>
+                <td>Declination (J2000) in the southern-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="dec_max">
+                <td><i>dec_max</i></td>
+                <td>degrees</td>
+                <td>Declination (J2000) in the northern-most corner of the CCD frame.</td>
               </tr>
 
             </tbody>
