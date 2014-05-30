@@ -127,9 +127,10 @@
           </div>
 
           <p>The posterior expectations and uncertainties are
-          available in <a href="">one large file</a> covering the
-          entire sky, in this form the values all voxels beyond the
-          maximum relaible distance are set to null. The README
+          available in <a href="http://www.iphas.org/data/extinction/Amap.tar.gz">one large file</a> 
+          (<small>107MB</small>) covering the
+          entire sky, in this form the maximum reliable distance 
+          is indicated in the seventh column. The README
           accompanying this file contains column definitions.</p>
 
           <p>Alternatively the same data are available with one
@@ -158,8 +159,8 @@
                 <td>30° ≤ <i>l</i> &lt; 40°</td>
 
                 <td>
-                  <a href="">A_map_030.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_030.tar.gz">A_map_030.tar.gz</a>
+                  (<small>9 MB</small>)
                 </td>
               </tr>
 
@@ -167,8 +168,8 @@
                 <td>40° ≤ <i>l</i> &lt; 50°</td>
 
                 <td>
-                  <a href="">A_map_040.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_040.tar.gz">A_map_040.tar.gz</a>
+                  (<small>9 MB</small>)
                 </td>
               </tr>
 
@@ -176,8 +177,8 @@
                 <td>50° ≤ <i>l</i> &lt; 60°</td>
 
                 <td>
-                  <a href="">A_map_050.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_050.tar.gz">A_map_050.tar.gz</a>
+                  (<small>11 MB</small>)
                 </td>
               </tr>
 
@@ -185,8 +186,8 @@
                 <td>60° ≤ <i>l</i> &lt; 70°</td>
 
                 <td>
-                  <a href="">A_map_060.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_060.tar.gz">A_map_060.tar.gz</a>
+                  (<small>12MB</small>)
                 </td>
               </tr>
 
@@ -194,8 +195,8 @@
                 <td>70° ≤ <i>l</i> &lt; 80°</td>
 
                 <td>
-                  <a href="">A_map_070.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_070.tar.gz">A_map_070.tar.gz</a>
+                  (<small>7MB</small>)
                 </td>
               </tr>
 
@@ -203,8 +204,8 @@
                 <td>80° ≤ <i>l</i> &lt; 90°</td>
 
                 <td>
-                  <a href="">A_map_080.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_080.tar.gz">A_map_080.tar.gz</a>
+                  (<small>6MB</small>)
                 </td>
               </tr>
 
@@ -212,8 +213,8 @@
                 <td>90° ≤ <i>l</i> &lt; 100°</td>
 
                 <td>
-                  <a href="">A_map_090.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_090.tar.gz">A_map_090.tar.gz</a>
+                  (<small>6MB</small>)
                 </td>
               </tr>
 
@@ -221,8 +222,8 @@
                 <td>100° ≤ <i>l</i> &lt; 110°</td>
 
                 <td>
-                  <a href="">A_map_100.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_100.tar.gz">A_map_100.tar.gz</a>
+                  (<small>7 MB</small>)
                 </td>
               </tr>
 
@@ -230,8 +231,8 @@
                 <td>110° ≤ <i>l</i> &lt; 120°</td>
 
                 <td>
-                  <a href="">A_map_110.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_110.tar.gz">A_map_110.tar.gz</a>
+                  (<small>6 MB</small>)
                 </td>
               </tr>
 
@@ -239,8 +240,8 @@
                 <td>120° ≤ <i>l</i> &lt; 130°</td>
 
                 <td>
-                  <a href="">A_map_120.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_120.tar.gz">A_map_120.tar.gz</a>
+                  (<small>6 MB</small>)
                 </td>
               </tr>
 
@@ -248,8 +249,8 @@
                 <td>130° ≤ <i>l</i> &lt; 140°</td>
 
                 <td>
-                  <a href="">A_map_130.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_130.tar.gz">A_map_130.tar.gz</a>
+                  (<small>6 MB</small>)
                 </td>
               </tr>
 
@@ -257,8 +258,8 @@
                 <td>140° ≤ <i>l</i> &lt; 150°</td>
 
                 <td>
-                  <a href="">A_map_140.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_140.tar.gz">A_map_140.tar.gz</a>
+                  (<small>4MB</small>)
                 </td>
               </tr>
 
@@ -266,8 +267,8 @@
                 <td>150° ≤ <i>l</i> &lt; 160°</td>
 
                 <td>
-                  <a href="">A_map_150.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_150.tar.gz">A_map_150.tar.gz</a>
+                  (<small>5MB</small>)
                 </td>
               </tr>
 
@@ -275,8 +276,8 @@
                 <td>160° ≤ <i>l</i> &lt; 170°</td>
 
                 <td>
-                  <a href="">A_map_160.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_160.tar.gz">A_map_160.tar.gz</a>
+                  (<small>6MB</small>)
                 </td>
               </tr>
 
@@ -284,8 +285,8 @@
                 <td>170° ≤ <i>l</i> &lt; 180°</td>
 
                 <td>
-                  <a href="">A_map_170.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_170.tar.gz">A_map_170.tar.gz</a>
+                  (<small>6 MB</small>)
                 </td>
               </tr>
 
@@ -293,8 +294,8 @@
                 <td>180° ≤ <i>l</i> &lt; 190°</td>
 
                 <td>
-                  <a href="">A_map_180.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_180.tar.gz">A_map_180.tar.gz</a>
+                  (<small>5MB</small>)
                 </td>
               </tr>
 
@@ -302,8 +303,8 @@
                 <td>190° ≤ <i>l</i> &lt; 200°</td>
 
                 <td>
-                  <a href="">A_map_190.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_190.tar.gz">A_map_190.tar.gz</a>
+                  (<small>5MB</small>)
                 </td>
               </tr>
 
@@ -311,8 +312,8 @@
                 <td>200° ≤ <i>l</i> &lt; 210°</td>
 
                 <td>
-                  <a href="">A_map_200.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_200.tar.gz">A_map_200.tar.gz</a>
+                  (<small>5 MB</small>)
                 </td>
               </tr>
 
@@ -320,8 +321,8 @@
                 <td>210° ≤ <i>l</i> &lt; 215°</td>
 
                 <td>
-                  <a href="">A_map_210.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_map_210.tar.gz">A_map_210.tar.gz</a>
+                  (<small>3 MB</small>)
                 </td>
               </tr>
             </tbody>
@@ -428,8 +429,8 @@
           sight. The first column of each file gives the midpoint
           distance of a voxel, whilst the subsequent columns each
           give a value sampled from the posterior on mean
-          extinction. The sample were all taken at the same
-          iteration in the MCMC chain and so each column is itself
+          extinction. The samples were all taken from the same set of
+          iterations in the MCMC chain and so each column is itself
           a sample from the posterior on the entire distance
           extinction relationship.</p>
 
@@ -453,8 +454,8 @@
                 <td>30° ≤ <i>l</i> &lt; 40°</td>
 
                 <td>
-                  <a href="">A_samp_030.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_030.tar.gz">A_samp_030.tar.gz</a>
+                  (<small>40 MB</small>)
                 </td>
               </tr>
 
@@ -462,8 +463,8 @@
                 <td>40° ≤ <i>l</i> &lt; 50°</td>
 
                 <td>
-                  <a href="">A_samp_040.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_040.tar.gz">A_samp_040.tar.gz</a>
+                  (<small>43 MB</small>)
                 </td>
               </tr>
 
@@ -471,8 +472,8 @@
                 <td>50° ≤ <i>l</i> &lt; 60°</td>
 
                 <td>
-                  <a href="">A_samp_050.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_050.tar.gz">A_samp_050.tar.gz</a>
+                  (<small>50 MB</small>)
                 </td>
               </tr>
 
@@ -480,8 +481,8 @@
                 <td>60° ≤ <i>l</i> &lt; 70°</td>
 
                 <td>
-                  <a href="">A_samp_060.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_060.tar.gz">A_samp_060.tar.gz</a>
+                  (<small>55 MB</small>)
                 </td>
               </tr>
 
@@ -489,8 +490,8 @@
                 <td>70° ≤ <i>l</i> &lt; 80°</td>
 
                 <td>
-                  <a href="">A_samp_070.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_070.tar.gz">A_samp_070.tar.gz</a>
+                  (<small>33 MB</small>)
                 </td>
               </tr>
 
@@ -498,8 +499,8 @@
                 <td>80° ≤ <i>l</i> &lt; 90°</td>
 
                 <td>
-                  <a href="">A_samp_080.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_080.tar.gz">A_samp_080.tar.gz</a>
+                  (<small>26 MB</small>)
                 </td>
               </tr>
 
@@ -507,8 +508,8 @@
                 <td>90° ≤ <i>l</i> &lt; 100°</td>
 
                 <td>
-                  <a href="">A_samp_090.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_090.tar.gz">A_samp_090.tar.gz</a>
+                  (<small>30 MB</small>)
                 </td>
               </tr>
 
@@ -516,8 +517,8 @@
                 <td>100° ≤ <i>l</i> &lt; 110°</td>
 
                 <td>
-                  <a href="">A_samp_100.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_100.tar.gz">A_samp_100.tar.gz</a>
+                  (<small>31 MB</small>)
                 </td>
               </tr>
 
@@ -525,8 +526,8 @@
                 <td>110° ≤ <i>l</i> &lt; 120°</td>
 
                 <td>
-                  <a href="">A_samp_110.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_110.tar.gz">A_samp_110.tar.gz</a>
+                  (<small>27 MB</small>)
                 </td>
               </tr>
 
@@ -534,8 +535,8 @@
                 <td>120° ≤ <i>l</i> &lt; 130°</td>
 
                 <td>
-                  <a href="">A_samp_120.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_120.tar.gz">A_samp_120.tar.gz</a>
+                  (<small>29 MB</small>)
                 </td>
               </tr>
 
@@ -543,8 +544,8 @@
                 <td>130° ≤ <i>l</i> &lt; 140°</td>
 
                 <td>
-                  <a href="">A_samp_130.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_130.tar.gz">A_samp_130.tar.gz</a>
+                  (<small>26 MB</small>)
                 </td>
               </tr>
 
@@ -552,8 +553,8 @@
                 <td>140° ≤ <i>l</i> &lt; 150°</td>
 
                 <td>
-                  <a href="">A_samp_140.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_140.tar.gz">A_samp_140.tar.gz</a>
+                  (<small>17 MB</small>)
                 </td>
               </tr>
 
@@ -561,8 +562,8 @@
                 <td>150° ≤ <i>l</i> &lt; 160°</td>
 
                 <td>
-                  <a href="">A_samp_150.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_150.tar.gz">A_samp_150.tar.gz</a>
+                  (<small>25 MB</small>)
                 </td>
               </tr>
 
@@ -570,8 +571,8 @@
                 <td>160° ≤ <i>l</i> &lt; 170°</td>
 
                 <td>
-                  <a href="">A_samp_160.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_160.tar.gz">A_samp_160.tar.gz</a>
+                  (<small>28 MB</small>)
                 </td>
               </tr>
 
@@ -579,8 +580,8 @@
                 <td>170° ≤ <i>l</i> &lt; 180°</td>
 
                 <td>
-                  <a href="">A_samp_170.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_170.tar.gz">A_samp_170.tar.gz</a>
+                  (<small>26 MB</small>)
                 </td>
               </tr>
 
@@ -588,8 +589,8 @@
                 <td>180° ≤ <i>l</i> &lt; 190°</td>
 
                 <td>
-                  <a href="">A_samp_180.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_180.tar.gz">A_samp_180.tar.gz</a>
+                  (<small>23 MB</small>)
                 </td>
               </tr>
 
@@ -597,8 +598,8 @@
                 <td>190° ≤ <i>l</i> &lt; 200°</td>
 
                 <td>
-                  <a href="">A_samp_190.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_190.tar.gz">A_samp_190.tar.gz</a>
+                  (<small>25 MB</small>)
                 </td>
               </tr>
 
@@ -606,8 +607,8 @@
                 <td>200° ≤ <i>l</i> &lt; 210°</td>
 
                 <td>
-                  <a href="">A_samp_200.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_200.tar.gz">A_samp_200.tar.gz</a>
+                  (<small>22 MB</small>)
                 </td>
               </tr>
 
@@ -615,8 +616,8 @@
                 <td>210° ≤ <i>l</i> &lt; 215°</td>
 
                 <td>
-                  <a href="">A_samp_210.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/A_samp_210.tar.gz">A_samp_210.tar.gz</a>
+                  (<small>14 MB</small>)
                 </td>
               </tr>
             </tbody>
@@ -657,7 +658,8 @@
           </div>
 
           <p>We provide one file that contains the <a href=
-          "">entire catalogue</a>.</p>
+          "http://www.iphas.org/data/extinction/Acat.tar.gz">
+          entire catalogue</a> (<small>1.5GB</small>).</p> 
 
           <p>We also split the catalogue up into files
           corresponding to each sightline analysed. These files
@@ -680,8 +682,8 @@
                 <td>30° ≤ <i>l</i> &lt; 40°</td>
 
                 <td>
-                  <a href="">star_cat_030.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_030.tar.gz">star_cat_030.tar.gz</a>
+                  (<small>125 MB</small>)
                 </td>
               </tr>
 
@@ -689,8 +691,8 @@
                 <td>40° ≤ <i>l</i> &lt; 50°</td>
 
                 <td>
-                  <a href="">star_cat_040.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_040.tar.gz">star_cat_040.tar.gz</a>
+                  (<small>140 MB</small>)
                 </td>
               </tr>
 
@@ -698,8 +700,8 @@
                 <td>50° ≤ <i>l</i> &lt; 60°</td>
 
                 <td>
-                  <a href="">star_cat_050.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_050.tar.gz">star_cat_050.tar.gz</a>
+                  (<small>159 MB</small>)
                 </td>
               </tr>
 
@@ -707,8 +709,8 @@
                 <td>60° ≤ <i>l</i> &lt; 70°</td>
 
                 <td>
-                  <a href="">star_cat_060.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_060.tar.gz">star_cat_060.tar.gz</a>
+                  (<small>159 MB</small>)
                 </td>
               </tr>
 
@@ -716,8 +718,8 @@
                 <td>70° ≤ <i>l</i> &lt; 80°</td>
 
                 <td>
-                  <a href="">star_cat_070.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_070.tar.gz">star_cat_070.tar.gz</a>
+                  (<small>97 MB</small>)
                 </td>
               </tr>
 
@@ -725,8 +727,8 @@
                 <td>80° ≤ <i>l</i> &lt; 90°</td>
 
                 <td>
-                  <a href="">star_cat_080.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_080.tar.gz">star_cat_080.tar.gz</a>
+                  (<small>76 MB</small>)
                 </td>
               </tr>
 
@@ -734,8 +736,8 @@
                 <td>90° ≤ <i>l</i> &lt; 100°</td>
 
                 <td>
-                  <a href="">star_cat_090.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_090.tar.gz">star_cat_090.tar.gz</a>
+                  (<small>87 MB</small>)
                 </td>
               </tr>
 
@@ -743,8 +745,8 @@
                 <td>100° ≤ <i>l</i> &lt; 110°</td>
 
                 <td>
-                  <a href="">star_cat_100.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_100.tar.gz">star_cat_100.tar.gz</a>
+                  (<small>88 MB</small>)
                 </td>
               </tr>
 
@@ -752,8 +754,8 @@
                 <td>110° ≤ <i>l</i> &lt; 120°</td>
 
                 <td>
-                  <a href="">star_cat_110.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_110.tar.gz">star_cat_110.tar.gz</a>
+                  (<small>67 MB</small>)
                 </td>
               </tr>
 
@@ -761,8 +763,8 @@
                 <td>120° ≤ <i>l</i> &lt; 130°</td>
 
                 <td>
-                  <a href="">star_cat_120.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_120.tar.gz">star_cat_120.tar.gz</a>
+                  (<small>70 MB</small>)
                 </td>
               </tr>
 
@@ -770,8 +772,8 @@
                 <td>130° ≤ <i>l</i> &lt; 140°</td>
 
                 <td>
-                  <a href="">star_cat_130.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_130.tar.gz">star_cat_130.tar.gz</a>
+                  (<small>62 MB</small>)
                 </td>
               </tr>
 
@@ -779,8 +781,8 @@
                 <td>140° ≤ <i>l</i> &lt; 150°</td>
 
                 <td>
-                  <a href="">star_cat_140.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_140.tar.gz">star_cat_140.tar.gz</a>
+                  (<small>38 MB</small>)
                 </td>
               </tr>
 
@@ -788,8 +790,8 @@
                 <td>150° ≤ <i>l</i> &lt; 160°</td>
 
                 <td>
-                  <a href="">star_cat_150.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_150.tar.gz">star_cat_150.tar.gz</a>
+                  (<small>48 MB</small>)
                 </td>
               </tr>
 
@@ -797,8 +799,8 @@
                 <td>160° ≤ <i>l</i> &lt; 170°</td>
 
                 <td>
-                  <a href="">star_cat_160.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_160.tar.gz">star_cat_160.tar.gz</a>
+                  (<small>62 MB</small>)
                 </td>
               </tr>
 
@@ -806,8 +808,8 @@
                 <td>170° ≤ <i>l</i> &lt; 180°</td>
 
                 <td>
-                  <a href="">star_cat_170.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_170.tar.gz">star_cat_170.tar.gz</a>
+                  (<small>52 MB</small>)
                 </td>
               </tr>
 
@@ -815,8 +817,8 @@
                 <td>180° ≤ <i>l</i> &lt; 190°</td>
 
                 <td>
-                  <a href="">star_cat_180.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_180.tar.gz">star_cat_180.tar.gz</a>
+                  (<small>47 MB</small>)
                 </td>
               </tr>
 
@@ -824,8 +826,8 @@
                 <td>190° ≤ <i>l</i> &lt; 200°</td>
 
                 <td>
-                  <a href="">star_cat_190.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_190.tar.gz">star_cat_190.tar.gz</a>
+                  (<small>51 MB</small>)
                 </td>
               </tr>
 
@@ -833,8 +835,8 @@
                 <td>200° ≤ <i>l</i> &lt; 210°</td>
 
                 <td>
-                  <a href="">star_cat_200.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_200.tar.gz">star_cat_200.tar.gz</a>
+                  (<small>51 MB</small>)
                 </td>
               </tr>
 
@@ -842,8 +844,8 @@
                 <td>210° ≤ <i>l</i> &lt; 215°</td>
 
                 <td>
-                  <a href="">star_cat_210.tar.gz</a>
-                  (<small>XX MB</small>)
+                  <a href="http://www.iphas.org/data/extinction/star_cat_210.tar.gz">star_cat_210.tar.gz</a>
+                  (<small>31 MB</small>)
                 </td>
               </tr>
             </tbody>
