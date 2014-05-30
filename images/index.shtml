@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--#include virtual="../inc/head.html" -->
+    <title>IPHAS: Imaging Data</title>
+  </head>
+  <body>
+    <!--#include virtual="../inc/navbar.html" -->
+    <div class="container">
+    <!-- CONTENT STARTS HERE -->
+
+    <div class="page-header">
+      <h1>Accessing IPHAS Images</h1>
+    </div>
+
+    <p>IPHAS provides images.</p>
+
+
+    <div class="page-header">
+      <h2>Downloading IPHAS images</h2>
+    </div>
+
+    <p>
+    http://www.iphas.org/data/images/rXXX/r{RUN}-{CCD}.fits.fz
+    </p>
+
+   
+
+   <div class="well">
+  <h4>Example</h4>
+  <p>
+    The frame observed by CCD#2 in exposure number 534002 is located at
+    <a href="http://www.iphas.org/data/images/r534/r534002-2.fits.fz">http://www.iphas.org/data/images/r534/r534002-2.fits.fz</a>
+    </p>
+</div>
+
+    <div class="page-header">
+      <h2>Catalogue of IPHAS images</h2>
+    </div>
+
+
+          <h3>Metadata columns</h3>
+
+
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Column</th>
+
+                <th>Unit</th>
+
+                <th>Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr id="filename">
+                <td><i>filename</i></td>
+                <td></td>
+                <td>Filename of the CCD frame, e.g. "r358863-1.fits.fz".</td>
+              </tr>
+
+              <tr id="run">
+                <td><i>run</i></td>
+                <td></td>
+                <td>Number of the exposure, corresponding to the run number found in the <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">observing logs</a> of the Isaac Newton Telescope.</td>
+              </tr>
+
+              <tr id="ccd">
+                <td><i>ccd</i></td>
+                <td></td>
+                <td>Number of the CCD (1, 2, 3, or 4).</td>
+              </tr>
+
+              <tr id="in_dr2">
+                <td><i>in_dr2</i></td>
+                <td></td>
+                <td>Boolean column, true if the exposure passed all the quality control criteria and was selected for inclusion in <a href="/dr2">IPHAS Data Release 2</a> (DR2).
+                When this column is set to false, then it is likely that the frame suffers from severe quality problems (e.g. clouds).</td>
+              </tr>
+
+              <tr id="ra">
+                <td><i>ra</i></td>
+                <td>degrees</td>
+                <td>Right Ascension (J2000) in the centre of the frame, i.e. at pixel position (x,y)=(1024,2048).</td>
+              </tr>
+
+              <tr id="dec">
+                <td><i>dec</i></td>
+                <td>degrees</td>
+                <td>Declination (J2000) in the centre of the frame, i.e. at pixel position (x,y)=(1024,2048).</td>
+              </tr>
+
+              <tr id="ra_min">
+                <td><i>ra_min</i></td>
+                <td>degrees</td>
+                <td>Right Ascension (J2000) in the western-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="ra_max">
+                <td><i>ra_max</i></td>
+                <td>degrees</td>
+                <td>Right Ascension (J2000) in the eastern-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="dec_min">
+                <td><i>dec_min</i></td>
+                <td>degrees</td>
+                <td>Declination (J2000) in the southern-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="dec_max">
+                <td><i>dec_max</i></td>
+                <td>degrees</td>
+                <td>Declination (J2000) in the northern-most corner of the CCD frame.</td>
+              </tr>
+
+              <tr id="band">
+                <td><i>band</i></td>
+                <td></td>
+                <td>Waveband of the filter used. One of "r", "i", or "halpha".</td>
+              </tr>
+
+              <tr id="utstart">
+                <td><i>utstart</i></td>
+                <td></td>
+                <td>Universal Time (UTC) at the start of the exposure, given as a ISO 8601 timestamp (e.g. "2003-08-08T22:07:10.4").</td>
+              </tr>
+
+              <tr id="exptime">
+                <td><i>exptime</i></td>
+                <td>seconds</td>
+                <td>Exposure time adopted in DR2.</td>
+              </tr>
+
+              <tr id="seeing">
+                <td><i>seeing</i></td>
+                <td>arcsec</td>
+                <td>Average Full Width at Half Maximum (FWHM) of point sources in the CCD frame.</td>
+              </tr>
+
+              <tr id="elliptic">
+                <td><i>elliptic</i></td>
+                <td></td>
+                <td>Average ellipticity of point sources in the CCD frame, defined as e = (1 - b/a) with b the semi-minor and a the semi-major axis.</td>
+              </tr>
+
+              <tr id="skylevel">
+                <td><i>skylevel</i></td>
+                <td>counts/pixel</td>
+                <td>Median sky brightness. An automatic 2D background-following algorithm is used to track and "remove"
+slowly varying background features such as image gradients etc.</td>
+              </tr>
+
+              <tr id="skynoise">
+                <td><i>skynoise</i></td>
+                <td>counts/pixel</td>
+                <td>Pixel noise at sky level, estimated using a robust MAD estimator for noise scaled to equivalent Gaussian rms value, 
+ie. = MAD x 1.48, after removing large scale sky background variations.
+MAD = Median of the Absolute Deviations about the median.</td>
+              </tr>
+
+              <tr id="airmass">
+                <td><i>airmass</i></td>
+                <td></td>
+                <td>Effective mean airmass.</td>
+              </tr>
+
+              <tr id="photzp">
+                <td><i>photzp</i></td>
+                <td></td>
+                <td>Photometric zeropoint, computed such that it absorbs the required corrections for atmospheric extinction, gain variations, exposure time, and the DR2 re-calibration shift (included only if the frame was part of DR2). Hence, the number counts stored in the frame can be converted into Vega-based magnitudes using: <b>mag(Vega)&nbsp;=&nbsp;-2.5*log(pixel value)&nbsp;+&nbsp;PHOTZP</b>.</td>
+              </tr>
+
+              <tr id="confmap">
+                <td><i>confmap</i></td>
+                <td></td>
+                <td>Filename of the confidence map. Note that the confidence maps are located under <a href="http://www.iphas.org/data/images/confmaps">http://www.iphas.org/data/images/confmaps</a></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+    <!-- CONTENT ENDS HERE -->
+    </div><!-- /container -->
+    <!--#include virtual="../inc/footer.html" -->
+
+  </body>
+</html>
