@@ -22,18 +22,18 @@
   <div class="carousel-inner">
 
     <div class="item active">
-      <img src="assets/images/carousel-ic1396.jpg" alt="IC1396 in IPHAS" class="img-responsive">
+      <img src="assets/images/carousel-footprint.jpg" alt="IC1396 in IPHAS" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <h1>The INT/WFC Photometric H&alpha; Survey (IPHAS)</h1>
+          <h1>The INT Photometric H&alpha; Survey of the Northern Galactic Plane (IPHAS)</h1>
           <p class="lead">
             <a class="btn btn-primary pull-right" href="survey.shtml">Read the survey description &raquo;</a>
-            IPHAS is imaging the Northern Milky Way in the H&alpha;, r and i filters down to &gt;20th magnitude, using the Isaac Newton Telescope in La Palma.
+            IPHAS is imaging the Northern Milky Way in visible light (H&alpha;, r, i) down to &gt;20th magnitude, using the Isaac Newton Telescope in La Palma.
           </p>
         </div>
       </div>
       <div class="carousel-credit">
-        <p>Image: IC1396 in IPHAS (N. Wright)</p>
+        <p>Image: ESO/S. Brunier</p>
       </div>
     </div>
 
