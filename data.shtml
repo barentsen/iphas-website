@@ -51,7 +51,7 @@
     </table>
 
     <div class="page-header">
-      <h3>Acknowledging IPHAS</h3>
+      <h3>Acknowledging IPHAS data</h3>
     </div>
 
     <p>Publications arising from IPHAS data should cite and acknowledge the survey. The primary reference for defining the survey is <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a> [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>]. Where the data have come from <a href='/dr2'>DR2</a>, Barentsen et al 2014 [submitted] should be cited as well.</p>

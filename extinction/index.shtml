@@ -64,18 +64,7 @@
 
       <div class="col-sm-9">
         <h1>A 3D extinction map of the Northern Galactic Plane
-        based on IPHAS photometry</h1><br>
-
-        <div class="alert alert-warning">
-          <button type="button" class="close" data-dismiss=
-          "alert">×</button>
-
-          <h4>Warning</h4>The map linked on this page is likely to
-          be the final product, to be made public when the
-          accompanying paper is accepted, but minor changes remain
-          possible.<br>
-          <b>Last update: 2014-05-20</b>
-        </div>
+        based on IPHAS photometry</h1>
 
         <section id="summary">
           <div class="page-header">
@@ -92,8 +81,7 @@
           (2012)</a>, and IPHAS DR2 photometry.</p>
 
           <p><img class="img-responsive center-block" alt=
-          "A 3D map of extinction" src=
-          "../assets/images/A_map.gif"></p>
+          "A 3D map of extinction" src="../assets/images/A_map.gif"></p>
 
           <p>There are two main products available for download:
           the 3D extinction map itself and a catalogue of stellar
