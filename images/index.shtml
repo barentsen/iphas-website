@@ -13,37 +13,37 @@
       <h1>Accessing IPHAS images</h1>
     </div>
 
-    <p>This server provides access to the entire collection of pipeline-reduced imaging data that has been produced as part of the IPHAS survey of the Northern Galactic Plane, between 2003 and 2012.
+    <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane.
     The data set consists of 268&thinsp;180 CCD frames,
-    observed during 67&thinsp;045 individual exposures.
+    recorded during 67&thinsp;045 exposures across more than 300 nights between 2003 and 2012.
     The data volume is 1.6 TB.<p>
 
     <p>All the images were obtained by the
-    4-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were originally pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), but the FITS headers have been updated as part of <a href="/dr2">DR2</a> to include the latest, globally re-calibrated photometric zeropoints.</p>
+    four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU). The FITS headers have been updated to include the new, globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints however.</p>
 
     <p>
-    Note that the raw data and the calibration frames are not available from this page. They may be downloaded from the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
+    The raw telescope data and the calibration frames are not available from this page. They may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a>.</p>
 
     <div class="page-header">
       <h2>Downloading images</h2>
     </div>
 
-    <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector in the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (either 1, 2, 3 or 4). The run numbers may be looked up using the table provided at the bottom of this page, and may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+    <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (i.e. CCD number 1, 2, 3 or 4). Run and CCD numbers for a desired region or epoch may be looked up using the table provided further below on this page. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
 
-    <p>When the run and CCD number of a desired frame is known, the URL of the image may be composed as follows:</p>
+    <p>When the run and CCD numbers of a desired frame are known, the URL of the image may be composed as follows:</p>
 
-    <pre>http://www.iphas.org/data/images/r<b>{first 3 digits of RUN}</b>/r<b>{RUN}</b>-<b>{CCD}</b>.fits.fz</b></pre>
+    <pre>http://www.iphas.org/data/images/r<b><i>{first 3 digits of RUN}</i></b>/r<b><i>{RUN}</i></b>-<b><i>{CCD}</i></b>.fits.fz</b></pre>
 
-    <p>For example, the image observed by CCD #2 in run number 534002 is located at:</p>
+    <p>For example, the frame recorded by CCD #2 in run number 534002 is located at:</p>
 
     <pre>http://www.iphas.org/data/images/r534/r534002-2.fits.fz</pre> 
 
-    <p>Note that all our images are Rice-compressed. Although this format is widely supported by astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
+    <p>Note that all the images are compressed using the Rice algorithm. Although this format is widely supported by astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
 
 
    <div class="alert alert-warning">
       <h4>Warning</h4>
-      This server provides access to the complete set of images, including any data that were obtained under poor conditions (e.g. clouds, poor seeing, electronic noise). <b>Do not use this data without verifying the quality (see instructions below).</b>
+      This data set includes <i>all</i> images, including those that were obtained under poor conditions (e.g. clouds, poor seeing, electronic noise). <b>You should verify the quality of the images for your purpose, using the instructions given below.</b>
    </div>
 
     <div class="page-header">
@@ -57,7 +57,16 @@
       <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB ASCII, limited set of columns).</li>
     </ul>
 
-    <p>The quality of an image is summarised by the table's <a href="#qcgrade">qcgrade</a> column, which can be one of "A++", "A+", "A", "B", "C", or "D". All the images that are graded "D" were excluded from <a href="/dr2">DR2</a> and their use is discouraged, though they may be adequate for some science cases. For many of the "B" and "C"-graded images, the data set includes a repeat observation at a later date. Note that the <a href="#in_dr2">in_dr2</a> columns flags the <i>best-available</i> data for each field in the survey footprint.</p>
+    <p>The table summarises the quality of each image in the <a href="#qcgrade">qcgrade</a> column as follows:</p>
+    <ul>
+    <li>"A"-graded images were found to meet all our quality criteria;</li>
+    <li>"B"- and "C"-graded images do not meet the criteria in a strict sense, but may nevertheless be adequate for a range of scientific applications. For example, this category includes images that were obtained under sub-standard seeing, i.e. 2 to 2.5 arcsec, but are fine otherwise.</li>
+    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> and their use is discouraged.</li>
+    </ul>
+
+    <p>Many fields in the survey footprint had more than one observing attempt to improve their quality. Column <a href="#in_dr2">in_dr2</a> in the table flags the <i>best-available</i> image for each field.</p>
+
+    <p>Note that the quality grades were assigned on a field-by-field basis, all three bands at once, and hence the D-graded category does contain a small subset of single-band images which are perfectly fine.</p>
 
     <p>The columns in the table are as follows:</p>
 
