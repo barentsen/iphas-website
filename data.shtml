@@ -22,17 +22,17 @@
     <tbody>
       <tr>
         <td>Catalogue</td>
-        <td><i>coming soon (paper submitted)</i></td>
+        <td><a href='/images'>iphas.org/dr2</a></i></td>
         <td>Globally-calibrated source catalogue.</td>
       </tr>
       <tr>
         <td>Images</td>
-        <td><a href='/images'>iphas.org/images</a></i></td>
+        <td><a href='/images'>iphas.org/images</a></td>
         <td>Pipeline-reduced images.</td>
       </tr>
       <tr>
         <td>Extinction map</td>
-        <td><a href='/extinction'>iphas.org/extinction</a></i></td>
+        <td><a href='/extinction'>iphas.org/extinction</a></td>
         <td>A 3D extinction map derived from the catalogue data.</td>
       </tr>
       <!--
