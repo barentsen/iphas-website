@@ -77,7 +77,7 @@
         </div>
         <div class="col-sm-4">
           <a class="about" href="data.shtml"><i class="icon-download-alt"></i> Data</a>
-          <p>The imaging data and a photometric catalogue containing 219 million unique sources are available to the public.</p>
+          <p>Our data products include a photometric catalogue of 219 million sources, 1.6&thinsp;TB of CCD images, and a 3D extinction map.</p>
           <p><a class="btn btn-default" href="data.shtml">More &raquo;</a></p>
         </div>
       </div>
