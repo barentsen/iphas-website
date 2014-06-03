@@ -9,46 +9,89 @@
     <div class="container">
     <!-- CONTENT STARTS HERE -->
 
+       <nav class="col-sm-3 visible-sm visible-md visible-lg bs-docs-sidebar" id="sidebarCol">
+          <div class="fixed">
+            <ul class="nav nav-stacked fixed" id="sidebar">
+                <li>
+                    <a href="#summary">Summary</a>
+                </li>
+                <li>
+                    <a href="#download">Downloading images</a>
+                </li>
+                <li>
+                    <a href="#metadata">Metadata table</a>
+                     <ul class="nav nav-stacked fixed">
+                        <li>
+                          <a href="#metadata-download">Downloading metadata</a>
+                        </li>
+                        <li>
+                          <a href="#metadata-columns">Column definitions</a>
+                        </li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#calibration">Photometric calibration</a>
+                </li>
+                <li>
+                  <a class="back-to-top" href="#top">
+                    Back to top
+                  </a>
+                </li>
+            </ul>
+
+          </div>
+        </nav>
+
+        <div class="col-sm-9">
+
+    
+    <h1>Accessing IPHAS images</h1>
+
+    <section id="summary">
+      <div class="page-header">
+        <h2>Summary</h2>
+      </div>
+
+      <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane. The data set consists of 268&thinsp;180 CCD frames, recorded during 67&thinsp;045 exposures across more than 300 nights between 2003 and 2012. The data volume is 1.6 TB.</p>
+
+      <p>All the images were obtained by the
+      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU). The FITS headers have been updated to include the new, globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints however.</p>
+
+      <p>This page also provides a table containing the associated meta data
+      and the quality control information that is required to select images.
+      Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a>.</p>
+    </section>
+
+    <section id="download">
+      <div class="page-header">
+        <h2>Downloading images</h2>
+      </div>
+
+      <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (i.e. CCD number 1, 2, 3 or 4). Run and CCD numbers for a desired region or epoch may be looked up using the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+
+      <p>When the run and CCD numbers of a desired frame are known, the URL of the image may be composed as follows:</p>
+
+      <pre>http://www.iphas.org/data/images/r<b><i>{first 3 digits of RUN}</i></b>/r<b><i>{RUN}</i></b>-<b><i>{CCD}</i></b>.fits.fz</pre>
+
+      <p>For example, the frame recorded by CCD #2 in run number 534002 is located at:</p>
+
+      <pre>http://www.iphas.org/data/images/r534/r534002-2.fits.fz</pre> 
+
+      <p>Note that all the images are compressed using the Rice algorithm. Although this format is widely supported by astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
+
+
+     <div class="alert alert-warning">
+        <h4>Warning</h4>
+        This data set includes <i>all</i> images, including those that were obtained under poor conditions (e.g. clouds, poor seeing, electronic noise). <b>You should verify the quality of the images for your purpose, using the information given below.</b>
+     </div>
+   </section>
+
+   <section id="metadata">
     <div class="page-header">
-      <h1>Accessing IPHAS images</h1>
+      <h2>Metadata table</h2>
     </div>
 
-    <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane.
-    The data set consists of 268&thinsp;180 CCD frames,
-    recorded during 67&thinsp;045 exposures across more than 300 nights between 2003 and 2012.
-    The data volume is 1.6 TB.<p>
-
-    <p>All the images were obtained by the
-    four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU). The FITS headers have been updated to include the new, globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints however.</p>
-
-    <p>
-    The raw telescope data and the calibration frames are not available from this page. They may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a>.</p>
-
-    <div class="page-header">
-      <h2>Downloading images</h2>
-    </div>
-
-    <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (i.e. CCD number 1, 2, 3 or 4). Run and CCD numbers for a desired region or epoch may be looked up using the table provided further below on this page. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
-
-    <p>When the run and CCD numbers of a desired frame are known, the URL of the image may be composed as follows:</p>
-
-    <pre>http://www.iphas.org/data/images/r<b><i>{first 3 digits of RUN}</i></b>/r<b><i>{RUN}</i></b>-<b><i>{CCD}</i></b>.fits.fz</b></pre>
-
-    <p>For example, the frame recorded by CCD #2 in run number 534002 is located at:</p>
-
-    <pre>http://www.iphas.org/data/images/r534/r534002-2.fits.fz</pre> 
-
-    <p>Note that all the images are compressed using the Rice algorithm. Although this format is widely supported by astronomical software, the data can be decompressed using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> if necessary.</p>
-
-
-   <div class="alert alert-warning">
-      <h4>Warning</h4>
-      This data set includes <i>all</i> images, including those that were obtained under poor conditions (e.g. clouds, poor seeing, electronic noise). <b>You should verify the quality of the images for your purpose, using the information given below.</b>
-   </div>
-
-    <div class="page-header">
-      <h2>Run numbers and quality information</h2>
-    </div>
+    <h3 id='metadata-download'>Downloading metadata</h3>
 
     <p>A table detailing the run numbers, sky coordinates, observing dates, and quality information is available in FITS and ASCII format:</p>
 
@@ -57,18 +100,21 @@
       <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB ASCII, limited set of columns).</li>
     </ul>
 
-    <p>The table summarises the quality of each image in the <a href="#qcgrade">qcgrade</a> column as follows:</p>
+    <p>The table summarises the quality of each image in the <a href="#qcgrade"><i>qcgrade</i></a> column. The value of <i>qcgrade</i> is one of "A", "B", "C", or "D":</p>
     <ul>
     <li>"A"-graded images were found to meet all our quality criteria;</li>
-    <li>"B"- and "C"-graded images do not meet the criteria in a strict sense, but may nevertheless be adequate for a range of scientific applications. For example, this category includes images that were obtained under sub-standard seeing, i.e. 2 to 2.5 arcsec, but are fine otherwise.</li>
-    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> and their use is discouraged.</li>
+    <li>"B"- and "C"-graded images do not meet the criteria in a strict sense, but may nevertheless be adequate for a range of scientific applications. For example, this category includes images that were obtained under sub-standard seeing (2 to 2.5 arcsec), but are fine otherwise.</li>
+    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> over serious quality concerns and their use is discouraged.</li>
     </ul>
 
-    <p>Many fields in the survey footprint had more than one observing attempt to improve their quality. Column <a href="#in_dr2">in_dr2</a> in the table flags the <i>best-available</i> image for each field.</p>
+    <p>Note that the quality grades were assigned on a field-by-field basis,
+    during which the same-epoch exposures of the field in all three wavebands were evaluated at the same time. Hence, the D-graded category does contain some single-band exposures which are perfectly fine, but were graded poorly because of a quality problem in an accompanying exposure.</p>
 
-    <p>Note that the quality grades were assigned on a field-by-field basis, all three bands at once, and hence the D-graded category does contain a small subset of single-band images which are perfectly fine.</p>
+    <p>Some fields in the survey footprint were observed more than once, in an attempt to improve data quality. Column <a href="#in_dr2"><i>in_dr2</i></a> in the metadata table flags the best-available image for each field, and marks the images that were used to compile the <a href="/dr2">DR2 source catalogue</a>.</p>
 
-    <p>The columns in the table are as follows:</p>
+    <h3 id='metadata-columns'>Column definitions</h3>
+
+    <p>The columns in the metadata table are as follows:</p>
 
           <table class="table table-striped table-hover">
             <thead>
@@ -162,28 +208,25 @@
               <tr id="skylevel">
                 <td><i>skylevel</i></td>
                 <td>counts/pixel</td>
-                <td>Median sky brightness. An automatic 2D background-following algorithm is used to track and "remove"
-slowly varying background features such as image gradients etc.</td>
+                <td>Median sky brightness. An automatic 2D background-following algorithm is used to track and "remove" slowly varying background features such as image gradients etc.</td>
               </tr>
 
               <tr id="skynoise">
                 <td><i>skynoise</i></td>
                 <td>counts/pixel</td>
-                <td>Pixel noise at sky level, estimated using a robust MAD estimator for noise scaled to equivalent Gaussian rms value, 
-ie. = MAD x 1.48, after removing large scale sky background variations.
-MAD = Median of the Absolute Deviations about the median.</td>
+                <td>Pixel noise at sky level, estimated using a robust MAD estimator for noise scaled to equivalent Gaussian rms value, ie. = MAD x 1.48, after removing large scale sky background variations. MAD = Median of the Absolute Deviations about the median.</td>
               </tr>
 
               <tr id="photzp">
                 <td><i>photzp</i></td>
                 <td></td>
-                <td>Photometric zeropoint, computed such that it absorbs the required corrections for atmospheric extinction, gain variations, exposure time, and the DR2 re-calibration shift (included only if the frame was part of DR2). Hence, the number counts stored in the frame can be converted into Vega-based magnitudes using: <b>mag(Vega)&nbsp;=&nbsp;-2.5*log(pixel value)&nbsp;+&nbsp;PHOTZP</b>.</td>
+                <td>Photometric zeropoint, computed such that it absorbs the required corrections for atmospheric extinction, gain variations, exposure time, and the DR2 re-calibration shift (included only if the frame was part of DR2). Hence, the number counts stored in the frame can be converted into Vega-based magnitudes using: mag(Vega)&nbsp;=&nbsp;-2.5*log(pixel value)&nbsp;+&nbsp;PHOTZP.</td>
               </tr>
 
               <tr id="confmap">
                 <td><i>confmap</i></td>
                 <td></td>
-                <td>Filename of the confidence map. Note that the confidence maps are located under <a href="http://www.iphas.org/data/images/confmaps">http://www.iphas.org/data/images/confmaps</a></td>
+                <td>Filename of the confidence map, relative to their loctation on the IPHAS server: <a href="http://www.iphas.org/data/images/confmaps">http://www.iphas.org/data/images/confmaps</a></td>
               </tr>
 
               <tr id="ra_min">
@@ -213,9 +256,41 @@ MAD = Median of the Absolute Deviations about the median.</td>
             </tbody>
           </table>
 
+    </section>
+
+    <section id="calibration">
+    <div class="page-header">
+      <h2>Photometric calibration</h2>
+    </div>
+
+    <p>Both the image headers and the metadata table provide a photometric zeropoint for each image (keyword PHOTZP). This zeropoint can be used to convert the pixel values (i.e. number counts) into Vega-based magnitudes as follows:</p>
+
+    <pre>mag(Vega) = -2.5*log10(pixel value) + PHOTZP.</pre>
+
+    <p>The PHOTZP value has been computed such that it absorbs the required    
+    corrections for atmospheric extinction, gain variations, exposure time, 
+    and the DR2 re-calibration shift.                                       
+    As these images still include moonlight and other sources of            
+    non-astronomical background, they can only support flux measurements    
+    that include a suitably-chosen local background subtraction. 
+    </p>
+    </section>
+
+</div>
+
     <!-- CONTENT ENDS HERE -->
     </div><!-- /container -->
     <!--#include virtual="../inc/footer.html" -->
-
+  <script>
+    $('#sidebar').affix({
+            offset: {
+              top: 150
+            }
+      });
+      $('body').scrollspy({
+          target: '#sidebarCol',
+          offset: 100
+      });
+  </script>
   </body>
 </html>
