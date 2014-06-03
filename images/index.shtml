@@ -19,10 +19,13 @@
                     <a href="#download">Downloading images</a>
                 </li>
                 <li>
-                    <a href="#metadata">Metadata table</a>
+                    <a href="#metadata">Metadata</a>
                      <ul class="nav nav-stacked fixed">
                         <li>
                           <a href="#metadata-download">Downloading metadata</a>
+                        </li>
+                        <li>
+                          <a href="#metadata-quality">Quality information</a>
                         </li>
                         <li>
                           <a href="#metadata-columns">Column definitions</a>
@@ -52,12 +55,12 @@
         <h2>Summary</h2>
       </div>
 
-      <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane. The data set consists of 268&thinsp;180 CCD frames, recorded during 67&thinsp;045 exposures across more than 300 nights between 2003 and 2012. The data volume is 1.6 TB.
+      <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane. The data set consists of 268&thinsp;180 CCD frames, recorded during 67&thinsp;045 exposures obtained between 2003 and 2012. The data volume is 1.6 TB.
       This page also provides a table with the associated metadata
       and quality control information.</p>
 
       <p>All the images were obtained by the
-      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU). The FITS headers have been updated to include the new, globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints however.</p>
+      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU). The FITS headers have been updated to include the globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints however.</p>
 
       <p>
       Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
@@ -68,7 +71,7 @@
         <h2>Downloading images</h2>
       </div>
 
-      <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (i.e. CCD number 1, 2, 3 or 4). The run and CCD numbers for a desired region or epoch may be looked up using the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+      <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (i.e. CCD number 1, 2, 3 or 4). The run and CCD numbers for a desired position or epoch may be found in the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
 
       <p>When the run and CCD numbers of a desired frame are known, the URL of the image may be composed as follows:</p>
 
@@ -78,40 +81,42 @@
 
       <pre>http://www.iphas.org/data/images/r570/r570144-1.fits.fz</pre> 
 
-      <p>Note that all the images are compressed using the Rice algorithm. Although this compression scheme is widely adopted by professional archives and software such as <i>ds9</i> and <i>aladin</i>, it not supported by every FITS image viewer yet. If you struggle to open an image, try to decompress it using the <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack tool</a> first.</p>
+      <p>Note that all the images are compressed using the Rice algorithm. Although this compression scheme is adopted by professional software
+      such as <i>ds9</i> and <i>aladin</i>, it not supported by every FITS viewer yet. If you struggle to open an image, try to decompress it using <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack</a> first.</p>
 
      <div class="alert alert-warning">
-        <h4>Warning</h4>
-        This data set includes all the images obtained during our observing runs, including those that were collected under poor conditions (e.g. clouds, poor seeing, electronic noise). <b>You should verify the quality of the images using the metadata provided below.</b>
+        <strong>Warning:</strong> this data set includes all the images obtained during our observing runs, including those that were affected by poor conditions (e.g. clouds, bad seeing, electronic noise). You should verify the quality of the images using the metadata provided below. <b>We recommend that you avoid images for which the <a href="#qcgrade"><i>qcgrade</i></a> equals "D".</b>
      </div>
    </section>
 
    <section id="metadata">
     <div class="page-header">
-      <h2>Metadata table</h2>
+      <h2>Metadata</h2>
     </div>
 
     <h3 id='metadata-download'>Downloading metadata</h3>
 
-    <p>A table detailing the run numbers, ccd numbers, sky coordinates, observing dates, and quality information is available in FITS and ASCII format (though the ASCII table contains a limited number of columns):</p>
+    <p>A table detailing the run numbers, ccd numbers, sky coordinates, observing dates, and quality information is available in FITS and ASCII format:</p>
 
     <ul>
       <li><a href="/data/images/iphas-images.fits.gz">iphas-images.fits.gz</a> (20 MB FITS table);</li>
-      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB ASCII table, limited set of columns).</li>
+      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB ASCII table, *limited set of columns*).</li>
     </ul>
 
-    <h3 id='metadata-download'>Quality information</h3>
+    <h3 id='metadata-quality'>Quality information</h3>
 
     <p>The table provides essential quality information such as the <a href="#seeing"><i>seeing</i></a>, <a href="#elliptic"><i>ellipticity</i></a>, <a href="#skylevel"><i>skylevel</i></a>, and <a href="#skynoise"><i>skynoise</i></a>. The quality of each image is summarised in the <a href="#qcgrade"><i>qcgrade</i></a> column, which classifies images as "A", "B", "C", or "D":</p>
     <ul>
     <li>"A"-graded images were found to meet all our quality criteria;</li>
     <li>"B"- and "C"-graded images do not meet the criteria in a strict sense, but may nevertheless be adequate for a range of scientific applications. For example, this category includes images that were obtained under sub-standard seeing (2 to 2.5 arcsec), but are fine otherwise.</li>
-    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> due to serious quality concerns and their use is discouraged.</li>
+    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> due to serious quality concerns.</li>
     </ul>
 
-    <p>Note that the quality grades were assigned on a field-by-field basis, i.e. each trio of r/i/H-alpha exposures towards a field were given a single quality grade based on their combined properties. Hence, the D-graded category does contain some single-band exposures which are perfectly fine, but were graded poorly because of a problem in the partner exposure.</p>
+    <p>Although the use of D-graded images is generally discouraged,
+    we note that the quality grades were assigned on a field-by-field basis.
+    That is, each trio of r/i/H-alpha exposures of a field were given a single quality grade based on their combined properties. Hence, the D-graded category does contain some single-band exposures which are perfectly fine, but were graded poorly because of a problem in a partner exposure.</p>
 
-    <p>Some fields in the survey footprint were observed more than once to improve data quality. The <i>best</i> exposures for each field are flagged by the <a href="#in_dr2"><i>in_dr2</i></a> column, which marks the exposures that were used to compile the <a href="/dr2">DR2 source catalogue</a>. These are also the only exposures for which the photometric zeropoints are calibrated in a global sense to an accuracy of 0.03 mag (see Barentsen et al 2014).</p>
+    <p>Some fields in the survey footprint were observed more than once to improve data quality. The best-available data for each field are flagged by the <a href="#in_dr2"><i>in_dr2</i></a> column, which marks the exposures that were used to compile the <a href="/dr2">DR2 source catalogue</a>. These are also the only exposures for which the photometric zeropoints are calibrated in a global sense to an accuracy of 0.03 mag (see Barentsen et al 2014).</p>
 
     <h3 id='metadata-columns'>Column definitions</h3>
 
@@ -271,20 +276,20 @@
     <p>The PHOTZP value has been computed such that it absorbs the required
     corrections for atmospheric extinction, gain variations, exposure time,
     and the DR2 re-calibration shift (if available).
-    As these images still include moonlight and other sources of
-    non-astronomical background, they can only support flux measurements
-    that include a suitably-chosen local background subtraction.
     </p>
 
      <div class="alert alert-warning">
-        <h4>Warning</h4>
-        Only the images which were used to compile the DR2 source catalogue ("<a href="#in_dr2">in_dr2</a> == true") have photometric zeropoints which are globally calibrated to an accuracy of 0.03 mag.
-        The other images have not been calibrated in a global sense at present.
+        <strong>Warning:</strong>
+        only the images which were used to compile the DR2 source catalogue (i.e. for which <a href="#in_dr2">in_dr2</a> equals "true") have photometric zeropoints that are globally calibrated to an accuracy of 0.03 mag (rms). The other images are considerably less accurate at present.
      </div>
 
     <p>To estimate absolute narrow-band Hα fluxes from the image data, we note that the integrated in-band energy flux for Vega in the IPHAS Hα filter is 1.52 x 10^−7 erg cm^−2 s^−1 at the top of the Earth’s atmosphere, which is the flux obtained by folding the CALSPEC SED with the filter transmission curve only (the correction for atmosphere and detector quantum efficiency, otherwise scales down the narrow-band flux by 0.707). 
     We note that the Hα magnitude for Vega is set by convention to 0.03 (Fukugita et al. 1996), which implies that the in-band flux corresponding to zero magnitude is:</p>
     <pre>F(Hα=0) = 1.56 x 10^−7 erg cm^−2 s^−1</pre>
+
+     <div class="alert alert-warning">
+        <strong>Warning:</strong> as these images still include moonlight and other sources of non-astronomical background, they can only support flux measurements that include a suitably-chosen local background subtraction.
+     </div>
 
     </section>
 
