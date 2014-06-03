@@ -60,7 +60,7 @@
       and quality control information.</p>
 
       <p>All the images were obtained by the
-      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU). The FITS headers have been updated to include the globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints however.</p>
+      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were initially pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), though the FITS headers have since been updated to include the globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints.</p>
 
       <p>
       Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
@@ -81,8 +81,8 @@
 
       <pre>http://www.iphas.org/data/images/r570/r570144-1.fits.fz</pre> 
 
-      <p>Note that all the images are compressed using the Rice algorithm. Although this compression scheme is adopted by professional software
-      such as <i>ds9</i> and <i>aladin</i>, it not supported by every FITS viewer yet. If you struggle to open an image, try to decompress it using <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack</a> first.</p>
+      <p>Note that the images are compressed using the Rice algorithm. Although this compression scheme is supported by professional software
+      such as <i>ds9</i> and <i>aladin</i>, it is not supported by every FITS viewer yet. If you struggle to open an image, try to decompress it using <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack</a> first.</p>
 
      <div class="alert alert-warning">
         <strong>Warning:</strong> this data set includes all the images obtained during our observing runs, including those that were affected by poor conditions (e.g. clouds, bad seeing, electronic noise). You should verify the quality of the images using the metadata provided below. <b>We recommend that you avoid images for which the <a href="#qcgrade"><i>qcgrade</i></a> equals "D".</b>
@@ -285,7 +285,7 @@
 
     <p>To estimate absolute narrow-band Hα fluxes from the image data, we note that the integrated in-band energy flux for Vega in the IPHAS Hα filter is 1.52 x 10^−7 erg cm^−2 s^−1 at the top of the Earth’s atmosphere, which is the flux obtained by folding the CALSPEC SED with the filter transmission curve only (the correction for atmosphere and detector quantum efficiency, otherwise scales down the narrow-band flux by 0.707). 
     We note that the Hα magnitude for Vega is set by convention to 0.03 (Fukugita et al. 1996), which implies that the in-band flux corresponding to zero magnitude is:</p>
-    <pre>F(Hα=0) = 1.56 x 10^−7 erg cm^−2 s^−1</pre>
+    <pre>F(Hα=zero) = 1.56 x 10^−7 erg cm^−2 s^−1</pre>
 
      <div class="alert alert-warning">
         <strong>Warning:</strong> as these images still include moonlight and other sources of non-astronomical background, they can only support flux measurements that include a suitably-chosen local background subtraction.
