@@ -989,7 +989,7 @@
       });
       $('body').scrollspy({
           target: '#sidebarCol',
-          offset: 150
+          offset: 100
       });
   </script>
 </body>
