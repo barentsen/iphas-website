@@ -63,7 +63,10 @@
       four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were initially pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), though the FITS headers have since been updated to include the globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints.</p>
 
       <p>
-      Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a> instead.</p>
+      Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a>. 
+      These data are also available through the
+      <a href="http://apm3.ast.cam.ac.uk/cgi-bin/wfs/dqc.cgi">CASU dqc interface</a>.
+      </p>
     </section>
 
     <section id="download">
