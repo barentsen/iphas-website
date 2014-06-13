@@ -13,22 +13,24 @@
           <div class="fixed">
             <ul class="nav nav-stacked fixed" id="sidebar">
                 <li>
-                    <a href="#summary">Summary</a>
-                </li>
+                    <a href="#summary">Downloading CCD frames</a>
+                     <ul class="nav nav-stacked fixed">
+                    <li>
+                        <a href="#image-search">Search form</a>
+                    </li>
+                    <li>
+                        <a href="#image-direct">Direct access</a>
+                    </li>
+                  </ul>
+                  </li>
                 <li>
-                    <a href="#download">Downloading images</a>
-                </li>
-                <li>
-                    <a href="#metadata">Metadata</a>
+                    <a href="#metadata">Downloading metadata</a>
                      <ul class="nav nav-stacked fixed">
                         <li>
-                          <a href="#metadata-download">Downloading metadata</a>
+                          <a href="#metadata-columns">Columns</a>
                         </li>
                         <li>
-                          <a href="#metadata-quality">Quality information</a>
-                        </li>
-                        <li>
-                          <a href="#metadata-columns">Column definitions</a>
+                          <a href="#metadata-quality">Quality grades</a>
                         </li>
                       </ul>
                 </li>
@@ -52,7 +54,7 @@
 
     <section id="summary">
       <div class="page-header">
-        <h2>Summary</h2>
+        <h2>Downloading CCD frames</h2>
       </div>
 
       <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane. The data set consists of 268&thinsp;180 CCD frames, recorded during 67&thinsp;045 exposures obtained between 2003 and 2012. The data volume is 1.6 TB.
@@ -67,16 +69,67 @@
       These data are also available through the
       <a href="http://apm3.ast.cam.ac.uk/cgi-bin/wfs/dqc.cgi">CASU dqc interface</a>.
       </p>
-    </section>
 
-    <section id="download">
-      <div class="page-header">
-        <h2>Downloading images</h2>
+      <h3 id='image-search'>Search form</h3>
+
+      <p>Use the form below to retrieve a list of IPHAS CCD frames at a given position.</p>
+
+      <div class="row">
+      <div class="col-sm-5">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          Search by coordinates
+          </div>
+          <div class="panel-body">
+            <form role="form" action="http://iphas.geert.io/images" method="get" class="form-horizontal">
+              <div class="form-group">
+                <label for="ra" class="col-sm-2 control-label">R.A.:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="ra" id="ra" placeholder="hh:mm:ss or decimal degrees">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="dec" class="col-sm-2 control-label">Dec.:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" name="dec" id="dec" placeholder="dd:mm:ss or decimal degrees">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
-      <p>IPHAS images are uniquely identified by the combination of their <i>run number</i>, which identifies the exposure, and their <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">camera</a> (i.e. CCD number 1, 2, 3 or 4). The run and CCD numbers for a desired position or epoch may be found in the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+      <div class="col-sm-5">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          Search by object name
+          </div>
+          <div class="panel-body">
+            <form role="form" action="http://iphas.geert.io/images" method="get">
+              <div class="form-group">
+                <label for="objname" class="control-label">Object name:</label>
+                  <input type="text" class="form-control" name="objname" id="objname" placeholder="e.g. NGC2264">
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
 
-      <p>When the run and CCD numbers of a desired frame are known, the URL of the image may be composed as follows:</p>
+      
+      <h3 id='image-direct'>Direct access</h3>
+
+      <p>CCD frames may also be downloaded directly from our server. Each frame is uniquely identified by the combination of its <i>run number</i>, which identifies the exposure, and the <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">INT/WFC camera</a> (i.e. CCD number 1, 2, 3 or 4). The run and CCD numbers for a desired position or epoch may be found in the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+
+      <p>When the run and CCD numbers of a desired frame are known, the URL of the image is composed as follows:</p>
 
       <pre>http://www.iphas.org/data/images/r<b><i>{first 3 digits of RUN}</i></b>/r<b><i>{RUN}</i></b>-<b><i>{CCD}</i></b>.fits.fz</pre>
 
@@ -94,34 +147,19 @@
 
    <section id="metadata">
     <div class="page-header">
-      <h2>Metadata</h2>
+      <h2>Dowloading metadata</h2>
     </div>
 
-    <h3 id='metadata-download'>Downloading metadata</h3>
-
-    <p>A table detailing the run numbers, ccd numbers, sky coordinates, observing dates, and quality information is available in FITS and ASCII format:</p>
+    <p>A table detailing the run numbers, ccd numbers, sky coordinates, observing dates, and quality information is available in FITS, SQLite and ASCII format:</p>
 
     <ul>
-      <li><a href="/data/images/iphas-images.fits.gz">iphas-images.fits.gz</a> (20 MB FITS table);</li>
-      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (41 MB ASCII table, *limited set of columns*).</li>
+      <li><a href="/data/images/iphas-images.fits.gz">iphas-images.fits.gz</a> (21 MB FITS table);</li>
+      <li><a href="/data/images/iphas-images.sqlite">iphas-images.sqlite</a> (88 MB SQLite database);</li>
+      <li><a href="/data/images/iphas-images.txt">iphas-images.txt</a> (32 MB ASCII table, <em>containing only a small subset of columns</em>).</li>
     </ul>
 
-    <h3 id='metadata-quality'>Quality information</h3>
 
-    <p>The table provides essential quality information such as the <a href="#seeing"><i>seeing</i></a>, <a href="#elliptic"><i>ellipticity</i></a>, <a href="#skylevel"><i>skylevel</i></a>, and <a href="#skynoise"><i>skynoise</i></a>. The quality of each image is summarised in the <a href="#qcgrade"><i>qcgrade</i></a> column, which classifies images as "A", "B", "C", or "D":</p>
-    <ul>
-    <li>"A"-graded images were found to meet all our quality criteria;</li>
-    <li>"B"- and "C"-graded images do not meet the criteria in a strict sense, but may nevertheless be adequate for a range of scientific applications. For example, this category includes images that were obtained under sub-standard seeing (2 to 2.5 arcsec), but are fine otherwise.</li>
-    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> due to serious quality concerns.</li>
-    </ul>
-
-    <p>Although the use of D-graded images is generally discouraged,
-    we note that the quality grades were assigned on a field-by-field basis.
-    That is, each trio of r/i/H-alpha exposures of a field were given a single quality grade based on their combined properties. Hence, the D-graded category does contain some single-band exposures which are perfectly fine, but were graded poorly because of a problem in a partner exposure.</p>
-
-    <p>Some fields in the survey footprint were observed more than once to improve data quality. The best-available data for each field are flagged by the <a href="#in_dr2"><i>in_dr2</i></a> column, which marks the exposures that were used to compile the <a href="/dr2">DR2 source catalogue</a>. These are also the only exposures for which the photometric zeropoints are calibrated in a global sense to an accuracy of 0.03 mag (see Barentsen et al 2014).</p>
-
-    <h3 id='metadata-columns'>Column definitions</h3>
+    <h3 id='metadata-columns'>Columns</h3>
 
     <p>The columns in the metadata table are as follows:</p>
 
@@ -150,7 +188,7 @@
               <tr id="url">
                 <td><i>url</i></td>
                 <td></td>
-                <td>URL of the FITS file containing the image, e.g. "www.iphas.org/data/images/r534/r534002-2.fits.fz".</td>
+                <td>URL of the FITS file containing the image, e.g. "http://www.iphas.org/data/images/r534/r534002-2.fits.fz".</td>
               </tr>
 
               <tr id="ra">
@@ -183,18 +221,24 @@
                 <td>Internal IPHAS identifier for the observation composed of the field number and the observing month, e.g. "0001o_aug2003".</td>
               </tr>              
 
-              <tr id="qcgrade">
-                <td><i>qcgrade</i></td>
-                <td></td>
-                <td>IPHAS DR2 quality score. One of "A++", "A+", "A", "B", "C" or "D". D-graded data is generally unsuited for scientific use due to e.g. clouds or electronic noise in the image.</td>
-              </tr>   
-
               <tr id="in_dr2">
                 <td><i>in_dr2</i></td>
                 <td></td>
                 <td>Boolean column, true if the exposure passed all the quality control criteria and was selected for inclusion in <a href="/dr2">IPHAS Data Release 2</a> (DR2).
                 When this column is set to false, then it is likely that the frame suffers from severe quality problems (e.g. clouds).</td>
               </tr>
+
+              <tr id="qcgrade">
+                <td><i>qcgrade</i></td>
+                <td></td>
+                <td>IPHAS DR2 quality score. One of "A++", "A+", "A", "B", "C" or "D". D-graded data is generally unsuited for scientific use due to e.g. clouds or electronic noise in the image.</td>
+              </tr>   
+
+              <tr id="qcproblems">
+                <td><i>qcproblems</i></td>
+                <td></td>
+                <td>Brief description of the issues encountered during quality control.</td>
+              </tr> 
 
              <tr id="exptime">
                 <td><i>exptime</i></td>
@@ -226,9 +270,15 @@
                 <td>Pixel noise at sky level, estimated using a robust MAD estimator for noise scaled to equivalent Gaussian rms value, ie. = MAD x 1.48, after removing large scale sky background variations. MAD = Median of the Absolute Deviations about the median.</td>
               </tr>
 
+              <tr id="depth">
+                <td><i>depth</i></td>
+                <td>mag</td>
+                <td>5-sigma limiting magnitude in the Vega system.</td>
+              </tr>
+
               <tr id="photzp">
                 <td><i>photzp</i></td>
-                <td></td>
+                <td>mag</td>
                 <td>Photometric zeropoint, computed such that it absorbs the required corrections for atmospheric extinction, gain variations, exposure time, and the DR2 re-calibration shift (included only if the frame was part of DR2). Hence, the number counts stored in the frame can be converted into Vega-based magnitudes using: mag(Vega)&nbsp;=&nbsp;-2.5*log(pixel value)&nbsp;+&nbsp;PHOTZP.</td>
               </tr>
 
@@ -264,6 +314,21 @@
 
             </tbody>
           </table>
+
+    <h3 id='metadata-quality'>Quality grades</h3>
+
+    <p>The table provides essential quality information such as the <a href="#seeing"><i>seeing</i></a>, <a href="#elliptic"><i>ellipticity</i></a>, <a href="#skylevel"><i>skylevel</i></a>, and <a href="#skynoise"><i>skynoise</i></a>. The quality of each image is summarised in the <a href="#qcgrade"><i>qcgrade</i></a> column, which classifies images as "A", "B", "C", or "D":</p>
+    <ul>
+    <li>"A"-graded images were found to meet all our quality criteria;</li>
+    <li>"B"- and "C"-graded images do not meet the criteria in a strict sense, but may nevertheless be adequate for a range of scientific applications. For example, this category includes images that were obtained under sub-standard seeing (2 to 2.5 arcsec), but are fine otherwise.</li>
+    <li>"D"-graded images were excluded from <a href="/dr2">DR2</a> due to serious quality concerns.</li>
+    </ul>
+
+    <p>Although the use of D-graded images is generally discouraged,
+    we note that the quality grades were assigned on a field-by-field basis.
+    That is, each trio of r/i/H-alpha exposures of a field were given a single quality grade based on their combined properties. Hence, the D-graded category does contain some single-band exposures which are perfectly fine, but were graded poorly because of a problem in a partner exposure.</p>
+
+    <p>Some fields in the survey footprint were observed more than once to improve data quality. The best-available data for each field are flagged by the <a href="#in_dr2"><i>in_dr2</i></a> column, which marks the exposures that were used to compile the <a href="/dr2">DR2 source catalogue</a>. These are also the only exposures for which the photometric zeropoints are calibrated in a global sense to an accuracy of 0.03 mag (see Barentsen et al 2014).</p>
 
     </section>
 
