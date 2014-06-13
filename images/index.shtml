@@ -113,7 +113,7 @@
             <form role="form" action="http://iphas.geert.io/images" method="get">
               <div class="form-group">
                 <label for="objname" class="control-label">Object name:</label>
-                  <input type="text" class="form-control" name="objname" id="objname" placeholder="e.g. NGC2264">
+                  <input type="text" class="form-control" name="objname" id="objname" placeholder="e.g. NGC 2264">
               </div>
               <div class="form-group">
                   <button type="submit" class="btn btn-primary">Search</button>
@@ -147,7 +147,7 @@
 
    <section id="metadata">
     <div class="page-header">
-      <h2>Dowloading metadata</h2>
+      <h2>Downloading metadata</h2>
     </div>
 
     <p>A table detailing the run numbers, ccd numbers, sky coordinates, observing dates, and quality information is available in FITS, SQLite and ASCII format:</p>
