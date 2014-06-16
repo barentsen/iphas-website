@@ -72,10 +72,10 @@
           </div>
 
           <p>In <a href="http://arxiv.org/abs/1406.0009">Sale et
-          al (2014)</a> we present a new 3D extinction map of the
+          al (2014)</a> we present a 3D extinction map of the
           entire Northern Galactic Plane (|<a href="#" rel=
           "tooltip" data-original-title="Galactic latitude">b</a>|
-          &lt; 5°) based on an algorithm H-MEAD, previously
+          &lt; 5°) based on H-MEAD, an algorithm previously
           described in <a href=
           "http://adsabs.harvard.edu/abs/2012MNRAS.427.2119S">Sale
           (2012)</a>, and IPHAS DR2 photometry.</p>
@@ -122,8 +122,8 @@
           longitude and latitudes covered in the file header. The
           individual files are organised into archives covering 10°
           wide strips of the Glactic plane. In this format the
-          final column says wheter a voxel is considered
-          'trustworty' or not, i.e. if it is within or beyond the
+          final column flags whether a voxel is considered
+          'trustworthy' or not, i.e. if it is within or beyond the
           maximum reliable distance for the sightline. The limits
           of the voxel in Galactic longitude and latitude are given
           in the file header. Column definitions for these files
@@ -363,7 +363,7 @@
 
                 <td></td>
 
-                <td>The halfwidth of a symetric 68.3% credible
+                <td>The halfwidth of a symmetric 68.3% credible
                 interval on mean extinction, centred on the
                 expectation value. This serves as an estimate of
                 the uncertainty on the mean extinction. Expressed
@@ -376,10 +376,10 @@
 
                 <td></td>
 
-                <td>The halfwidth of a symetric 68.3% credible
+                <td>The halfwidth of a symmetric 68.3% credible
                 interval on differential extinction, centred on the
                 expectation value. This serves as an estimate of
-                the uncertainty on the differntial extinction.
+                the uncertainty on the differential extinction.
                 Expressed in terms of <i>A</i><sub>0</sub>, the
                 monochromatic extinction at 5495 Å.</td>
               </tr>
@@ -392,7 +392,7 @@
                 <td>Indicates whether a voxel is within or beyond
                 the maximum relaible distance. A value of 1
                 indicates that the voxel is within this distance
-                and can be considered to be trustworty. A value of
+                and can be considered to be trustworthy. A value of
                 0 indicates that the voxel is beyond this distance
                 and so should not be relied upon.</td>
               </tr>
@@ -403,9 +403,9 @@
             <h3>Download posterior samples</h3>
           </div>
 
-          <p>We also make availbe 20 sample from the posterior
+          <p>We also make available 20 samples from the posterior
           distribution on mean extinction. For many purposes this
-          might be a more useful representation of the poserior
+          might be a more useful representation of the posterior
           than that given by the expectation and halfwidth of the
           credible interval. We provide one file for each
           sightline, where the filename gives the Galactic
@@ -629,12 +629,11 @@
           have heavily shaped the results obtained. Any further
           analysis of these data will also be inevitably subject to
           these same priors and selection function. In light of
-          these factors, we caution the reader that great care must
+          these factors, we caution the reader that care must
           be taken not to over-interpret or mistake patterns which
           appear in this catalogue. These data are provided in the
-          spirit that they may be a useful resource for e.g. target
-          selection for spectroscopic programmes or for the
-          interested reader to gain insight into the origin of
+          spirit that they may be a useful resource for 
+          gaining insight into the origin of
           features in the extinction map.</p>
 
           <div class="page-header" id="cat-download">
