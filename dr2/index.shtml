@@ -50,7 +50,7 @@
 <section id="summary">
 
   <p>
-    IPHAS DR2 provides r, i and H&alpha;-band photometry
+    IPHAS DR2 provides a catalogue containing r, i and H&alpha;-band photometry
     for 219 million unique sources, observed across the
     Northern Galactic Plane between 2003 and 2012.
     The catalogue is described in detail in 
@@ -63,7 +63,7 @@
   </p> 
 
   <p>
-    For each unique source, the catalogue provides r, i and H&alpha; magnitudes measured using a series of apertures, along with coordinates and quality warning flags. Where available, magnitudes at a second epoch in the same night are given as well. A table detailing the <a href="#columns">column definitions</a> is given below.
+    For each unique source, the catalogue provides magnitudes measured using a series of apertures, along with coordinates, morphology information, and quality warning flags. A table detailing the <a href="#columns">column definitions</a> is given below.
   </p>  
 </section>
 
@@ -74,7 +74,7 @@
 </div>
 
     <p>The source catalogue has recently been submitted to <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
-    and is currently in the process of being ingested there. In meanwhile, you can already use the form below to perform simple radial object searches. For more advanced queries, we recommend downloading the full catalogue in FITS format (explained below).</p><br>
+    and is currently in the process of being ingested there. In meanwhile, you can already use the form below to perform simple radial object searches. For more advanced queries, we recommend downloading the full catalogue in FITS format (see further below).</p><br>
 
 <div class="row">
       <div class="col-sm-6">
@@ -86,8 +86,8 @@
             <form role="form" action="http://iphas.herokuapp.com/conesearch" method="get" class="form-horizontal">
 
              <div class="form-group">
-                <label for="OUTPUT" class="col-sm-3 control-label">Search by:</label>
-                <div class="col-sm-9">
+                <label for="OUTPUT" class="col-sm-4 control-label">Search by:</label>
+                <div class="col-sm-8">
                   <select class="form-control" name='SEARCH' id='SEARCH'>
                     <option value='equ' selected='selected'>equatorial J2000 coordinates</option>
                     <!-- <option value='gal'>Galactic l/b coordinates</option> -->
@@ -97,48 +97,50 @@
               </div>
 
               <div class="form-group" id='RA-GROUP'>
-                <label for="RA" class="col-sm-3 control-label">R.A.:</label>
-                <div class="col-sm-9">
+                <label for="RA" class="col-sm-4 control-label">R.A.:</label>
+                <div class="col-sm-8">
                   <input type="text" class="form-control" name="RA" id="RA" placeholder="hh:mm:ss or decimal degrees">
                 </div>
               </div>
               <div class="form-group" id='DEC-GROUP'>
-                <label for="DEC" class="col-sm-3 control-label">Dec.:</label>
-                <div class="col-sm-9">
+                <label for="DEC" class="col-sm-4 control-label">Dec.:</label>
+                <div class="col-sm-8">
                   <input type="text" class="form-control" name="DEC" id="DEC" placeholder="dd:mm:ss or decimal degrees">
                 </div>
               </div>
 
               <div class="form-group hidden" id='GLON-GROUP'>
-                <label for="GLON" class="col-sm-3 control-label">l:</label>
-                <div class="col-sm-9">
+                <label for="GLON" class="col-sm-4 control-label">l:</label>
+                <div class="col-sm-8">
                   <input type="text" class="form-control" name="GLON" id="GLON" placeholder="decimal degrees">
                 </div>
               </div>
               <div class="form-group hidden" id='GLAT-GROUP'>
-                <label for="GLAT" class="col-sm-3 control-label">b:</label>
-                <div class="col-sm-9">
+                <label for="GLAT" class="col-sm-4 control-label">b:</label>
+                <div class="col-sm-8">
                   <input type="text" class="form-control" name="GLAT" id="GLAT" placeholder="decimal degrees">
                 </div>
               </div>
 
               <div class="form-group hidden" id='OBJNAME-GROUP'>
-                <label for="OBJNAME" class="col-sm-3 control-label">Name:</label>
-                <div class="col-sm-9">
+                <label for="OBJNAME" class="col-sm-4 control-label">Name:</label>
+                <div class="col-sm-8">
                   <input type="text" class="form-control" name="OBJNAME" id="OBJNAME" placeholder="Identifier known by SIMBAD">
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="SR" class="col-sm-3 control-label">Radius:</label>
-                <div class="col-sm-6">
+                <label for="SR" class="col-sm-4 control-label">Radius:</label>
+                <div class="col-sm-4">
                   <input type="text" class="form-control" name="SR" id="SR" value="0.01">
-                  <span class="help-block">Search radius in degrees.</span>
+                </div>
+                <div class="col-sm-4">
+                  <span class="help-block">degrees</span>
                 </div>
               </div>
               <div class="form-group">
-                <label for="OUTPUT" class="col-sm-3 control-label">Output:</label>
-                <div class="col-sm-6">
+                <label for="OUTPUT" class="col-sm-4 control-label">Output:</label>
+                <div class="col-sm-4">
                   <select class="form-control" name='OUTPUT'>
                     <option>html</option>
                     <option>votable</option>
