@@ -17,7 +17,10 @@
                     <a href="#summary">Summary</a>
                 </li>
                 <li>
-                    <a href="#download">Download</a>
+                    <a href="#query">Query tool</a>
+                </li>
+                <li>
+                    <a href="#download">Download instructions</a>
                 </li>
                 <li>
                     <a href="#columns">Column definitions</a>
@@ -41,17 +44,10 @@
 
 <br>
 <div class="alert alert-warning">
-  <button type="button" class="close" data-dismiss=
-  "alert">×</button>
-  <h4>Warning</h4>This catalogue is currently under peer review. Minor changes remain possible.<br>
-  <b>Last update: 2014-06-02</b>
+  <b>Note:</b> this catalogue is currently under peer review. Minor changes remain possible. (Last update: 2 June 2014.)</b>
 </div>
 
 <section id="summary">
-<div class="page-header">
-<h2>Summary</h2>
-</div>
-
 
   <p>
     IPHAS DR2 provides r, i and H&alpha;-band photometry
@@ -61,10 +57,9 @@
     an accompanying paper (Barentsen et al. 2014, submitted).
     In brief, the catalogue has been constructed by cross-matching 
     the detection lists from the individual bands using a maximum matching 
-    distance of 1 arcsec. All objects which were detected 
-    at at signal-to-noise ratio of 5 or better in at least one band
-    are included. The catalogue is uniformly calibrated to
-    an accuracy of 0.03 mag (rms).
+    distance of 1 arcsec. Moreover, the photometry has been re-calibrated uniformly to an accuracy of 0.03 mag (rms).
+    The catalogue includes all the source which have been detected 
+    at at signal-to-noise ratio of 5 or better in at least one band.
   </p> 
 
   <p>
@@ -72,20 +67,107 @@
   </p>  
 </section>
 
+
+<section id="query">
+<div class="page-header">
+<h2>Query tool</h2>
+</div>
+
+    <p>The source catalogue has recently been submitted to <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
+    and is currently in the process of being ingested there. In meanwhile, you can already use the form below to perform simple radial object searches. For more advanced queries, we recommend downloading the full catalogue in FITS format (explained below).</p><br>
+
+<div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          DR2 Cone Search
+          </div>
+          <div class="panel-body">
+            <form role="form" action="http://iphas.herokuapp.com/conesearch" method="get" class="form-horizontal">
+
+             <div class="form-group">
+                <label for="OUTPUT" class="col-sm-3 control-label">Search by:</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name='SEARCH' id='SEARCH'>
+                    <option value='equ' selected='selected'>equatorial J2000 coordinates</option>
+                    <!-- <option value='gal'>Galactic l/b coordinates</option> -->
+                    <option value='name'>object name</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" id='RA-GROUP'>
+                <label for="RA" class="col-sm-3 control-label">R.A.:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="RA" id="RA" placeholder="hh:mm:ss or decimal degrees">
+                </div>
+              </div>
+              <div class="form-group" id='DEC-GROUP'>
+                <label for="DEC" class="col-sm-3 control-label">Dec.:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="DEC" id="DEC" placeholder="dd:mm:ss or decimal degrees">
+                </div>
+              </div>
+
+              <div class="form-group hidden" id='GLON-GROUP'>
+                <label for="GLON" class="col-sm-3 control-label">l:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="GLON" id="GLON" placeholder="decimal degrees">
+                </div>
+              </div>
+              <div class="form-group hidden" id='GLAT-GROUP'>
+                <label for="GLAT" class="col-sm-3 control-label">b:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="GLAT" id="GLAT" placeholder="decimal degrees">
+                </div>
+              </div>
+
+              <div class="form-group hidden" id='OBJNAME-GROUP'>
+                <label for="OBJNAME" class="col-sm-3 control-label">Name:</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="OBJNAME" id="OBJNAME" placeholder="Identifier known by SIMBAD">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="SR" class="col-sm-3 control-label">Radius:</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="SR" id="SR" value="0.01">
+                  <span class="help-block">Search radius in degrees.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="OUTPUT" class="col-sm-3 control-label">Output:</label>
+                <div class="col-sm-6">
+                  <select class="form-control" name='OUTPUT'>
+                    <option>html</option>
+                    <option>votable</option>
+                    <option>csv</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
       <section id="download">
         <div class="page-header">
-          <h2>Download</h2>
+          <h2>Download instructions</h2>
         </div>
 
         <p>
-          The IPHAS DR2 Source Catalogue is distributed as a series of 
+          The IPHAS DR2 source catalogue is made available as a series of 
           binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
-          At present the catalogue cannot be queried online,
-          but it will likely be made available through Vizier soon.
-        </p>
-
-        <p>
-          You may download the full catalogue (50&thinsp;GB) 
+          You may download all the tables (50&thinsp;GB) 
           using the following
           <a href="http://www.gnu.org/software/wget/">wget</a> command:
         </p>
@@ -93,7 +175,7 @@
         <pre>wget -c -r -np -nH --cut-dirs=3 --accept=fits.gz http://www.iphas.org/data/dr2/full/</pre>
 
         <p>
-          Or to obtain a light version with a limited subset of columns (8&thinsp;GB):
+          Or to obtain a light version with a very limited subset of columns (8&thinsp;GB):
         </p>
         
         <pre>wget -c -r -np -nH --cut-dirs=3 --accept=fits.gz http://www.iphas.org/data/dr2/light/</pre>
@@ -2077,6 +2159,40 @@
       $('body').scrollspy({
           target: '#sidebarCol',
           offset: 100
+      });
+
+      $("#SEARCH").change(function() {
+        var mode = $(this).val();
+        if (mode == 'equ') {
+          $("#RA-GROUP").show().removeClass('hidden');;
+          $("#DEC-GROUP").show().removeClass('hidden');;
+          $("#GLON-GROUP").hide();
+          $("#GLAT-GROUP").hide();
+          $("#OBJNAME-GROUP").hide();
+          $("#OBJNAME").val("");
+          $("#GLON").val("");
+          $("#GLAT").val("");
+        } else if (mode == 'gal') {
+          $("#RA-GROUP").hide();
+          $("#DEC-GROUP").hide();
+          $("#GLON-GROUP").show().removeClass('hidden');;
+          $("#GLAT-GROUP").show().removeClass('hidden');;
+          $("#OBJNAME-GROUP").hide();
+          $("#OBJNAME").val("");
+          $("#RA").val("");
+          $("#DEC").val("");
+        } else if (mode == 'name') {
+          $("#RA-GROUP").hide();
+          $("#DEC-GROUP").hide();
+          $("#GLON-GROUP").hide();
+          $("#GLAT-GROUP").hide();
+          $("#OBJNAME-GROUP").show().removeClass('hidden');
+          $("#GLON").val("");
+          $("#GLAT").val("");
+          $("#RA").val("");
+          $("#DEC").val("");
+        }
+
       });
     </script>
   </body>

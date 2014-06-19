@@ -13,7 +13,7 @@
       <h1>IPHAS Data Access</h1>
     </div>
 
-    <p>IPHAS provides globally-calibrated catalogues and images, along with derived data products such as a 3D extinction map and lists of special objects. The primary data products are:</p>
+    <p>IPHAS provides globally-calibrated catalogues and images, along with derived data products such as a 3D extinction map. The primary data products are:</p>
 
     <table class="table table-striped table-hover">
     <thead>
@@ -66,17 +66,5 @@
     </div><!-- /container -->
     <!--#include virtual="inc/footer.html" -->
 
-    <script>
-      $('#sidebar').affix({
-            offset: {
-              top: 100
-            }
-      });
-      var $body = $(document.body);
-      $body.scrollspy({
-        target: '#sidebarCol',
-        offset: 200
-      });
-    </script>
   </body>
 </html>

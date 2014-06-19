@@ -13,18 +13,13 @@
           <div class="fixed">
             <ul class="nav nav-stacked fixed" id="sidebar">
                 <li>
-                    <a href="#summary">Downloading CCD frames</a>
-                     <ul class="nav nav-stacked fixed">
-                    <li>
-                        <a href="#image-search">Search form</a>
-                    </li>
-                    <li>
-                        <a href="#image-direct">Direct access</a>
-                    </li>
-                  </ul>
-                  </li>
+                    <a href="#search">Search form</a>
+                </li>
                 <li>
-                    <a href="#metadata">Downloading metadata</a>
+                    <a href="#summary">Summary</a>
+                </li>
+                <li>
+                    <a href="#metadata">Metadata</a>
                      <ul class="nav nav-stacked fixed">
                         <li>
                           <a href="#metadata-columns">Columns</a>
@@ -35,7 +30,7 @@
                       </ul>
                 </li>
                 <li>
-                    <a href="#calibration">Photometric calibration</a>
+                    <a href="#calibration">Flux calibration</a>
                 </li>
                 <li>
                   <a class="back-to-top" href="#top">
@@ -50,29 +45,15 @@
         <div class="col-sm-9">
 
     
-    <h1>Accessing IPHAS images</h1>
+    <h1>Accessing IPHAS imaging</h1>
 
-    <section id="summary">
-      <div class="page-header">
-        <h2>Downloading CCD frames</h2>
-      </div>
+    <section id="search">
 
-      <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane. The data set consists of 268&thinsp;180 CCD frames, recorded during 67&thinsp;045 exposures obtained between 2003 and 2012. The data volume is 1.6 TB.
-      This page also provides a table with the associated metadata
-      and quality control information.</p>
-
-      <p>All the images were obtained by the
-      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were initially pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), though the FITS headers have since been updated to include the globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints.</p>
-
-      <p>
-      Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a>. 
-      These data are also available through the
-      <a href="http://apm3.ast.cam.ac.uk/cgi-bin/wfs/dqc.cgi">CASU dqc interface</a>.
-      </p>
-
-      <h3 id='image-search'>Search form</h3>
+      <br/>
 
       <p>Use the form below to retrieve a list of IPHAS CCD frames at a given position.</p>
+
+      <br/>
 
       <div class="row">
       <div class="col-sm-5">
@@ -81,7 +62,7 @@
           Search by coordinates
           </div>
           <div class="panel-body">
-            <form role="form" action="http://iphas.geert.io/images" method="get" class="form-horizontal">
+            <form role="form" action="http://iphas.herokuapp.com/images" method="get" class="form-horizontal">
               <div class="form-group">
                 <label for="ra" class="col-sm-2 control-label">R.A.:</label>
                 <div class="col-sm-10">
@@ -110,7 +91,7 @@
           Search by object name
           </div>
           <div class="panel-body">
-            <form role="form" action="http://iphas.geert.io/images" method="get">
+            <form role="form" action="http://iphas.herokuapp.com/images" method="get">
               <div class="form-group">
                 <label for="objname" class="control-label">Object name:</label>
                   <input type="text" class="form-control" name="objname" id="objname" placeholder="e.g. NGC 2264">
@@ -123,11 +104,28 @@
         </div>
       </div>
       </div>
+    </section>
 
-      
-      <h3 id='image-direct'>Direct access</h3>
 
-      <p>CCD frames may also be downloaded directly from our server. Each frame is uniquely identified by the combination of its <i>run number</i>, which identifies the exposure, and the <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">INT/WFC camera</a> (i.e. CCD number 1, 2, 3 or 4). The run and CCD numbers for a desired position or epoch may be found in the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
+    <section id="summary">
+      <div class="page-header">
+        <h2>Summary</h2>
+      </div>
+
+      <p>This server provides access to the entire collection of pipeline-reduced images that have been obtained as part of the IPHAS survey of the Northern Galactic Plane. The data set consists of 268&thinsp;180 CCD frames, recorded during 67&thinsp;045 exposures obtained between 2003 and 2012. The data volume is 1.6 TB.
+      This page also provides a table with the associated metadata
+      and quality control information.</p>
+
+      <p>All the images were obtained by the
+      four-CCD  <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">Wide Field Camera</a> (WFC) at the <a href="http://www.ing.iac.es/Astronomy/telescopes/int/">Isaac Newton Telescope</a> (INT) in La Palma. The data were initially pipeline-processed by the <a href="http://casu.ast.cam.ac.uk">Cambridge Astronomical Survey Unit</a> (CASU), though the FITS headers have since been updated to include the globally re-calibrated <a href="/dr2">DR2</a> photometric zeropoints.</p>
+
+      <p>
+      Note that the raw telescope data and the calibration frames are not available here, they may be found in the <a href="http://casu.ast.cam.ac.uk/casuadc/ingarch/query">Isaac Newton Group Archive</a>. 
+      These data are also available through the
+      <a href="http://apm3.ast.cam.ac.uk/cgi-bin/wfs/dqc.cgi">CASU dqc interface</a>.
+      </p>
+
+      <p>CCD frames may be downloaded directly from our server. Each frame is uniquely identified by the combination of its <i>run number</i>, which identifies the exposure, and the <i>CCD number</i>, which identifies the detector within the <a href="http://www.ing.iac.es/astronomy/instruments/wfc/">INT/WFC camera</a> (i.e. CCD number 1, 2, 3 or 4). The run and CCD numbers for a desired position or epoch may be found in the metadata table provided below. The run numbers may also be found in the INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>.</p>
 
       <p>When the run and CCD numbers of a desired frame are known, the URL of the image is composed as follows:</p>
 
@@ -141,13 +139,13 @@
       such as <i>ds9</i> and <i>aladin</i>, it is not supported by every FITS viewer yet. If you struggle to open an image, try to decompress it using <a href="http://heasarc.nasa.gov/fitsio/fpack/">funpack</a> first.</p>
 
      <div class="alert alert-warning">
-        <strong>Warning:</strong> this data set includes all the images obtained during our observing runs, including those that were affected by poor conditions (e.g. clouds, bad seeing, electronic noise). You should verify the quality of the images using the metadata provided below. <b>We recommend that you avoid images for which the <a href="#qcgrade"><i>qcgrade</i></a> equals "D".</b>
+        <strong>Note:</strong> this data set includes all the images obtained during our observing runs, including those that were affected by poor conditions (e.g. clouds, bad seeing, electronic noise). You should verify the quality of the images using the metadata provided below. <b>We recommend that you avoid images for which the <a href="#qcgrade"><i>qcgrade</i></a> equals "D".</b>
      </div>
    </section>
 
    <section id="metadata">
     <div class="page-header">
-      <h2>Downloading metadata</h2>
+      <h2>Metadata</h2>
     </div>
 
     <p>A table detailing the run numbers, ccd numbers, sky coordinates, observing dates, and quality information is available in FITS, SQLite and ASCII format:</p>
@@ -334,7 +332,7 @@
 
     <section id="calibration">
     <div class="page-header">
-      <h2>Photometric calibration</h2>
+      <h2>Flux calibration</h2>
     </div>
 
     <p>Each image contains a photometric zeropoint in the FITS header (keyword PHOTZP) which allows the pixel values to be converted into Vega-based magnitudes as follows:</p>
@@ -347,8 +345,8 @@
     </p>
 
      <div class="alert alert-warning">
-        <strong>Warning:</strong>
-        only the images which were used to compile the DR2 source catalogue (i.e. for which <a href="#in_dr2">in_dr2</a> equals "true") have photometric zeropoints that are globally calibrated to an accuracy of 0.03 mag (rms). The other images are considerably less accurate at present.
+        <strong>Note:</strong>
+        only the images which were used to compile the DR2 source catalogue (i.e. for which column <a href="#in_dr2">in_dr2</a> equals "true") have photometric zeropoints that are globally calibrated to an accuracy of 0.03 mag (rms).
      </div>
 
     <p>To estimate absolute narrow-band Hα fluxes from the image data, we note that the integrated in-band energy flux for Vega in the IPHAS Hα filter is 1.52 x 10^−7 erg cm^−2 s^−1 at the top of the Earth’s atmosphere, which is the flux obtained by folding the CALSPEC SED with the filter transmission curve only (the correction for atmosphere and detector quantum efficiency, otherwise scales down the narrow-band flux by 0.707). 
@@ -356,7 +354,7 @@
     <pre>F(Hα=zero) = 1.56 x 10^−7 erg cm^−2 s^−1</pre>
 
      <div class="alert alert-warning">
-        <strong>Warning:</strong> as these images still include moonlight and other sources of non-astronomical background, they can only support flux measurements that include a suitably-chosen local background subtraction.
+        <strong>Note:</strong> as these images still include moonlight and other sources of non-astronomical background, they can only support flux measurements that include a suitably-chosen local background subtraction.
      </div>
 
     </section>
