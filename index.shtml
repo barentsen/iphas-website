@@ -108,7 +108,7 @@
           <p><a class="btn btn-default" href="science.shtml">More &raquo;</a></p>
         </div>
         <div class="col-sm-4">
-          <a class="about" href="data.shtml"><i class="icon-download-alt"></i> Data</a>
+          <a class="about" href="data.shtml"><i class="icon-download-alt"></i> Data Release 2 <sup class="text-danger">new</sup></a>
           <p>Our public data products include a photometric catalogue, imaging data, and a 3D extinction map.</p>
           <p><a class="btn btn-default" href="data.shtml">More &raquo;</a></p>
         </div>

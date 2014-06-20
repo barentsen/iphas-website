@@ -54,7 +54,7 @@
     for 219 million unique sources, observed across the
     Northern Galactic Plane between 2003 and 2012.
     The catalogue is described in detail in 
-    an accompanying paper (Barentsen et al. 2014, submitted).
+    an accompanying paper (<a href='http://arxiv.org/abs/1406.4862'>Barentsen et al. 2014</a>).
     In brief, the catalogue has been constructed by cross-matching 
     the detection lists from the individual bands using a maximum matching 
     distance of 1 arcsec. Moreover, the photometry has been re-calibrated uniformly to an accuracy of 0.03 mag (rms).

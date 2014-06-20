@@ -326,7 +326,7 @@
     we note that the quality grades were assigned on a field-by-field basis.
     That is, each trio of r/i/H-alpha exposures of a field were given a single quality grade based on their combined properties. Hence, the D-graded category does contain some single-band exposures which are perfectly fine, but were graded poorly because of a problem in a partner exposure.</p>
 
-    <p>Some fields in the survey footprint were observed more than once to improve data quality. The best-available data for each field are flagged by the <a href="#in_dr2"><i>in_dr2</i></a> column, which marks the exposures that were used to compile the <a href="/dr2">DR2 source catalogue</a>. These are also the only exposures for which the photometric zeropoints are calibrated in a global sense to an accuracy of 0.03 mag (see Barentsen et al 2014).</p>
+    <p>Some fields in the survey footprint were observed more than once to improve data quality. The best-available data for each field are flagged by the <a href="#in_dr2"><i>in_dr2</i></a> column, which marks the exposures that were used to compile the <a href="/dr2">DR2 source catalogue</a>. These are also the only exposures for which the photometric zeropoints are calibrated in a global sense to an accuracy of 0.03 mag (see <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al 2014</a>).</p>
 
     </section>
 
