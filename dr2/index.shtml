@@ -20,13 +20,13 @@
                     <a href="#query">Query tool</a>
                 </li>
                 <li>
-                    <a href="#download">Download instructions</a>
+                    <a href="#download">Download</a>
                 </li>
                 <li>
-                    <a href="#columns">Column definitions</a>
+                    <a href="#columns">Columns</a>
                 </li>
                 <li>
-                    <a href="#source">Source code</a>
+                    <a href="#faq">FAQ</a>
                 </li>
                 <li>
                   <a class="back-to-top" href="#top">
@@ -44,7 +44,8 @@
 
 <br>
 <div class="alert alert-warning">
-  <b>Note:</b> this catalogue is currently under peer review. Minor changes remain possible. (Last update: 2 June 2014.)</b>
+  <b>Note:</b> this catalogue is currently under peer review.
+  Minor changes remain possible. (Last update: 18 July 2014.)</b>
 </div>
 
 <section id="summary">
@@ -63,7 +64,11 @@
   </p> 
 
   <p>
-    For each unique source, the catalogue provides magnitudes measured using a series of apertures, along with coordinates, morphology information, and quality warning flags. A table detailing the <a href="#columns">column definitions</a> is given below.
+    For each unique source, the catalogue provides magnitudes measured using a 
+    series of circular apertures, along with coordinates, 
+    morphology information, and quality warning flags.
+    A table detailing the <a href="#columns">column definitions</a>
+    and a list of <a href="#caveats">known caveats</a> is given below.
   </p>  
 </section>
 
@@ -73,8 +78,12 @@
 <h2>Query tool</h2>
 </div>
 
-    <p>The source catalogue has recently been submitted to <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
-    and is currently in the process of being ingested there. In meanwhile, you can already use the form below to perform simple radial object searches. For more advanced queries, we recommend downloading the full catalogue in FITS format (see further below).</p><br>
+    <p>The source catalogue has recently been submitted to 
+    <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
+    and is currently in the process of being ingested there.
+    In meanwhile, you can already use the form below to perform simple radial 
+    object searches. For more advanced queries, we recommend downloading 
+    the full catalogue in FITS format (see below).</p><br>
 
 <div class="row">
       <div class="col-sm-6">
@@ -163,13 +172,13 @@
 
       <section id="download">
         <div class="page-header">
-          <h2>Download instructions</h2>
+          <h2>Downloading the full catalogue</h2>
         </div>
 
         <p>
-          The IPHAS DR2 source catalogue is made available as a series of 
+          The catalogue is made available as a series of 
           binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
-          You may download all the tables (50&thinsp;GB) to a local directory
+          You may download all the tables (48&thinsp;GB) to a local directory
           using the following
           <a href="http://www.gnu.org/software/wget/">wget</a> command:
         </p>
@@ -177,13 +186,15 @@
         <pre>wget -c -r -np -nH --cut-dirs=3 --accept=fits.gz http://www.iphas.org/data/dr2/full/</pre>
 
         <p>
-          Or to obtain a light version with a very limited subset of columns (8&thinsp;GB):
+          Or to obtain a light version
+          with a very limited subset of 11 columns (8&thinsp;GB):
         </p>
         
         <pre>wget -c -r -np -nH --cut-dirs=3 --accept=fits.gz http://www.iphas.org/data/dr2/light/</pre>
                 
         <p>
-          You may also download individual 5x5&thinsp;deg<sup>2</sup> tiles using the links in the table below:
+          You may also download individual 5x5&thinsp;deg<sup>2</sup> tiles 
+          using the links in the table below:
         </p>
 
         <table class="table table-condensed iphas-download">
@@ -192,10 +203,10 @@
               <td>Gal. Lon.</td>
               <td>Gal. Lat.</td>
               <td>
-                Light version (10 columns)
+                Light version (11 columns)
               </td>
               <td>
-                Full version (97 columns)
+                Full version (99 columns)
               </td>
             </tr>
           </thead>
@@ -1537,6 +1548,12 @@
     <h2>Column definitions</h2>
   </div>
 
+        <p>
+          The following table summarises the meaning of each column.
+          Note that the catalogue is described in more detail in 
+          <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al. (2014)</a>.
+        </p>
+
         <table class="table table-striped iphas-columns">
           <thead>
             <tr><th>Column</th><th>Type</th><th>Unit</th><th>Description</th></tr>
@@ -2140,15 +2157,140 @@
         </table>
 </section>
 
-<section id="source">
+<section id="faq">
   <div class="page-header">
-    <h2>Source code</h2>
+    <h2>Frequently Asked Questions & Caveats</h2>
   </div>
+
+  <h3>Which quality criteria should I use?</h3>
   <p>
-    In the spirit of reproducibility,
-    the source code that was used to generate
-    the catalogue is <a href="https://www.github.com/barentsen/iphas-dr2">available on GitHub</a>.
+    The choice of quality criteria tensions 
+    completeness against reliability,
+    and hence depends on the requirements of your project.
+    To aid users, we proposed two sets of quality criteria
+    in the <a href='http://arxiv.org/abs/1406.4862'>data release paper</a>,
+    called "a10" and "a10point",
+    which should satisfy most projects.
+    As a minimum, the "a10" criteria select objects which have been
+    detected at the level of 10-sigma in all bands, without being saturated.
+    Additional safeguards are provided by the stricter "a10point" criteria,
+    which require objects to be single, unconfused point sources,
+    as well as being unsaturated 10-sigma detections in all bands.
+    Sources in both categories are flagged in the catalogue using the boolean
+    columns <a href="#a10">a10</a> and <a href="#a10point">a10point</a>.
   </p>
+
+  <h3>Does IPHAS DR2 provide variability information?</h3>
+  <p>
+    IPHAS revisited roughly 30% of the survey
+    footprint at a second or third epoch, often years apart,
+    to improve the data quality in fields affected
+    by poor seeing or depth.
+    The survey hence provides some variability information,
+    but in DR2 we have decided to focus on providing single-epoch photometry
+    based on the highest-quality observations alone.
+    Multi-epoch data for a source can nevertheless
+    be obtained by querying the <a href="/images">IPHAS image database</a>.
+    The variability information has not been compiled into a user-friendly
+    catalogue at present however.
+  </p>
+
+  <h3>Why are some stars classified as galaxies?</h3>
+  <p>
+    The morphological classification values
+    (e.g. <a href="#rClass">rClass</a>, <a href="#rClass">iClass</a>, <a href="#rClass">haClass</a>)
+    are determined by comparing the point spread function (PSF) of a source
+    against the mean shape of the PSF measured across the CCD.
+    It is common for stars to be incorrectly flagged as
+    extended objects because the PSF deviates from the mean for a different reason.
+    For example, this may affect stars which are
+    (i) very faint,
+    (ii) have a nearby neighbour,
+    (iii) are located in a nebulous region,
+    or (iv) fall near the edge of the focal plane.
+    The band-merged morphological information 
+    (e.g. <a href="#mergedClass">mergedClass</a>, <a href="#mergedClass">pStar</a>)
+    tends to be more robust against these effects.
+    For fine-grained control, we recommend
+    using the stellarness-of-profile statistics included in the catalogue
+    (e.g. <a href="#mergedClassStat">mergedClassStat</a>, <a href="#rClassStat">rClassStat</a>)
+    or inspecting the image data by eye!
+  </p>
+
+  <h3>How do I access the image data for a source?</h3>
+  <p>
+
+    Images may be downloaded directly from our server.
+    Each frame is uniquely identified by the combination of its
+    <i>run number</i> and <i>CCD number</i>.
+    These numbers are available in the catalogue
+    for each band as part of the columns
+    <a href="#rDetectionID">rDetectionID</a>,
+    <a href="#iDetectionID">iDetectionID</a> and
+    <a href="#haDetectionID">haDetectionID</a>,
+    which are in the form "{#Run}-{#CCD}-{#Star}".
+    The URL of an image is composed as follows:
+  </p>
+  <pre>http://www.iphas.org/data/images/r<b><i>{first 3 digits of #Run}</i></b>/r<b><i>{#Run}</i></b>-<b><i>{#CCD}</i></b>.fits.fz</pre>
+  <p>
+    For example, the r-band image for a source with
+    rDetectionID equal to "570144-1-9999" is located at:
+  </p>
+  <pre>http://www.iphas.org/data/images/r570/r570144-1.fits.fz</pre> 
+
+  <h3>What software was used to produce the catalogue?</h3>
+  <p>
+    The images were initially pipeline-processed by the
+    <a href='http://casu.ast.cam.ac.uk/'>Cambridge Astronomy Survey Unit</a>
+    using parts of their <a href='http://casu.ast.cam.ac.uk/surveys-projects/software-release'>CASUTOOLS</a>
+    software package.
+    The single-band detection tables were then homogeneously re-calibrated
+    and band-merged by the IPHAS team using a custom-built Python package,
+    which is <a href="https://www.github.com/barentsen/iphas-dr2">available on GitHub</a>
+    in the spirit of reproducibility.
+  </p>
+
+<!--
+  <p>
+    Like any other photometric survey,
+    our catalogue inevitably contains instrumental errors
+    arising from e.g. artefacts around bright stars
+    or source confusion.
+  </p>
+
+  <h3>How do I reference IPHAS and this catalogue in my papers?</h3>
+  <p>Answer TBC.</p>
+
+  <h3>How do I know if the measurements of an object are accurate?</h3>
+  <p>Answer TBC.</p>
+
+  <h3>How can I match a list of objects?</h3>
+  <p>Answer TBC.</p>
+
+  <h3>Why do not all the sources have values for r2/i2/ha2?</h3>
+  <p>Answer TBC.</p>
+
+  <h3>How do I obtain the photometry for an extended source?</h3>
+  <p>Answer TBC.</p>
+
+The measurements of faint objects
+are naturally prone to larger
+random and systematic uncertainties:
+for example, an inaccurately-subtracted background
+will introduce a proportionally larger systematic error
+for a faint object.
+Most scientific applications will hence require a set of
+quality criteria to be enforced for the purpose
+of removing lower-quality objects.
+
+The choice of quality criteria will always tension 
+completeness {\bf against reliability,
+i.e. the fraction of spurious sources}.
+To aid users we have listed two sets of
+recommended quality criteria 
+in Tables~\ref{tab:reliable} and \ref{tab:veryreliable}.
+  </p>
+  -->
 </section>
 
         </div><!-- /col-sm-9 -->
