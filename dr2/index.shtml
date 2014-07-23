@@ -68,7 +68,7 @@
     series of circular apertures, along with coordinates, 
     morphology information, and quality warning flags.
     A table detailing the <a href="#columns">column definitions</a>
-    and a list of <a href="#caveats">known caveats</a> is given below.
+    and a <a href="#faq">FAQ</a> which addresses common caveats are given below.
   </p>  
 </section>
 
@@ -2162,7 +2162,24 @@
     <h2>Frequently Asked Questions & Caveats</h2>
   </div>
 
-  <h3>Which quality criteria should I use?</h3>
+  <p>
+    Like any other photometric survey,
+    there are caveats associated with using IPHAS DR2 data.
+    We recommend reading the frequently asked questions below
+    to get a view on the most common caveats and questions:
+  </p>
+
+  <ul>
+    <li><a href='#faq-quality-criteria'>Which quality criteria should I use?</a></li>
+    <li><a href='#faq-variability'>Does IPHAS DR2 provide variability information?</a></li>
+    <li><a href='#faq-morphology'>Why are some stars classified as galaxies?</a></li>
+    <li><a href='#faq-extended'>How do I obtain the photometry for an extended source?</a></li>
+    <li><a href='#faq-images'>How do I access the image data for a source?</a></li>
+    <li><a href='#faq-software'>What software was used to produce the catalogue?</a></li>
+    <li><a href='#faq-citation'>How do I reference IPHAS and this catalogue in my papers?</a></li>
+  </ul>
+
+  <h3 id='faq-quality-criteria'>Which quality criteria should I use?</h3>
   <p>
     The choice of quality criteria tensions 
     completeness against reliability,
@@ -2172,15 +2189,16 @@
     called "a10" and "a10point",
     which should satisfy most projects.
     As a minimum, the "a10" criteria select objects which have been
-    detected at the level of 10-sigma in all bands, without being saturated.
+    detected at the minimum level of 10-sigma in all bands,
+    without being saturated.
     Additional safeguards are provided by the stricter "a10point" criteria,
     which require objects to be single, unconfused point sources,
-    as well as being unsaturated 10-sigma detections in all bands.
+    as well as being unsaturated &gt;10-sigma detections in all bands.
     Sources in both categories are flagged in the catalogue using the boolean
     columns <a href="#a10">a10</a> and <a href="#a10point">a10point</a>.
   </p>
 
-  <h3>Does IPHAS DR2 provide variability information?</h3>
+  <h3 id='faq-variability'>Does IPHAS DR2 provide variability information?</h3>
   <p>
     IPHAS revisited roughly 30% of the survey
     footprint at a second or third epoch, often years apart,
@@ -2192,10 +2210,10 @@
     Multi-epoch data for a source can nevertheless
     be obtained by querying the <a href="/images">IPHAS image database</a>.
     The variability information has not been compiled into a user-friendly
-    catalogue at present however.
+    catalogue at present.
   </p>
 
-  <h3>Why are some stars classified as galaxies?</h3>
+  <h3 id='faq-morphology'>Why are some stars classified as galaxies?</h3>
   <p>
     The morphological classification values
     (e.g. <a href="#rClass">rClass</a>, <a href="#rClass">iClass</a>, <a href="#rClass">haClass</a>)
@@ -2214,53 +2232,71 @@
     For fine-grained control, we recommend
     using the stellarness-of-profile statistics included in the catalogue
     (e.g. <a href="#mergedClassStat">mergedClassStat</a>, <a href="#rClassStat">rClassStat</a>)
-    or inspecting the image data by eye!
+    or inspecting the image data by eye.
   </p>
 
-  <h3>How do I access the image data for a source?</h3>
+  <h3 id='faq-extended'>How do I obtain the photometry for an extended source?</h3>
   <p>
+    We do not recommend using the photometry in the DR2 catalogue
+    to study extended objects.
+    The catalogue photometry was obtained using reasonably small apertures
+    which have been corrected for the flux lost outside of the aperture
+    by assuming that the source is a point source.
+    To enable the analysis of diffuse sources,
+    our website provides access to the pipeline-processed
+    imaging data. These have been updated to include
+    the DR2 re-calibrated zeropoints (header keyword PHOTZP).
+    The information required to convert the image data
+    into fluxes is provided at <a href='/images'>www.iphas.org/images</a>.
+  </p>
 
+  <h3 id='faq-images'>How do I access the image data for a source?</h3>
+  <p>
     Images may be downloaded directly from our server.
-    Each frame is uniquely identified by the combination of its
-    <i>run number</i> and <i>CCD number</i>.
-    These numbers are available in the catalogue
-    for each band as part of the columns
-    <a href="#rDetectionID">rDetectionID</a>,
+    In brief, each image is uniquely identified by the combination of its
+    <i>run number</i> and <i>CCD number</i>,
+    which are encoded within the detection identifiers
+    (catalogue columns <a href="#rDetectionID">rDetectionID</a>,
     <a href="#iDetectionID">iDetectionID</a> and
-    <a href="#haDetectionID">haDetectionID</a>,
-    which are in the form "{#Run}-{#CCD}-{#Star}".
-    The URL of an image is composed as follows:
-  </p>
-  <pre>http://www.iphas.org/data/images/r<b><i>{first 3 digits of #Run}</i></b>/r<b><i>{#Run}</i></b>-<b><i>{#CCD}</i></b>.fits.fz</pre>
-  <p>
+    <a href="#haDetectionID">haDetectionID</a>).
     For example, the r-band image for a source with
-    rDetectionID equal to "570144-1-9999" is located at:
+    rDetectionID equal to "570144-1-9999" (#run-#ccd-#source) is located at:
   </p>
   <pre>http://www.iphas.org/data/images/r570/r570144-1.fits.fz</pre> 
-
-  <h3>What software was used to produce the catalogue?</h3>
   <p>
-    The images were initially pipeline-processed by the
+  For more documentation on image access,
+  please visit <a href='/images'>www.iphas.org/images</a>.
+  </p>
+
+  <h3 id='faq-software'>What software was used to produce the catalogue?</h3>
+  <p>
+    The images were pipeline-processed by the
     <a href='http://casu.ast.cam.ac.uk/'>Cambridge Astronomy Survey Unit</a>
-    using parts of their <a href='http://casu.ast.cam.ac.uk/surveys-projects/software-release'>CASUTOOLS</a>
-    software package.
-    The single-band detection tables were then homogeneously re-calibrated
-    and band-merged by the IPHAS team using a custom-built Python package,
-    which is <a href="https://www.github.com/barentsen/iphas-dr2">available on GitHub</a>
-    in the spirit of reproducibility.
+    using the <a href='http://casu.ast.cam.ac.uk/surveys-projects/software-release'>CASUTOOLS</a> software package.
+    Next, the single-band detection tables produced in Cambridge
+    were homogeneously re-calibrated and band-merged by the IPHAS team
+    using a custom-built Python package,
+    which is <a href="https://www.github.com/barentsen/iphas-dr2">available on GitHub</a> in the spirit of reproducibility.
   </p>
 
-<!--
+  <h3 id='faq-citation'>How do I reference IPHAS and this catalogue in my papers?</h3>
   <p>
-    Like any other photometric survey,
-    our catalogue inevitably contains instrumental errors
-    arising from e.g. artefacts around bright stars
-    or source confusion.
+    Publications arising from IPHAS data should cite and acknowledge the survey and the data release.
+    The primary reference for defining the survey is 
+    <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a>
+    [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>],
+    and the reference for this data release is 
+    <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al 2014</a> 
+    [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2014arXiv1406.4862B&data_type=BIBTEX&db_key=PRE">bibtex</a>].
   </p>
 
-  <h3>How do I reference IPHAS and this catalogue in my papers?</h3>
-  <p>Answer TBC.</p>
+  <p>Here is text to be used in acknowledgment sections of papers:</p>
 
+  <blockquote>
+    <p style='font-size:0.8em;'><i>This paper makes use of data obtained as part of the INT Photometric Hα Survey of the Northern Galactic Plane (IPHAS, www.iphas.org) carried out at the Isaac Newton Telescope (INT). The INT is operated on the island of La Palma by the Isaac Newton Group in the Spanish Observatorio del Roque de los Muchachos of the Instituto de Astrofisica de Canarias. All IPHAS data are processed by the Cambridge Astronomical Survey Unit, at the Institute of Astronomy in Cambridge.  The bandmerged DR2 catalogue was assembled at the Centre for Astrophysics Research, University of Hertfordshire, supported by STFC grant ST/J001333/1.</i></p>
+  </blockquote>
+
+  <!--
   <h3>How do I know if the measurements of an object are accurate?</h3>
   <p>Answer TBC.</p>
 
@@ -2269,28 +2305,8 @@
 
   <h3>Why do not all the sources have values for r2/i2/ha2?</h3>
   <p>Answer TBC.</p>
-
-  <h3>How do I obtain the photometry for an extended source?</h3>
-  <p>Answer TBC.</p>
-
-The measurements of faint objects
-are naturally prone to larger
-random and systematic uncertainties:
-for example, an inaccurately-subtracted background
-will introduce a proportionally larger systematic error
-for a faint object.
-Most scientific applications will hence require a set of
-quality criteria to be enforced for the purpose
-of removing lower-quality objects.
-
-The choice of quality criteria will always tension 
-completeness {\bf against reliability,
-i.e. the fraction of spurious sources}.
-To aid users we have listed two sets of
-recommended quality criteria 
-in Tables~\ref{tab:reliable} and \ref{tab:veryreliable}.
-  </p>
   -->
+
 </section>
 
         </div><!-- /col-sm-9 -->
