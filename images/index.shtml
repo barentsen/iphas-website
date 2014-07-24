@@ -146,7 +146,6 @@
         in the metadata table provided below.
         They may also be found in the "detectionID" columns of the <a href='/dr2'>source catalogue</a>,
         which are in the form "#RUN-#CCD-#SOURCE".
-        <!-- INT's <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">archive of observing logs</a>. -->
       </p>
 
       <p>
@@ -429,12 +428,19 @@
 
       <tbody>
         <tr>
-          <td><i>DATE-OBS</i></td>
+          <td>RUN</td>
+          <td>Unique exposure number. Corresponds to the run number found in the
+          <a href="http://www.ing.iac.es/astronomy/observing/inglogs.php">observing logs</a>
+          of the Isaac Newton Telescope.
+          </td>
+        </tr>
+        <tr>
+          <td>DATE&#8209;OBS</td>
           <td>Start time of the exposure in UTC, given in the ISO 8601 format "YYYY-MM-DDTHH:MM:SS".
           </td>
         </tr>
         <tr>
-          <td><i>EXPTIME</i></td>
+          <td>EXPTIME</td>
           <td>Exposure time in seconds. This may deviate slightly from the value
           found in the raw data, because the INT/WFC is known to occasionally
           record incorrect exposure times in the headers.
@@ -442,12 +448,35 @@
           </td>
         </tr>
         <tr>
-          <td><i>PHOTZP</i></td>
+          <td>PHOTZP</td>
           <td>Photometric zeropoint, computed such that it absorbs 
           the required corrections for atmospheric extinction, gain variations, exposure time, 
           and the DR2 re-calibration shift (included only if the frame was part of DR2). 
           Hence, the number counts stored in the images can be converted straight
           into Vega-based magnitudes using: mag(Vega)&nbsp;=&nbsp;-2.5*log(pixel value)&nbsp;+&nbsp;PHOTZP.</td>
+        </tr>
+        <tr>
+          <td>FLUXCAL</td>
+          <td>Certifies the validity of PHOTZP.
+          If set to 'ABSOLUTE' it means that the image has been globally
+          re-calibrated to an accuracy of 0.03 mag (rms) as part of
+          DR2. If set to 'UNCALIBRATED' it indicates that the image 
+          has only been calibrated using the nightly average zeropoint
+          obtained by observing standard stars,
+          which may or may not be accurate depending on the zeropoint
+          stability during the night.
+          We recommend against using PHOTZP in the latter case.</td>
+        </tr>
+        <tr>
+          <td>MAGZPT</td>
+          <td>Original nightly zeropoint for default extinction measured
+          at unit airmass. Obtained by taking the average
+          zeropoint of all standard star fields observed within the same night.
+          Unlike PHOTZP, this value does NOT include the required corrections 
+          for atmospheric extinction at the altitude of the observed pointing,
+          gain variations, the exposure time or the
+          DR2 global re-calibration. We do not recommend its use.
+          </td>
         </tr>
       </tbody>
     </table>

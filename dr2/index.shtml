@@ -210,7 +210,7 @@
               </td>
             </tr>
           </thead>
-          <tbody>
+           <tbody>
 
             <tr>
               <td rowspan="2">
@@ -227,7 +227,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-025a.fits.gz">
                   iphas-dr2-025a.fits.gz
-                </a> (<small>212&thinsp;MB</small>)
+                </a> (<small>211&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -243,7 +243,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-025b.fits.gz">
                   iphas-dr2-025b.fits.gz
-                </a> (<small>132&thinsp;MB</small>)
+                </a> (<small>131&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -256,7 +256,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-030a-light.fits.gz">
                   iphas-dr2-030a-light.fits.gz
-                </a> (<small>337&thinsp;MB</small>)
+                </a> (<small>338&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-030a.fits.gz">
@@ -277,7 +277,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-030b.fits.gz">
                   iphas-dr2-030b.fits.gz
-                </a> (<small>910&thinsp;MB</small>)
+                </a> (<small>909&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -306,12 +306,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-035b-light.fits.gz">
                   iphas-dr2-035b-light.fits.gz
-                </a> (<small>147&thinsp;MB</small>)
+                </a> (<small>148&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-035b.fits.gz">
                   iphas-dr2-035b.fits.gz
-                </a> (<small>842&thinsp;MB</small>)
+                </a> (<small>841&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -324,7 +324,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-040a-light.fits.gz">
                   iphas-dr2-040a-light.fits.gz
-                </a> (<small>220&thinsp;MB</small>)
+                </a> (<small>221&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-040a.fits.gz">
@@ -358,7 +358,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-045a-light.fits.gz">
                   iphas-dr2-045a-light.fits.gz
-                </a> (<small>243&thinsp;MB</small>)
+                </a> (<small>244&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-045a.fits.gz">
@@ -374,7 +374,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-045b-light.fits.gz">
                   iphas-dr2-045b-light.fits.gz
-                </a> (<small>284&thinsp;MB</small>)
+                </a> (<small>285&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-045b.fits.gz">
@@ -392,7 +392,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-050a-light.fits.gz">
                   iphas-dr2-050a-light.fits.gz
-                </a> (<small>288&thinsp;MB</small>)
+                </a> (<small>289&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-050a.fits.gz">
@@ -408,7 +408,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-050b-light.fits.gz">
                   iphas-dr2-050b-light.fits.gz
-                </a> (<small>209&thinsp;MB</small>)
+                </a> (<small>210&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-050b.fits.gz">
@@ -426,12 +426,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-055a-light.fits.gz">
                   iphas-dr2-055a-light.fits.gz
-                </a> (<small>288&thinsp;MB</small>)
+                </a> (<small>289&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-055a.fits.gz">
                   iphas-dr2-055a.fits.gz
-                </a> (<small>1.7&thinsp;GB</small>)
+                </a> (<small>1.6&thinsp;GB</small>)
               </td>
             </tr>
 
@@ -442,7 +442,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-055b-light.fits.gz">
                   iphas-dr2-055b-light.fits.gz
-                </a> (<small>267&thinsp;MB</small>)
+                </a> (<small>268&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-055b.fits.gz">
@@ -460,7 +460,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-060a-light.fits.gz">
                   iphas-dr2-060a-light.fits.gz
-                </a> (<small>177&thinsp;MB</small>)
+                </a> (<small>178&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-060a.fits.gz">
@@ -476,7 +476,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-060b-light.fits.gz">
                   iphas-dr2-060b-light.fits.gz
-                </a> (<small>332&thinsp;MB</small>)
+                </a> (<small>333&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-060b.fits.gz">
@@ -499,7 +499,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-065a.fits.gz">
                   iphas-dr2-065a.fits.gz
-                </a> (<small>850&thinsp;MB</small>)
+                </a> (<small>849&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -510,7 +510,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-065b-light.fits.gz">
                   iphas-dr2-065b-light.fits.gz
-                </a> (<small>311&thinsp;MB</small>)
+                </a> (<small>312&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-065b.fits.gz">
@@ -528,12 +528,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-070a-light.fits.gz">
                   iphas-dr2-070a-light.fits.gz
-                </a> (<small>134&thinsp;MB</small>)
+                </a> (<small>135&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-070a.fits.gz">
                   iphas-dr2-070a.fits.gz
-                </a> (<small>778&thinsp;MB</small>)
+                </a> (<small>777&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -544,7 +544,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-070b-light.fits.gz">
                   iphas-dr2-070b-light.fits.gz
-                </a> (<small>245&thinsp;MB</small>)
+                </a> (<small>246&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-070b.fits.gz">
@@ -567,7 +567,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-075a.fits.gz">
                   iphas-dr2-075a.fits.gz
-                </a> (<small>599&thinsp;MB</small>)
+                </a> (<small>598&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -583,7 +583,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-075b.fits.gz">
                   iphas-dr2-075b.fits.gz
-                </a> (<small>878&thinsp;MB</small>)
+                </a> (<small>877&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -596,7 +596,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-080a-light.fits.gz">
                   iphas-dr2-080a-light.fits.gz
-                </a> (<small>101&thinsp;MB</small>)
+                </a> (<small>102&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-080a.fits.gz">
@@ -617,7 +617,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-080b.fits.gz">
                   iphas-dr2-080b.fits.gz
-                </a> (<small>515&thinsp;MB</small>)
+                </a> (<small>514&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -635,7 +635,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-085a.fits.gz">
                   iphas-dr2-085a.fits.gz
-                </a> (<small>924&thinsp;MB</small>)
+                </a> (<small>923&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -646,7 +646,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-085b-light.fits.gz">
                   iphas-dr2-085b-light.fits.gz
-                </a> (<small>128&thinsp;MB</small>)
+                </a> (<small>129&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-085b.fits.gz">
@@ -664,7 +664,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-090a-light.fits.gz">
                   iphas-dr2-090a-light.fits.gz
-                </a> (<small>128&thinsp;MB</small>)
+                </a> (<small>129&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-090a.fits.gz">
@@ -685,7 +685,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-090b.fits.gz">
                   iphas-dr2-090b.fits.gz
-                </a> (<small>432&thinsp;MB</small>)
+                </a> (<small>431&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -703,7 +703,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-095a.fits.gz">
                   iphas-dr2-095a.fits.gz
-                </a> (<small>748&thinsp;MB</small>)
+                </a> (<small>747&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -719,7 +719,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-095b.fits.gz">
                   iphas-dr2-095b.fits.gz
-                </a> (<small>738&thinsp;MB</small>)
+                </a> (<small>737&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -748,7 +748,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-100b-light.fits.gz">
                   iphas-dr2-100b-light.fits.gz
-                </a> (<small>112&thinsp;MB</small>)
+                </a> (<small>113&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-100b.fits.gz">
@@ -766,12 +766,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-105a-light.fits.gz">
                   iphas-dr2-105a-light.fits.gz
-                </a> (<small>116&thinsp;MB</small>)
+                </a> (<small>117&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-105a.fits.gz">
                   iphas-dr2-105a.fits.gz
-                </a> (<small>678&thinsp;MB</small>)
+                </a> (<small>677&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -805,7 +805,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-110a.fits.gz">
                   iphas-dr2-110a.fits.gz
-                </a> (<small>479&thinsp;MB</small>)
+                </a> (<small>478&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -850,12 +850,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-115b-light.fits.gz">
                   iphas-dr2-115b-light.fits.gz
-                </a> (<small>85&thinsp;MB</small>)
+                </a> (<small>86&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-115b.fits.gz">
                   iphas-dr2-115b.fits.gz
-                </a> (<small>487&thinsp;MB</small>)
+                </a> (<small>486&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -868,7 +868,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-120a-light.fits.gz">
                   iphas-dr2-120a-light.fits.gz
-                </a> (<small>96&thinsp;MB</small>)
+                </a> (<small>97&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-120a.fits.gz">
@@ -889,7 +889,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-120b.fits.gz">
                   iphas-dr2-120b.fits.gz
-                </a> (<small>464&thinsp;MB</small>)
+                </a> (<small>463&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -907,7 +907,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-125a.fits.gz">
                   iphas-dr2-125a.fits.gz
-                </a> (<small>437&thinsp;MB</small>)
+                </a> (<small>436&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -941,7 +941,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-130a.fits.gz">
                   iphas-dr2-130a.fits.gz
-                </a> (<small>447&thinsp;MB</small>)
+                </a> (<small>446&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -957,7 +957,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-130b.fits.gz">
                   iphas-dr2-130b.fits.gz
-                </a> (<small>414&thinsp;MB</small>)
+                </a> (<small>413&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1093,7 +1093,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-150b.fits.gz">
                   iphas-dr2-150b.fits.gz
-                </a> (<small>325&thinsp;MB</small>)
+                </a> (<small>324&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1111,7 +1111,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-155a.fits.gz">
                   iphas-dr2-155a.fits.gz
-                </a> (<small>263&thinsp;MB</small>)
+                </a> (<small>262&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -1127,7 +1127,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-155b.fits.gz">
                   iphas-dr2-155b.fits.gz
-                </a> (<small>322&thinsp;MB</small>)
+                </a> (<small>321&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1145,7 +1145,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-160a.fits.gz">
                   iphas-dr2-160a.fits.gz
-                </a> (<small>331&thinsp;MB</small>)
+                </a> (<small>330&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -1156,12 +1156,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-160b-light.fits.gz">
                   iphas-dr2-160b-light.fits.gz
-                </a> (<small>62&thinsp;MB</small>)
+                </a> (<small>63&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-160b.fits.gz">
                   iphas-dr2-160b.fits.gz
-                </a> (<small>352&thinsp;MB</small>)
+                </a> (<small>351&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1174,12 +1174,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-165a-light.fits.gz">
                   iphas-dr2-165a-light.fits.gz
-                </a> (<small>52&thinsp;MB</small>)
+                </a> (<small>53&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-165a.fits.gz">
                   iphas-dr2-165a.fits.gz
-                </a> (<small>303&thinsp;MB</small>)
+                </a> (<small>302&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -1190,7 +1190,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-165b-light.fits.gz">
                   iphas-dr2-165b-light.fits.gz
-                </a> (<small>65&thinsp;MB</small>)
+                </a> (<small>66&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-165b.fits.gz">
@@ -1208,7 +1208,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-170a-light.fits.gz">
                   iphas-dr2-170a-light.fits.gz
-                </a> (<small>57&thinsp;MB</small>)
+                </a> (<small>58&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-170a.fits.gz">
@@ -1229,7 +1229,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-170b.fits.gz">
                   iphas-dr2-170b.fits.gz
-                </a> (<small>288&thinsp;MB</small>)
+                </a> (<small>287&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1276,7 +1276,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-180a-light.fits.gz">
                   iphas-dr2-180a-light.fits.gz
-                </a> (<small>40&thinsp;MB</small>)
+                </a> (<small>41&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-180a.fits.gz">
@@ -1331,7 +1331,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-185b.fits.gz">
                   iphas-dr2-185b.fits.gz
-                </a> (<small>270&thinsp;MB</small>)
+                </a> (<small>269&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1360,12 +1360,12 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/light/iphas-dr2-190b-light.fits.gz">
                   iphas-dr2-190b-light.fits.gz
-                </a> (<small>52&thinsp;MB</small>)
+                </a> (<small>53&thinsp;MB</small>)
               </td>
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-190b.fits.gz">
                   iphas-dr2-190b.fits.gz
-                </a> (<small>299&thinsp;MB</small>)
+                </a> (<small>298&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1399,7 +1399,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-195b.fits.gz">
                   iphas-dr2-195b.fits.gz
-                </a> (<small>355&thinsp;MB</small>)
+                </a> (<small>354&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1417,7 +1417,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-200a.fits.gz">
                   iphas-dr2-200a.fits.gz
-                </a> (<small>355&thinsp;MB</small>)
+                </a> (<small>354&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -1433,7 +1433,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-200b.fits.gz">
                   iphas-dr2-200b.fits.gz
-                </a> (<small>308&thinsp;MB</small>)
+                </a> (<small>307&thinsp;MB</small>)
               </td>
             </tr>
             <tr>
@@ -1451,7 +1451,7 @@
               <td>
                 <a href="http://www.iphas.org/data/dr2/full/iphas-dr2-205a.fits.gz">
                   iphas-dr2-205a.fits.gz
-                </a> (<small>219&thinsp;MB</small>)
+                </a> (<small>218&thinsp;MB</small>)
               </td>
             </tr>
 
@@ -2173,7 +2173,7 @@
     <li><a href='#faq-quality-criteria'>Which quality criteria should I use?</a></li>
     <li><a href='#faq-variability'>Does IPHAS DR2 provide variability information?</a></li>
     <li><a href='#faq-morphology'>Why are some stars classified as galaxies?</a></li>
-    <li><a href='#faq-extended'>How do I obtain the photometry for an extended source?</a></li>
+    <li><a href='#faq-extended'>How do I obtain photometry for extended sources?</a></li>
     <li><a href='#faq-images'>How do I access the image data for a source?</a></li>
     <li><a href='#faq-software'>What software was used to produce the catalogue?</a></li>
     <li><a href='#faq-citation'>How do I reference IPHAS and this catalogue in my papers?</a></li>
@@ -2235,7 +2235,7 @@
     or inspecting the image data by eye.
   </p>
 
-  <h3 id='faq-extended'>How do I obtain the photometry for an extended source?</h3>
+  <h3 id='faq-extended'>How do I obtain photometry for extended sources?</h3>
   <p>
     We do not recommend using the photometry in the DR2 catalogue
     to study extended objects.
