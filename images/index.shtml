@@ -38,7 +38,7 @@
                     <a href="#documentation">Documentation</a>
                     <ul class="nav nav-stacked fixed">
                       <li>
-                        <a href="#headers">Header keywords</a>
+                        <a href="#doc-keywords">Header keywords</a>
                       </li>
                       <li>
                         <a href="#calibration">Flux calibration</a>
@@ -414,7 +414,7 @@
       <h2>Documentation</h2>
     </div>
 
-    <h3 id='headers'>Header keywords</h3>
+    <h3 id='doc-keywords'>Header keywords</h3>
 
     Useful keywords in the image headers include:
 
@@ -480,6 +480,150 @@
         </tr>
       </tbody>
     </table>
+
+
+    <p>A typical header looks as follows:</p>
+
+<pre>
+XTENSION= 'IMAGE   '           / binary table extension                         
+BITPIX  =                   16 / data type of original image                    
+NAXIS   =                    2 / dimension of original image                    
+NAXIS1  =                 2048 / length of original image axis                  
+NAXIS2  =                 4096 / length of original image axis                  
+PCOUNT  =                    0 / size of special data area                      
+GCOUNT  =                    1 / one data group (required keyword)              
+RUN     =               570144 / Run number                                     
+OBSERVAT= 'LAPALMA '           / Name of observatory (IRAF style)               
+OBSERVER= 'Drew    '           / Name of principal investigator                 
+OBJECT  = 'intphas_6686 Ha'    / Title of observation                           
+LATITUDE=            28.761915 / Telescope latitude  (degrees), +28:45:42.9     
+LONGITUD=           -17.877588 / Telescope longitude (degrees), -17:52:39.3     
+HEIGHT  =                 2348 / [m] Height above sea level.                    
+SLATEL  = 'LPO2.5  '           / Telescope name known to SLALIB                 
+TELESCOP= 'INT     '           / 2.5m Isaac Newton Telescope                    
+MJD-OBS =        54277.1902816 / Modified Julian Date at start of observation   
+JD      =      2454277.6902816 / Julian Date at start of observation            
+PLATESCA=             6.856013 / [d/m] Platescale ( 24.68arcsec/mm)             
+TELFOCUS=             0.043476 / Telescope focus (metres)                       
+AIRMASS =             1.142659 / Effective mean airmass                         
+TEMPTUBE=            11.330218 / Truss Temperature (degrees Celsius)            
+INSTRUME= 'WFC     '           / INT wide-field camera is in use.               
+WFFPOS  =                    2 / Position-number of deployed filter             
+WFFBAND = 'Halpha  '           / Waveband of filter                             
+WFFID   = '197     '           / Unique identifier of filter                    
+SECPPIX =                0.333 / Arcseconds per pixel                           
+DETECTOR= 'WFC     '           / Formal name of camera                          
+CCDSPEED= 'FAST    '           / Readout speed                                  
+CCDXBIN =                    1 / Binning factor in x axis                       
+CCDYBIN =                    1 / Binning factor in y axis                       
+CCDSUM  = '1 1     '           / Binning factors (IRAF style)                   
+CCDTEMP =              150.167 / [K] Cryostat temperature                       
+NWINDOWS=                    0 / Number of readout windows                      
+DATE-OBS= '2007-06-26T04:34:02.5' / Start time of the exposure [UTC]            
+BZERO   =       32768.00000000 / Pixel-data have 32K offset.                    
+BSCALE  =           1.00000000 / Pixel-data are not scaled.                     
+INHERIT =                    T / Extension inherits primary HDU.                
+EXTVER  =                    1 / Extension version number                       
+IMAGEID =                    1 / Image identification                           
+DASCHAN =                    1 / Number of readout channel                      
+WINNO   =                    0 / Number of readout window                       
+CHIPNAME= 'A5506-4           ' / Name of detector chip.                         
+CCDNAME = 'A5506-4           ' / Name of detector chip.                         
+CCDCHIP = 'A5506-4           ' / Name of detector chip.                         
+CCDTYPE = 'EEV42-80          ' / Type of detector chip.                         
+CCDXPIXE=           0.00001350 / [m] Size of pixels in x.                       
+CCDYPIXE=           0.00001350 / [m] Size of pixels in y.                       
+AMPNAME = 'LH                ' / Name of output amplifier.                      
+GAIN    =           2.80000000 / Nominal Photo-electrons per ADU.               
+READNOIS=           6.40000000 / Nominal Readout noise in electrons.            
+SATURATE=       65535.00000000 / Highest value that is unsaturated              
+MAXBIAS =       65535.00000000 / Maximum expected bias level                    
+BIASSEC = '[11:50,3:4098]'     / Bias pixels.                                   
+TRIMSEC = '[51:2098,3:4098]'   / Illuminated pixels.                            
+RTDATSEC= '[2062:4215,13:4212]             ' / Location in d-space for RTD.     
+RADESYS = 'ICRS    '           / WCS calibrated against 2MASS                   
+EQUINOX =               2000.0                                                  
+CTYPE1  = 'RA---ZPN'           / Algorithm type for axis 1                      
+CTYPE2  = 'DEC--ZPN'           / Algorithm type for axis 2                      
+CRUNIT1 = 'deg     '           / Unit of right ascension coordinates            
+CRUNIT2 = 'deg     '           / Unit of declination coordinates                
+PV2_1   =                  1.0 / Coefficient for r term                         
+PV2_2   =                  0.0 / Coefficient for r**2 term                      
+PV2_3   =                220.0 / Coefficient for r**3 term                      
+CRVAL1  =            324.17822 / [deg] Right ascension at the reference pixel   
+CRVAL2  =            57.634918 / [deg] Declination at the reference pixel       
+CRPIX1  =           -388.29001 / [pixel] Reference pixel along axis 1           
+CRPIX2  =               3050.0 / [pixel] Reference pixel along axis 2           
+CD1_1   =       -1.2477742E-06 / Transformation matrix element                  
+CD1_2   =       -9.2437171E-05 / Transformation matrix element                  
+CD2_1   =       -9.2437804E-05 / Transformation matrix element                  
+CD2_2   =        1.2915958E-06 / Transformation matrix element                  
+PEDESTAL=                  0.0 / Artificial pedestal added to data              
+HISTORY  trimmed to range     :     51  2098     3  4098                        
+HISTORY  linearity LUT applied: /home/mike/pipeline/nonlincoeffs/int_non        
+HISTORY  bias-corrected with  : bias.fits                                       
+HISTORY  flatfielded with     : ../Haflat.fits                                  
+HISTORY  gain-corrected by    :      1.000                                      
+HISTORY                                                                         
+HISTORY Updated 2014-05-02                                                      
+HISTORY ------------------                                                      
+HISTORY This frame contains pipeline-reduced IPHAS data that was originally     
+HISTORY processed by the Cambridge Astronomical Survey Unit (CASU), but the     
+HISTORY headers have been updated by Geert Barentsen (Hertfordshire) in 2014    
+HISTORY to add a re-calibrated zeropoint and to tweak the WCS keywords.         
+NUMBRMS =                  623 / Number of standards used                       
+STDCRMS =                0.075 / Astrometric fit error (arcsec)                 
+PERCORR =               -0.005 / Sky calibration correction (mags)              
+MAGZPT  =                21.61 / Uncorrected nightly ZP (per second)            
+MAGZRR  =                 0.03 / Photometric ZP error (mags)                    
+EXTINCT =                 0.05 / Extinction coefficient (mags)                  
+NUMZPT  =                   -1                                                  
+NIGHTZPT=                  30.                                                  
+NIGHTZRR=                  -1.                                                  
+SEEING  =                2.633 / Average FWHM (pixels)                          
+NIGHTNUM=                   -1                                                  
+EXPTIME =               120.04 / [sec] Exposure time adopted in DR2             
+PHOTZP  =              26.6162 / mag(Vega) = -2.5*log(pixel value) + PHOTZP     
+PHOTZPER=                 0.03 / Default 1-sigma PHOTZP uncertainty in IPHAS DR2
+PHOTSYS = 'Vega    '           / Photometric system                             
+FLUXCAL = 'ABSOLUTE'           / Certifies the validity of PHOTZP               
+CONFMAP = 'iphas_jun2007/Ha_conf.fits'                                          
+CHECKSUM= 'aNjcdLgZaLgaaLgY'   / HDU checksum updated 2014-05-02T12:27:04       
+DATASUM = '362546080'          / data unit checksum updated 2014-05-02T12:27:04 
+COMMENT  _____ _____  _    _           _____                                    
+COMMENT |_   _|  __ \| |  | |   /\    / ____|                                   
+COMMENT   | | | |__) | |__| |  /  \  | (___                                     
+COMMENT   | | |  ___/|  __  | / /\ \  \___ \                                    
+COMMENT  _| |_| |    | |  | |/ ____ \ ____) |                                   
+COMMENT |_____|_|    |_|  |_/_/    \_\_____/                                    
+COMMENT                                                                         
+COMMENT Data origin                                                             
+COMMENT -----------                                                             
+COMMENT This image is part of the INT Photometric H-Alpha Survey                
+COMMENT of the Northern Galactic Plane (IPHAS). For more information,           
+COMMENT visit http://www.iphas.org.                                             
+COMMENT                                                                         
+COMMENT Photometric calibration info                                            
+COMMENT ----------------------------                                            
+COMMENT The pixel values (number counts) in this image can be converted into    
+COMMENT Vega-based magnitudes using the PHOTZP keyword as follows:              
+COMMENT                                                                         
+COMMENT     mag(Vega) = -2.5*log10(pixel value) + PHOTZP.                       
+COMMENT                                                                         
+COMMENT The PHOTZP value has been computed such that it absorbs the required    
+COMMENT corrections for atmospheric extinction, gain variations, exposure time, 
+COMMENT and the DR2 re-calibration shift.                                       
+COMMENT As these images still include moonlight and other sources of            
+COMMENT non-astronomical background, they can only support flux measurements    
+COMMENT that include a suitably-chosen local background subtraction.            
+COMMENT                                                                         
+COMMENT Acknowledgement instructions                                            
+COMMENT ----------------------------                                            
+COMMENT If you use this data, please cite Drew et al. (2005) and                
+COMMENT Barentsen et al. (2014), and include the acknowledgement text           
+COMMENT that is available from www.iphas.org.                                   
+END
+</pre>
 
 
     <h3 id='calibration'>Flux calibration</h3>
