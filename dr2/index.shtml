@@ -2175,6 +2175,7 @@
     <li><a href='#faq-morphology'>Why are some stars classified as galaxies?</a></li>
     <li><a href='#faq-extended'>How do I obtain photometry for extended sources?</a></li>
     <li><a href='#faq-images'>How do I access the image data for a source?</a></li>
+    <li><a href='#faq-astrometry'>How accurate is the astrometry?</a></li>
     <li><a href='#faq-software'>What software was used to produce the catalogue?</a></li>
     <li><a href='#faq-citation'>How do I reference IPHAS and this catalogue in my papers?</a></li>
   </ul>
@@ -2266,6 +2267,24 @@
   <p>
   For more documentation on image access,
   please visit <a href='/images'>www.iphas.org/images</a>.
+  </p>
+
+  <h3 id='faq-astrometry'>How accurate is the astrometry?</h3>
+  <p>
+    The astrometric solution for IPHAS has been determined
+    by comparing the positions of stars 
+    against those found in the Two-Micron All Sky Survey (2MASS).
+    The Root Mean Square (RMS) residual of our astrometric fit against 2MASS
+    is typically better than 0.1 arcsec. 
+    We warn however that the residuals of individual stars near CCD corners
+    can occasionally exceed 0.5 arcsec,
+    even when the RMS is below 0.1 arcsec.
+    We hence do not recommend using IPHAS astrometry for applications
+    which require a positional accuracy better than 0.5 arcsec: 
+    such applications should employ relative astrometry techniques instead.
+    More information about the astrometric solution
+    can be found in the dedicated section
+    at <a href='/images'>www.iphas.org/images</a>.
   </p>
 
   <h3 id='faq-software'>What software was used to produce the catalogue?</h3>

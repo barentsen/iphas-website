@@ -727,10 +727,10 @@ STDCRMS =                0.075 / Astrometric fit error (arcsec)
 </pre>
 
     <p>
-    You can use the keywords to transform pixel into equatorial coordinates
-    using a range of libraries.
+    You can use the keywords to transform pixel coordinates
+    into equatorial coordinates using a range of libraries.
     The example below demonstrates the conversion of pixel coordinates (x,y)=(10,20)
-    into RA and Dec using the <a href='http://www.astropy.org'>AstroPy</a> library for Python:
+    into RA and Dec using the <a href='http://www.astropy.org'>AstroPy</a> library:
     </p>
 
 <pre>
