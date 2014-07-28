@@ -43,6 +43,9 @@
                       <li>
                         <a href="#calibration">Flux calibration</a>
                       </li>
+                      <li>
+                        <a href="#astrometry">Astrometry</a>
+                      </li>
                     </ul>
                 </li>
                 <li>
@@ -670,7 +673,65 @@ END
       a suitably-chosen local background subtraction.
     </div>
 
+
+    <h3 id='astrometry'>Astrometry</h3>
+
+    <p>
+      An astrometric solution for the IPHAS images has been determined
+      by comparing the positions of our stars against those found in the
+      <a href="http://www.ipac.caltech.edu/2mass/releases/allsky/">Two-Micron All Sky Survey</a>
+      (2MASS), which itself is calibrated
+      in the International Celestial Reference System (ICRS).
+      The root mean square (rms) residual of our astrometric fit against
+      2MASS is typically better than 0.1 arcsec, but can occasionally
+      exceed 0.5 arcsec near CCD corners.
+    </p>
+
+    <p>
+      The astrometric solution is recorded in the FITS headers
+      by means of a series of World Coordinate System (WCS) keywords.
+      IPHAS uses the Zenithal PolyNomial (ZPN) projection,
+      which is required to model the radial distortions in the focal plane
+      (see <a href='http://adsabs.harvard.edu/abs/2002A%26A...395.1077C'>Calabretta &amp; Greisen, 2002</a>).
+      As part of DR2 we have reprocessed the WCS keywords
+      to ensure that they are in line with the current standard.
+    </p>
+
+    <p>
+      An example WCS extracted from an IPHAS image is given below.
+      Note that each image contains its own solution.
+    </p>
+
+<pre>
+RADESYS = 'ICRS    '           / WCS calibrated against 2MASS                   
+EQUINOX =               2000.0                                                  
+CTYPE1  = 'RA---ZPN'           / Algorithm type for axis 1                      
+CTYPE2  = 'DEC--ZPN'           / Algorithm type for axis 2                      
+CRPIX1  =           -388.29001 / [pixel] Reference pixel along axis 1           
+CRPIX2  =               3050.0 / [pixel] Reference pixel along axis 2  
+CRVAL1  =            324.17822 / [deg] Right ascension at the reference pixel   
+CRVAL2  =            57.634918 / [deg] Declination at the reference pixel       
+CRUNIT1 = 'deg     '           / Unit of right ascension coordinates            
+CRUNIT2 = 'deg     '           / Unit of declination coordinates                
+PV2_1   =                  1.0 / Coefficient for r term                         
+PV2_2   =                  0.0 / Coefficient for r**2 term                      
+PV2_3   =                220.0 / Coefficient for r**3 term                      
+CD1_1   =       -1.2477742E-06 / Transformation matrix element                  
+CD1_2   =       -9.2437171E-05 / Transformation matrix element                  
+CD2_1   =       -9.2437804E-05 / Transformation matrix element                  
+CD2_2   =        1.2915958E-06 / Transformation matrix element  
+NUMBRMS =                  623 / Number of standards used                       
+STDCRMS =                0.075 / Astrometric fit error (arcsec)   
+</pre>
+
+    <div class="alert alert-warning">
+      <strong>Note:</strong> we do not recommend using our absolute calibration
+      for applications which require a positional accuracy better than 0.5 arcsec.
+      Such applications should employ relative astrometry.
+    </div>
+
   </section>
+
 
 </div>
 
