@@ -682,9 +682,11 @@ END
       <a href="http://www.ipac.caltech.edu/2mass/releases/allsky/">Two-Micron All Sky Survey</a>
       (2MASS), which itself is calibrated
       in the International Celestial Reference System (ICRS).
-      The root mean square (rms) residual of our astrometric fit against
-      2MASS is typically better than 0.1 arcsec, but can occasionally
-      exceed 0.5 arcsec near CCD corners.
+      The Root Mean Square (RMS) residual of our astrometric fit against
+      2MASS is typically better than 0.1 arcsec (see header keyword STDCRMS).
+      We warn that the residuals of individual stars near CCD corners
+      can occasionally exceed 0.5 arcsec however,
+      even when the RMS is below 0.1 arcsec.
     </p>
 
     <p>
@@ -724,10 +726,24 @@ NUMBRMS =                  623 / Number of standards used
 STDCRMS =                0.075 / Astrometric fit error (arcsec)   
 </pre>
 
+    <p>
+    You can use the keywords to transform pixel into equatorial coordinates
+    using a range of libraries.
+    The example below demonstrates the conversion of pixel coordinates (x,y)=(10,20)
+    into RA and Dec using the <a href='http://www.astropy.org'>AstroPy</a> library for Python:
+    </p>
+
+<pre>
+import astropy
+myheader = astropy.io.fits.open('http://www.iphas.org/data/images/r570/r570144-1.fits.fz')[1].header
+mywcs = astropy.wcs.WCS(myheader)
+ra, dec = mywcs.all_pix2world([[10, 20]], 1)[0]
+</pre>
+
     <div class="alert alert-warning">
-      <strong>Note:</strong> we do not recommend using our absolute calibration
+      <strong>Note:</strong> we do not recommend using the astrometric solution
       for applications which require a positional accuracy better than 0.5 arcsec.
-      Such applications should employ relative astrometry.
+      You should employ relative astrometry in such cases.
     </div>
 
   </section>
