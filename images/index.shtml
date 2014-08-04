@@ -705,8 +705,6 @@ END
     </p>
 
 <pre>
-RADESYS = 'ICRS    '           / WCS calibrated against 2MASS                   
-EQUINOX =               2000.0                                                  
 CTYPE1  = 'RA---ZPN'           / Algorithm type for axis 1                      
 CTYPE2  = 'DEC--ZPN'           / Algorithm type for axis 2                      
 CRPIX1  =           -388.29001 / [pixel] Reference pixel along axis 1           
@@ -715,13 +713,15 @@ CRVAL1  =            324.17822 / [deg] Right ascension at the reference pixel
 CRVAL2  =            57.634918 / [deg] Declination at the reference pixel       
 CRUNIT1 = 'deg     '           / Unit of right ascension coordinates            
 CRUNIT2 = 'deg     '           / Unit of declination coordinates                
-PV2_1   =                  1.0 / Coefficient for r term                         
-PV2_2   =                  0.0 / Coefficient for r**2 term                      
-PV2_3   =                220.0 / Coefficient for r**3 term                      
 CD1_1   =       -1.2477742E-06 / Transformation matrix element                  
 CD1_2   =       -9.2437171E-05 / Transformation matrix element                  
 CD2_1   =       -9.2437804E-05 / Transformation matrix element                  
 CD2_2   =        1.2915958E-06 / Transformation matrix element  
+PV2_1   =                  1.0 / Coefficient for r term                         
+PV2_2   =                  0.0 / Coefficient for r**2 term                      
+PV2_3   =                220.0 / Coefficient for r**3 term                      
+RADESYS = 'ICRS    '           / WCS calibrated against 2MASS                   
+EQUINOX =               2000.0                                                  
 NUMBRMS =                  623 / Number of standards used                       
 STDCRMS =                0.075 / Astrometric fit error (arcsec)   
 </pre>
