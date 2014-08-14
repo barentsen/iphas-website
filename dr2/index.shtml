@@ -42,12 +42,6 @@
 
 <h1>The IPHAS DR2 Source Catalogue</h1>
 
-<br>
-<div class="alert alert-warning">
-  <b>Note:</b> this catalogue is currently under peer review.
-  Minor changes remain possible. (Last update: 18 July 2014.)</b>
-</div>
-
 <section id="summary">
 
   <p>
@@ -2159,7 +2153,7 @@
 
 <section id="faq">
   <div class="page-header">
-    <h2>Frequently Asked Questions & Caveats</h2>
+    <h2>Frequently Asked Questions &amp; Caveats</h2>
   </div>
 
   <p>
