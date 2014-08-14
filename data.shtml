@@ -14,10 +14,10 @@
     </div>
 
     <p>
-      IPHAS provides a source catalogue and imaging data, 
+      IPHAS provides imaging data and an associated source catalogue,
       along with derived data products such as a 3D extinction map. 
-      The most recent release is described in <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al (2014)</a> 
-      and the primary data products are:
+      The most recent Data Release 2 (DR2) is described in <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al (2014)</a>.
+      The primary data products are:
     </p>
 
     <table class="table table-striped table-hover">
