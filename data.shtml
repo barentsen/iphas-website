@@ -47,12 +47,17 @@
         <td>A list of H&alpha; emission-line objects detected by IPHAS.</td>
       </tr>
       -->
+
       <tr>
         <td>Symbiotic stars</td>
         <td><a href='/symbiotics'>iphas.org/symbiotics</a></td>
         <td>Positions and spectra of symbiotic stars discovered in IPHAS data.</td>
       </tr>
-      
+      <tr>
+        <td>Planetary nebulae</td>
+        <td><a href='http://mnras.oxfordjournals.org/content/443/4/3388'>MNRAS, 443, 3388</a></td>
+        <td>A catalogue of new extended planetary nebulae discovered in IPHAS data has been published by <a href='http://mnras.oxfordjournals.org/content/443/4/3388'>Sabin et al 2014</a>.</td>
+      </tr>      
     </tbody>
     </table>
 
