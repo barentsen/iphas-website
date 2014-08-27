@@ -2166,7 +2166,7 @@
   <ul>
     <li><a href='#faq-quality-criteria'>Which quality criteria should I use?</a></li>
     <li><a href='#faq-variability'>Does IPHAS DR2 provide variability information?</a></li>
-    <li><a href='#faq-morphology'>Why are some stars classified as galaxies?</a></li>
+    <li><a href='#faq-morphology'>Why are some stars classified as galaxies or noise?</a></li>
     <li><a href='#faq-extended'>How do I obtain photometry for extended sources?</a></li>
     <li><a href='#faq-images'>How do I access the image data for a source?</a></li>
     <li><a href='#faq-astrometry'>How accurate is the astrometry?</a></li>
@@ -2208,7 +2208,7 @@
     catalogue at present.
   </p>
 
-  <h3 id='faq-morphology'>Why are some stars classified as galaxies?</h3>
+  <h3 id='faq-morphology'>Why are some stars classified as galaxies or noise?</h3>
   <p>
     The morphological classification values
     (e.g. <a href="#rClass">rClass</a>, <a href="#rClass">iClass</a>, <a href="#rClass">haClass</a>)
