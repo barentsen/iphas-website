@@ -13,10 +13,12 @@
       <h1>IPHAS Data Access</h1>
     </div>
 
+    <div class="page-header">
+      <h3>Primary products</h3>
+    </div>
+
     <p>
-      IPHAS provides imaging data and an associated source catalogue,
-      along with derived data products such as a 3D extinction map. 
-      The most recent Data Release 2 (DR2) is described in <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al (2014)</a>.
+      The most recent data release (DR2) is described in <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al (2014)</a>.
       The primary data products are:
     </p>
 
@@ -26,12 +28,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><b>Imaging</b></td>
+        <td>Images</td>
         <td><a href='/images'>iphas.org/images</a></td>
         <td>Pipeline-processed CCD images in the r, i, and H&alpha;-bands, covering the entire northern Milky Way.</td>
       </tr>
       <tr>
-        <td><b>Catalogue</b></td>
+        <td>Catalogue</td>
         <td><a href='/dr2'>iphas.org/dr2</a></i></td>
         <td>Photometry and astrometry for 219 million objects detected in the imaging.</td>
       </tr>
@@ -47,16 +49,29 @@
         <td>A list of H&alpha; emission-line objects detected by IPHAS.</td>
       </tr>
       -->
+    </tbody>
+    </table>
 
+    <div class="page-header">
+      <h3>Special objects</h3>
+    </div>
+
+    <p>Lists of special classes of objects discovered in IPHAS data include:</p>
+
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr><th>Object class</th><th>Link</th><th>Description</th></tr>
+    </thead>
+    <tbody>    
       <tr>
         <td>Symbiotic stars</td>
         <td><a href='/symbiotics'>iphas.org/symbiotics</a></td>
-        <td>Positions and spectra of symbiotic stars discovered in IPHAS data.</td>
+        <td>Positions and spectra of symbiotic stars.</td>
       </tr>
       <tr>
         <td>Planetary nebulae</td>
         <td><a href='http://mnras.oxfordjournals.org/content/443/4/3388'>MNRAS, 443, 3388</a></td>
-        <td>A catalogue of new extended planetary nebulae discovered in IPHAS data has been published by <a href='http://mnras.oxfordjournals.org/content/443/4/3388'>Sabin et al 2014</a>.</td>
+        <td>A catalogue of new extended planetary nebulae.</td>
       </tr>      
     </tbody>
     </table>
@@ -66,18 +81,17 @@
     </div>
 
     <p>
-      Publications arising from IPHAS data should cite and acknowledge the survey. 
+      Publications arising from IPHAS data should cite and acknowledge the survey and its data products. 
       The primary reference for defining the survey is 
       <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a> 
-      [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>]. 
-      Where the data have come from the catalogues or images released as part of DR2, 
+      [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>],
+      and the latest catalogue and image products are described by
       <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al 2014</a> 
-      [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2014arXiv1406.4862B&data_type=BIBTEX&db_key=PRE">bibtex</a>]
-      must be cited as well.
+      [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2014arXiv1406.4862B&data_type=BIBTEX&db_key=PRE">bibtex</a>].
     </p>
 
     <p>
-      Here is text to be used in acknowledgment sections of papers:
+      We kindly request the following text to be included in the acknowledgment sections of papers:
     </p>
 
     <blockquote>
