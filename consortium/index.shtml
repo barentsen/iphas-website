@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--#include virtual="../inc/head.html" -->
+    <title>IPHAS: Consortium pages</title>
+  </head>
+  <body>
+    <!--#include virtual="../inc/navbar.html" -->
+    <div class="container">
+
+<!-- Content starts here -->
+
+<div class="page-header">
+  <h1>Consortium Pages</h1>
+</div>
+
+<h3>Policies on internal communications, authorship and acknowledgments</h3>
+
+<p>These are located <a href="./policy.shtml">here</a>. It is important to read them, if you have not visited this page before.</p>
+
+
+<h3>Current science activities and contacts</h3>
+
+<p>These can be started up at any time. Presently communication with them is handled either by mailing list or via Google groups. The list of activities is <a href="./activities.shtml">here</a>. If you want to create a new one, mail Janet (j.drew@herts.ac.uk) the name of the activity and relevant contact details so that this information might be added to this page.</p>
+
+<h3>Links to other IPHAS-related sites</h3>
+
+
+<table class="table table-striped">
+  <tr>
+    <th>Site Content</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>IPHAS/UVEX survey monitoring:</td>
+    <td><a href="http://apm25.ast.cam.ac.uk/surveys-projects/iphas/internal/">http://apm25.ast.cam.ac.uk/surveys-projects/iphas/internal/</a></td>
+  </tr>
+  <tr>
+    <td>IPHAS object catalogues</td>
+    <td><a href="http://apm3.ast.cam.ac.uk/~mike/iphas/">http://apm3.ast.cam.ac.uk/~mike/iphas/</a></td>
+  </tr>
+  <tr>
+    <td>Meeting minutes and presentations</td>
+    <td><a href="http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/Meetings/Minutes.html">http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/Meetings/Minutes.html</a></td>
+  </tr>
+  <tr>
+    <td>Scheduled observing runs</td>
+    <td><a href="http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/ObservationSchedule.html">http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/ObservationSchedule.html</a></td>
+  </tr>
+  <tr>
+    <td>Follow-up proposals archive</td>
+    <td><a href="http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/FollowUpProposals.html">http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/FollowUpProposals.html</a></td>
+  </tr>
+  <tr>
+    <td>Follow-up spectroscopy</td>
+    <td><a href="http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/FollowUpSpectroscopy.html">http://deneb.astro.warwick.ac.uk/phsdaj/Halpha/FollowUpSpectroscopy.html</a></td>
+  </tr>
+  <tr>
+    <td>HectoSpec follow-up</td>
+    <td><a href="http://deneb.astro.warwick.ac.uk/phsgan/IPHAS_EXPORT/HectoSpec.html">http://deneb.astro.warwick.ac.uk/phsgan/IPHAS_EXPORT/HectoSpec.html</a></td>
+  </tr>
+  <tr>
+    <td>FAST follow-up</td>
+    <td><a href="http://deneb.astro.warwick.ac.uk/phsgan/IPHAS_EXPORT/FAST.html">http://deneb.astro.warwick.ac.uk/phsgan/IPHAS_EXPORT/FAST.html</a></td>
+  </tr>
+  <tr>
+    <td>Table of extended objects (Bristol)</td>
+    <td><a href="http://www.star.bris.ac.uk/rahm/iphas/louise_page">http://www.star.bris.ac.uk/rahm/iphas/louise_page</a></td>
+  </tr>
+</table>
+   
+<!-- Content ends here -->
+
+    </div><!-- /container -->
+    
+    <!--#include virtual="../inc/footer.html" -->
+  </body>
+</html>
