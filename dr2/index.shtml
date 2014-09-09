@@ -131,18 +131,16 @@
   and will likely be part of IPHAS DR3.
 </p>
 
-<p>
-  You can download the footprint, shown below, as a 
-  <a href='/data/dr2/coverage/iphas-dr2-footprint.pdf'>high-resolution PDF file</a> or as a 
-  <a href='/data/dr2/coverage/iphas-dr2-moc.fits'>Multi-Order Coverage map</a>
-  (MOC), which can be visualised using the 
-  <a href='http://aladin.u-strasbg.fr'>Aladin software</a>.
+<p> 
+    <img class="img-responsive" alt="IPHAS DR2 footprint" src='/data/dr2/coverage/iphas-dr2-footprint-small.jpg' />
 </p>
 
-<p class='text-center'> 
-    <img class="img-responsive center-block" alt="IPHAS DR2 footprint" src='/data/dr2/coverage/iphas-dr2-footprint-small.jpg' />
-  <br/>
-  <i>Figure above: spatial coverage provided by IPHAS DR2.</i>
+<p>
+  You can download the footprint, shown in the figure above, as a 
+  <a href='/data/dr2/coverage/iphas-dr2-footprint.pdf'>high-resolution PDF file</a>, or as a 
+  <a href='/data/dr2/coverage/iphas-dr2-moc.fits'>Multi-Order Coverage map</a>
+  (MOC) which can be visualised using the 
+  <a href='http://aladin.u-strasbg.fr'>Aladin software</a>.
 </p>
 
 </section>
