@@ -1667,13 +1667,13 @@
               <td>l</td>
               <td>double</td>
               <td>degrees</td>
-              <td>Galactic longitude $\ell$ converted from ra/dec (IAU 1958 system).</td>
+              <td>Galactic longitude (IAU 1958 system).</td>
             </tr>
             <tr id="b">
               <td>b</td>
               <td>double</td>
               <td>degrees</td>
-              <td>Galactic latitude $b$ converted from ra/dec (IAU 1958 system).</td>
+              <td>Galactic latitude (IAU 1958 system).</td>
             </tr>
             <tr id="mergedClass">
               <td>mergedClass</td>
@@ -1787,7 +1787,7 @@
               <td>rClass</td>
               <td>short</td>
               <td></td>
-              <td>Discrete image classification flag: 1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated.</td>
+              <td>Discrete image classification flag: 1=extended, 0=noise, -1=star, -2=probableStar.</td>
             </tr>
             <tr id="rClassStat">
               <td>rClassStat</td>
@@ -1907,7 +1907,7 @@
               <td>iClass</td>
               <td>short</td>
               <td></td>
-              <td>Discrete image classification flag: 1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated.</td>
+              <td>Discrete image classification flag: 1=extended, 0=noise, -1=star, -2=probableStar.</td>
             </tr>
             <tr id="iClassStat">
               <td>iClassStat</td>
@@ -2039,7 +2039,7 @@
               <td>haClass</td>
               <td>short</td>
               <td></td>
-              <td>Discrete image classification flag: 1=galaxy, 0=noise, -1=star, -2=probableStar, -3=probableGalaxy, -9=saturated.</td>
+              <td>Discrete image classification flag: 1=extended, 0=noise, -1=star, -2=probableStar.</td>
             </tr>
             <tr id="haClassStat">
               <td>haClassStat</td>
