@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!--#include virtual="../inc/head.html" -->
-    <title>IPHAS DR2</title>
+    <title>IPHAS DR2 Source Catalogue</title>
   </head>
   <body>
     <!--#include virtual="../inc/navbar.html" -->
@@ -15,15 +15,39 @@
             <ul class="nav nav-stacked fixed" id="sidebar">
                 <li>
                     <a href="#summary">Summary</a>
+                    <ul class="nav nav-stacked fixed">
+                      <li>
+                          <a href="#properties">Key properties</a>
+                      </li>
+                      <li>
+                          <a href="#footprint">Spatial coverage</a>
+                      </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#query">Query tool</a>
+                    <a href="#access">Data access</a>
+                    <ul class="nav nav-stacked fixed">
+                      <li>
+                          <a href="#query">Query tool</a>
+                      </li>
+                      <li>
+                          <a href="#download">Direct download</a>
+                      </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#download">Download</a>
+                    <a href="#columns">Column definitions</a>
                 </li>
                 <li>
-                    <a href="#columns">Columns</a>
+                    <a href="#quality">Quality criteria</a>
+                    <ul class="nav nav-stacked fixed">
+                      <li>
+                        <a href="#a10def">a10</a>
+                      </li>
+                      <li>
+                        <a href="#a10pointdef">a10point</a>
+                      </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#faq">FAQ</a>
@@ -42,14 +66,15 @@
 
 <h1>The IPHAS DR2 Source Catalogue</h1>
 
-<section id="summary">
+<section id='summary'>
 
-  <div class="page-header">
+  <div class='page-header'>
   <h2>Summary</h2>
   </div>
 
+<h3 id='properties'>Key properties</h3>
+
   <div class="span4 well keyfacts pull-right">
-    <b>Key properties</b>
       <ul class="list-unstyled">
         <li><i class="icon-cogs"></i> <a href="http://www.ing.iac.es/astronomy/telescopes/int/">Isaac Newton Telescope</a> (⌀ 2.5m)</li>
         <li><i class="icon-globe"></i> La Palma, Canary Islands</li>
@@ -81,7 +106,7 @@
     IPHAS Data Release 2 (DR2) is the first quality-controlled and globally 
     calibrated source catalogue derived from the survey, providing 
     single-epoch photometry for 219 million unique sources across 92% of the 
-    footprint.  The observations were carried out between 2003 and 2012 at a 
+    footprint.  The observations were carried out at a 
     median seeing of 1.1 arcsec (sampled at 0.33 arcsec/pixel) and to a mean 
     5-sigma depth of 21.2 (r), 20.0 (i) and 20.3 (H-alpha). 
     The photometric calibration is in the Vega magnitude system and carries 
@@ -91,38 +116,43 @@
     For each source, the catalogue provides magnitudes measured using a 
     series of circular apertures, along with coordinates, 
     morphology information, and quality warning flags.
-    A table detailing the <a href="#columns">column definitions</a>
-    and a <a href="#faq">FAQ</a> which addresses 
-    common caveats are given below.
+    This page details how the data may be <a href='#access'>accessed</a>,
+    provides a table detailing the <a href="#columns">column definitions</a>,
+    explains a set of <a href="#quality">recommended quality criteria</a>,
+    and finally provides a <a href="#faq">FAQ</a> which addresses 
+    common caveats.
   </p>  
-  <p>
-    Users are warned that the catalogue includes all the sources which have 
-    been detected at a signal-to-noise ratio of 5 or better in at least one 
-    band.  
-    Many applications will require a combination of quality criteria to be 
-    applied to avoid faint stars or confused sources.  
-    The choice of quality criteria 
-    tensions completeness against reliability, and hence depends on the 
-    requirements of a project.  To aid users, the 
-    <a href='http://arxiv.org/abs/1406.4862'>data release paper</a> recommends 
-    two sets of quality criteria, named "a10" and "a10point", which should 
-    satisfy most projects.  As a minimum, the "a10" criteria select objects 
-    which have been detected at the minimum level of 10-sigma in all bands, 
-    without being saturated.  Additional constraints are provided by the 
-    "a10point" criteria, which require objects to be point sources free of 
-    blending, unaffected by nearby bright stars, as well as being unsaturated 
-    &gt;10-sigma detections in all bands.  Sources in both categories are 
-    flagged in the catalogue using the boolean columns 
-    <a href="#a10">a10</a> and <a href="#a10point">a10point</a>.
-  </p>
+
+<h3 id='footprint'>Spatial coverage</h3>
+<p>
+  IPHAS DR2 includes all the quality-approved data which the survey obtained
+  between 2003 and 2012, covering 92% of the final footprint.
+  The remaining spots of missing data are currently being observed
+  and will likely be part of IPHAS DR3.
+</p>
+
+<p>
+  You can download the footprint, shown below, as a 
+  <a href='/data/dr2/coverage/iphas-dr2-footprint.pdf'>high-resolution PDF file</a> or as a 
+  <a href='/data/dr2/coverage/iphas-dr2-moc.fits'>Multi-Order Coverage map</a>
+  (MOC), which can be visualised using the 
+  <a href='http://aladin.u-strasbg.fr'>Aladin software</a>.
+</p>
+
+<p class='text-center'> 
+    <img class="img-responsive center-block" alt="IPHAS DR2 footprint" src='/data/dr2/coverage/iphas-dr2-footprint-small.jpg' />
+  <br/>
+  <i>Figure above: spatial coverage provided by IPHAS DR2.</i>
+</p>
 
 </section>
 
-
-<section id="query">
+<section id="access">
 <div class="page-header">
-<h2>Query tool</h2>
+<h2>Data access</h2>
 </div>
+
+<h3 id='query'>Query tool</h3>
 
     <p>The source catalogue has recently been submitted to 
     <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
@@ -216,10 +246,8 @@
 
       </div>
 
-      <section id="download">
-        <div class="page-header">
-          <h2>Downloading the full catalogue</h2>
-        </div>
+
+<h3 id='download'>Direct download</h3>
 
         <p>
           The catalogue is made available as a series of 
@@ -2203,9 +2231,155 @@
         </table>
 </section>
 
+<section id="quality">
+  <div class="page-header">
+    <h2>Recommended quality criteria</h2>
+  </div>
+
+  <p>
+    An important feature introduced by this release
+    is the availability of user-friendly quality warning flags.
+    These are necessary because the catalogue includes any source 
+    detected at a signal-to-noise ratio of just 5 or better in any band.
+    Many applications will require a combination of quality 
+    criteria to be applied to exclude low-significance,
+    saturated, or confused photometry.
+  </p>
+
+  <p>
+    The choice of quality criteria 
+    tensions completeness against reliability, and hence depends on the 
+    requirements of a project.  To aid users, the 
+    <a href='http://arxiv.org/abs/1406.4862'>data release paper</a> recommends 
+    two sets of quality criteria, named "a10" and "a10point", which should 
+    satisfy most projects.
+  </p>
+
+  <p>As a minimum, the "a10" criteria select objects 
+    which have been detected at the minimum level of 10-sigma in all bands, 
+    without being saturated.  Additional constraints are provided by the 
+    "a10point" criteria, which require objects to be point sources free of 
+    blending, unaffected by nearby bright stars, as well as being unsaturated 
+    &gt;10-sigma detections in all bands.
+  </p>
+
+  <h3 id='a10def'>Definition of the "a10" class</h3>
+
+  <p>
+  All of the following criteria must be satisfied for an object
+  to be included in the "all-band 10-sigma detection" class,
+  which is flagged by the <a href="#a10">a10</a> column in the catalogue:
+  </p>
+
+  <table class='table table-striped'>
+  <tbody>
+    <tr>
+      <td style='min-width:27em;'>
+        <a href='#rErr'>rErr</a> &lt; 0.1 
+        &amp; <a href='#rErr'>iErr</a> &lt; 0.1 
+        &amp; <a href='#rErr'>haErr</a> &lt; 0.1
+      </td>
+      <td>
+        Require the photon noise to be less than 0.1
+        mag in all bands, i.e. S/N &gt; 10. This implicitly
+        requires a detection in all three bands.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        NOT <a href='#saturated'>saturated</a>
+      </td>
+      <td>
+        The brightness must not exceed the nominal saturation limits.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <small>|<a href='#r'>r</a> - <a href='#rAperMag1'>rAperMag1</a>| &lt; 3*sqrt(<a href='#rErr'>rErr</a><sup>2</sup> + <a href='#rAperMag1Err'>rAperMag1Err</a><sup>2</sup>) + 0.03</small>
+      </td>
+      <td>
+        Require the r magnitude measured in the default 2.3"-diameter aperture 
+        to be consistent with the measurement made in the smaller 1.2" aperture, 
+        albeit tolerating a 0.03 mag systematic error. This will reject sources 
+        for which the background subtraction or the deblending procedure was not 
+        performed reliably.
+      </td>
+    </tr> 
+    <tr>
+      <td>
+        <small>|<a href='#i'>i</a> - <a href='#iAperMag1'>iAperMag1</a>| &lt; 3*sqrt(<a href='#iErr'>iErr</a><sup>2</sup> + <a href='#iAperMag1Err'>iAperMag1Err</a><sup>2</sup>) + 0.03</small>
+      </td>
+      <td>
+        Same as above for the i band.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <small>|<a href='#ha'>ha</a> - <a href='#haAperMag1'>haAperMag1</a>| &lt; 3*sqrt(<a href='#haErr'>haErr</a><sup>2</sup> + <a href='#haAperMag1Err'>haAperMag1Err</a><sup>2</sup>) + 0.03</small>
+      </td>
+      <td>
+        Same as above for H&alpha;.
+      </td>
+    </tr> 
+  </tbody>
+  </table>
+
+
+  <h3 id='a10pointdef'>Definition of the "a10point" class</h3>
+
+  <p>
+  All of the following criteria must be satisfied for an object
+  to be included in the "unconfused, point-like, all-band 10-sigma detection"
+  class, which is flagged by the <a href="#a10point">a10point</a> column in the catalogue:
+  </p>
+
+  <table class='table table-striped'>
+  <tbody>
+    <tr>
+      <td style='min-width:27em;'>
+        <a href='#a10'>a10</a>
+      </td>
+      <td>
+        The object must satisfy the <a href='#a10'>a10</a> criteria listed above.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href='#pStar'>pStar</a> &gt; 0.9
+      </td>
+      <td>
+        The object must appear as a perfect point source, as inferred from 
+        comparing its PSF with the average PSF measured in the same CCD.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        NOT <a href='#deblend'>deblend</a>
+      </td>
+      <td>
+        The source must appear as a single, unconfused object.
+      </td>
+    </tr> 
+    <tr>
+      <td>
+        NOT <a href='#brightNeighb'>brightNeighb</a>
+      </td>
+      <td>
+        There is no star brighter than V &lt; 4 within
+        10 arcmin, or brighter than V &lt; 7 within 5 arcmin.
+        Such very bright stars cause scattered light and
+        diffraction spikes, which may add systematic errors
+        to the photometry or even trigger spurious detections.
+      </td>
+    </tr> 
+  </tbody>
+  </table>
+
+</section>
+
 <section id="faq">
   <div class="page-header">
-    <h2>Frequently Asked Questions &amp; Caveats</h2>
+    <h2>Frequently Asked Questions (FAQ)</h2>
   </div>
 
   <p>
@@ -2216,7 +2390,7 @@
   </p>
 
   <ul>
-    <li><a href='#faq-quality-criteria'>Which quality criteria should I use?</a></li>
+    <!-- <li><a href='#faq-quality-criteria'>Which quality criteria should I use?</a></li> -->
     <li><a href='#faq-variability'>Does IPHAS DR2 provide variability information?</a></li>
     <li><a href='#faq-morphology'>Why are some stars classified as galaxies or noise?</a></li>
     <li><a href='#faq-extended'>How do I obtain photometry for extended sources?</a></li>
@@ -2226,6 +2400,7 @@
     <li><a href='#faq-citation'>How do I reference IPHAS and this catalogue in my papers?</a></li>
   </ul>
 
+<!--
   <h3 id='faq-quality-criteria'>Which quality criteria should I use?</h3>
   <p>
     The choice of quality criteria tensions 
@@ -2244,7 +2419,7 @@
     Sources in both categories are flagged in the catalogue using the boolean
     columns <a href="#a10">a10</a> and <a href="#a10point">a10point</a>.
   </p>
-
+-->
   <h3 id='faq-variability'>Does IPHAS DR2 provide variability information?</h3>
   <p>
     IPHAS revisited roughly 30% of the survey
