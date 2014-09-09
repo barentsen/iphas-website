@@ -44,26 +44,78 @@
 
 <section id="summary">
 
-  <p>
-    IPHAS DR2 provides a catalogue containing r, i and H&alpha;-band photometry
-    for 219 million unique sources, observed across the
-    Northern Galactic Plane between 2003 and 2012.
-    The catalogue is described in detail in 
-    an accompanying paper (<a href='http://arxiv.org/abs/1406.4862'>Barentsen et al. 2014</a>).
-    In brief, the catalogue has been constructed by cross-matching 
-    the detection lists from the individual bands using a maximum matching 
-    distance of 1 arcsec. Moreover, the photometry has been re-calibrated uniformly to an accuracy of 0.03 mag (rms).
-    The catalogue includes all the source which have been detected 
-    at at signal-to-noise ratio of 5 or better in at least one band.
-  </p> 
+  <div class="page-header">
+  <h2>Summary</h2>
+  </div>
+
+  <div class="span4 well keyfacts pull-right">
+    <b>Key properties</b>
+      <ul class="list-unstyled">
+        <li><i class="icon-cogs"></i> <a href="http://www.ing.iac.es/astronomy/telescopes/int/">Isaac Newton Telescope</a> (⌀ 2.5m)</li>
+        <li><i class="icon-globe"></i> La Palma, Canary Islands</li>
+        <li><i class="icon-camera"></i> <a href="http://www.ing.iac.es/Astronomy/instruments/wfc/">Wide Field Camera</a> (0.3 deg<sup>2</sup>)</li>
+        <li><i class="icon-th"></i> Four 2048 x 4100 pixel CCD's</li>
+        <li><i class="icon-search"></i> 0.33 arcsec / pixel</li>
+        <li><i class="icon-filter"></i> Filters: r, i, H&alpha; (Vega system)</li>
+        <li><i class="icon-time"></i> Exposures: 30s (r), 10s (i), 120s (H&alpha;)</li>
+        <li><i class="icon-arrow-up"></i> Saturation: 13 (r), 12 (i), 12.5 (H&alpha;)</li>
+        <li><i class="icon-arrow-down"></i> Depth: 21 (r), 20 (i), 20 (H&alpha;)</li>
+        <li><i class="icon-eye-open"></i> Median seeing: 1.1 arcsec</li>
+        <li><i class="icon-resize-full"></i> Survey area: 1860 deg<sup>2</sup></li>
+        <li><i class="icon-move"></i> Footprint: |<a href="#" rel="tooltip" data-original-title="Galactic latitude">b</a>| &lt; 5&deg;, <a href="#" rel="tooltip" data-original-title="Galactic longitude">l</a> = 29-215&deg;</li>
+        <li><i class="icon-calendar"></i> Observing period: 2003 - 2012</li>   
+        <li><i class="icon-info-sign"></i> Reference: <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al. 2014</a></li>
+      </ul>
+  </div>
 
   <p>
-    For each unique source, the catalogue provides magnitudes measured using a 
+    The INT/WFC Photometric H-Alpha Survey of the Northern Galactic Plane 
+    (IPHAS) is a 1860 deg<sup>2</sup> imaging survey 
+    of the Northern Milky Way at red visible wavelengths.
+    It covers Galactic latitudes |b| &lt; 5&deg; and 
+    longitudes l = 30-215&deg; in the broad-band r, i and narrow-band H&alpha;
+    filters using the Wide Field Camera (WFC) on the 2.5-m Isaac Newton 
+    Telescope (INT) in La Palma.
+  </p>
+  <p>
+    IPHAS Data Release 2 (DR2) is the first quality-controlled and globally 
+    calibrated source catalogue derived from the survey, providing 
+    single-epoch photometry for 219 million unique sources across 92% of the 
+    footprint.  The observations were carried out between 2003 and 2012 at a 
+    median seeing of 1.1 arcsec (sampled at 0.33 arcsec/pixel) and to a mean 
+    5-sigma depth of 21.2 (r), 20.0 (i) and 20.3 (H-alpha). 
+    The photometric calibration is in the Vega magnitude system and carries 
+    an external precision of 0.03 mag (root-mean-square error).
+  </p>
+  <p>
+    For each source, the catalogue provides magnitudes measured using a 
     series of circular apertures, along with coordinates, 
     morphology information, and quality warning flags.
     A table detailing the <a href="#columns">column definitions</a>
-    and a <a href="#faq">FAQ</a> which addresses common caveats are given below.
+    and a <a href="#faq">FAQ</a> which addresses 
+    common caveats are given below.
   </p>  
+  <p>
+    Users are warned that the catalogue includes all the sources which have 
+    been detected at a signal-to-noise ratio of 5 or better in at least one 
+    band.  
+    Many applications will require a combination of quality criteria to be 
+    applied to avoid faint stars or confused sources.  
+    The choice of quality criteria 
+    tensions completeness against reliability, and hence depends on the 
+    requirements of a project.  To aid users, the 
+    <a href='http://arxiv.org/abs/1406.4862'>data release paper</a> recommends 
+    two sets of quality criteria, named "a10" and "a10point", which should 
+    satisfy most projects.  As a minimum, the "a10" criteria select objects 
+    which have been detected at the minimum level of 10-sigma in all bands, 
+    without being saturated.  Additional constraints are provided by the 
+    "a10point" criteria, which require objects to be point sources free of 
+    blending, unaffected by nearby bright stars, as well as being unsaturated 
+    &gt;10-sigma detections in all bands.  Sources in both categories are 
+    flagged in the catalogue using the boolean columns 
+    <a href="#a10">a10</a> and <a href="#a10point">a10point</a>.
+  </p>
+
 </section>
 
 

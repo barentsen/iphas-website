@@ -333,3 +333,10 @@ a.about:hover {
 h1 {
     line-height: 1.32em;
 }
+
+.keyfacts {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    padding: 1em;
+}
