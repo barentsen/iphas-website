@@ -28,10 +28,10 @@
                     <a href="#access">Data access</a>
                     <ul class="nav nav-stacked fixed">
                       <li>
-                          <a href="#query">Query tool</a>
+                          <a href="#query">Online queries</a>
                       </li>
                       <li>
-                          <a href="#download">Direct download</a>
+                          <a href="#download">Downloading a full copy</a>
                       </li>
                     </ul>
                 </li>
@@ -150,8 +150,19 @@
 <h2>Data access</h2>
 </div>
 
-<h3 id='query'>Query tool</h3>
+<h3 id='query'>Online queries</h3>
 
+    <p>The easiest way to retrieve data from the catalogue
+    is to use the Vizier data portal, which hosts a full copy
+    of the catalogue and allows excerpts from the catalogue
+    to be downloaded in various formats, including html, ascii and fits.
+    </p>
+
+    <p>To use this service, please head to the Vizier IPHAS2 query interface at:</p>
+
+    <p><a href='http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=IPHAS2'>http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=IPHAS2</a></p>
+
+<!--
     <p>The source catalogue has recently been submitted to 
     <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
     and is currently in the process of being ingested there.
@@ -173,7 +184,6 @@
                 <div class="col-sm-8">
                   <select class="form-control" name='SEARCH' id='SEARCH'>
                     <option value='equ' selected='selected'>equatorial J2000 coordinates</option>
-                    <!-- <option value='gal'>Galactic l/b coordinates</option> -->
                     <option value='name'>object name</option>
                   </select>
                 </div>
@@ -243,14 +253,14 @@
       </div>
 
       </div>
+-->
 
-
-<h3 id='download'>Direct download</h3>
+<h3 id='download'>Downloading a full copy (48&thinsp;GB)</h3>
 
         <p>
-          The catalogue is made available as a series of 
-          binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area.
-          You may download all the tables (48&thinsp;GB) to a local directory
+          The catalogue is also made available for download as a series of 
+          binary FITS tables, each covering a 5x5&thinsp;deg<sup>2</sup> area of the survey.
+          You may download all these tiles to a local directory
           using the following
           <a href="http://www.gnu.org/software/wget/">wget</a> command:
         </p>
@@ -258,15 +268,16 @@
         <pre>wget -c -r -np -nH --cut-dirs=3 --accept=fits.gz http://www.iphas.org/data/dr2/full/</pre>
 
         <p>
-          Or to obtain a light version
-          with a very limited subset of 11 columns (8&thinsp;GB):
+          Be aware however that the full size of the catalogue is 48&thinsp;GB.
+          To obtain the smaller "light" version (8&thinsp;GB),
+          which contains only a very limited subset of columns, use the following command instead:
         </p>
         
         <pre>wget -c -r -np -nH --cut-dirs=3 --accept=fits.gz http://www.iphas.org/data/dr2/light/</pre>
                 
         <p>
           You may also download individual 5x5&thinsp;deg<sup>2</sup> tiles 
-          using the links in the table below:
+          using the links provided in the table below:
         </p>
 
         <table class="table table-condensed iphas-download">
@@ -2524,8 +2535,8 @@
     <a href="http://adsabs.harvard.edu/abs/2005MNRAS.362..753D">Drew et al 2005</a>
     [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2005MNRAS.362..753D&data_type=BIBTEX&db_key=AST">bibtex</a>],
     and the reference for this data release is 
-    <a href='http://arxiv.org/abs/1406.4862'>Barentsen et al 2014</a> 
-    [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2014arXiv1406.4862B&data_type=BIBTEX&db_key=PRE">bibtex</a>].
+    <a href='http://adsabs.harvard.edu/abs/2014MNRAS.444.3230B'>Barentsen et al 2014</a> 
+    [<a href="http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=2014MNRAS.444.3230B&data_type=BIBTEX&db_key=AST">bibtex</a>].
   </p>
 
   <p>Here is text to be used in acknowledgment sections of papers:</p>
