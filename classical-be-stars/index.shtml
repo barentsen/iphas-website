@@ -23,13 +23,13 @@
     <tbody>
     <tr>
       <td>Appendix A: Photometric Data</td>
-      <td><a href="appendixA.html">html</a></td>
+      <td><a href="appendixA.shtml">html</a></td>
       <td><a href="tables/appendixA.txt">ascii</a></td>     
       <td><a href="tables/appendixA.fits">fits</a></td>           
      </tr>   
      <tr> 
       <td>Appendix B: Stellar Parameters</td>
-      <td><a href="appendixB.html">html</a></td>
+      <td><a href="appendixB.shtml">html</a></td>
       <td><a href="tables/appendixB.txt">ascii</a></td>
       <td><a href="tables/appendixB.fits">fits</a></td>          
     </tr>    
