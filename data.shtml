@@ -71,7 +71,12 @@
     <thead>
       <tr><th>Object class</th><th>Link</th><th>Description</th></tr>
     </thead>
-    <tbody>    
+    <tbody>
+      <tr>
+        <td>H&alpha; emission-line objects</td>
+        <td><i>in preparation</i></td>
+        <td></td>
+      </tr>    
       <tr>
         <td>Symbiotic stars</td>
         <td><a href='/symbiotics'>iphas.org/symbiotics</a></td>

@@ -5,8 +5,8 @@
 <body>
 <center>
 <h1>IPHAS - Observing Manual</h1>
-<h2>v3.3</h2>
-<h3>17.September.2012</h3>
+<h2>v3.4</h2>
+<h3>October 2014</h3>
 </center>
 <hr>
 
@@ -30,7 +30,7 @@ To improve the dome seeing you should open the south doors (if weather
 conditions permit) and the dome (point away from the sun !) about 1-2 hours
 before sunset.
 <li>
-Make sure the IPHAS <a href="iphas_stds.php">standard star catalogue</a> is
+Make sure the IPHAS <a href="iphas_stds.cat">standard star catalogue</a> is
 included in the TCS. To include the catalogue give the command
 <br><tt>USER&gt;incl iphas_stds</tt>
 <li>
@@ -132,8 +132,10 @@ nights observing.
 To get a real time display of the frames as they are coming in, use the command
 <b>iphas_rtd</b> in IRAF on the data reduction computer.
 <br><font color=red>Note:</font>
-If this does not seem to work it is most likely because IRAF was started in the
-wrong directory. Exit IRAF (<tt>cl&gt;logout</tt>), change into the home
+If this does not seem to work there are two possible reasons:
+(1) you are not in the data directory,
+or (2) IRAF was started in the wrong directory.
+In the latter case, Exit IRAF (<tt>cl&gt;logout</tt>), change into the home
 directory (<tt>csh&gt;cd</tt>) and start IRAF again (<tt>csh&gt;ecl</tt>).
 
 <br><font color=red><font size=+1><b>Important</b></font><br>
