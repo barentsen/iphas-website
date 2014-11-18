@@ -51,13 +51,6 @@
         <td><a href='/extinction'>iphas.org/extinction</a></td>
         <td>A 3D map of interstellar dust extinction derived from the catalogue.</td>
       </tr>
-      <!--
-      <tr>
-        <td>Catalogue of H&alpha; emitters</td>
-        <td><a href='/emitters'>www.iphas.org/emitters</a></td>
-        <td>A list of H&alpha; emission-line objects detected by IPHAS.</td>
-      </tr>
-      -->
     </tbody>
     </table>
 
@@ -83,10 +76,15 @@
         <td>Positions and spectra of symbiotic stars.</td>
       </tr>
       <tr>
+        <td>Classical Be stars</td>
+        <td><a href='/classical-be-stars'>iphas.org/classical-be-stars</a></td>
+        <td>Parameters and spectra of Classical Be stars.</td>
+      </tr>
+      <tr>
         <td>Planetary nebulae</td>
         <td><a href='http://mnras.oxfordjournals.org/content/443/4/3388'>MNRAS, 443, 3388</a></td>
         <td>A catalogue of new extended planetary nebulae.</td>
-      </tr>      
+      </tr>  
     </tbody>
     </table>
 
