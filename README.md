@@ -24,7 +24,7 @@ Authors
 * Geert Barentsen
 * Janet Drew
 * Stuart Sale
-* IPHAS team
+* Roberto Raddi
 
 License
 -------
