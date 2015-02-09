@@ -10,23 +10,38 @@
     <!-- CONTENT STARTS HERE -->
 
     <div class="page-header">
-      <h1>Contact Details</h1>
+      <h2>Jobs, training and collaboration opportunities</h2> 
     </div>
 
-<address>
-  <strong>PI: Janet Drew</strong><br>
-  Centre for Astrophysics Research, STRI<br />
-  University of Hertfordshire<br />
-  College Lane Campus<br />
-  Hatfield AL10 9AB<br />
-  United Kingdom<br/><br/>
-  Phone: 44-(0)1707-286576<br/>
-  Fax: 44-(0)1707-284514<br/>
-  E-mail: j.drew at herts.ac.uk
-</address>
+      <h3>Jobs</h3>
+
+  <p>No vacancies at present. </p>
+
+      <h3>PhD research</h3>
+
+  <p>There is a project available to start in October 2015, at the
+  University of Hertfordshire working with the IPHAS PI, 
+  Janet Drew, and with Geert Barentsen and Tim Gledhill as co-supervisors. A
+  brief description of the project entitled "The outer Galaxy - a
+  spectroscopic exploration of higher mass stars" can be found
+  <a href="http://www.herts.ac.uk/research/stri/research-areas/car/research-degrees-and-studentships/phd-projects/star-formation-and-stellar-evolution">
+  here (second entry)</a>.  How/when to apply is described
+  <a href="http://www.herts.ac.uk/research/stri/reasearch-areas/car/research-degrees-and-studentships">
+  on this page</a>.  Funding is likely to be available for students of
+  EU nationality.  </p>
+
+      <h3>Collaboration</h3> 
+
+  <p>If you are interested in exploiting IPHAS data and would like to
+  talk to us about it -- either because you need some advice
+  or pointers, or want to discuss a collaboration for some purpose -- 
+  you are most welcome to get in touch. We'd like to help. 
+  Our <a href="data.shtml"> data pages </a> are worth checking
+  first. If you can't find what you are looking for there, 
+  contact the survey PI - details are given below.</p> 
 
     <div class="page-header">
-      <h1>Survey members</h1>
+      <h2>The IPHAS Consortium</h2>
     </div>
 
   <p>(alphabetically, by institution )</p>
@@ -36,13 +51,12 @@
     <li><b>Harvard-Smithsonian Center for Astrophysics, USA</b>: Jeremy Drake</li>
     <li><b>Imperial College London, UK</b>: Yvonne Unruh</li>
     <li><b>Institute of Astronomy, Cambridge, UK</b>: Mike Irwin, Nic Walton, Eduardo Gonzalez-Solares</li>
-    <li><b>Instituto de Astrofisica de Canarias, Spain</b> : Romano Corradi, Antonio Mampaso, Eduardo Martin, Pablo Rodriguez-Gil</li>
+    <li><b>Instituto de Astrofisica de Canarias, Spain</b>: Romano Corradi, Antonio Mampaso, Eduardo Martin, Pablo Rodriguez-Gil</li>
     <li><b>Macquarie University, Australia</b>: Quentin Parker,
     David Frew</li>
     <li><b>Radboud University Nijmegen, The Netherlands</b>: Paul Groot</li>
     <li><b>Royal Observatory Edinburgh, UK</b>: Chris Evans</li>
     <li><b>Southampton University, UK</b>: Christian Knigge</li>
-    <li><b>Space Telescope Science Institute, USA</b>: Danny Lennon</li>
     <li><b>Thueringer Landessternwarte, Germany</b>: Jochen Eisloeffel, Bringfried Stecklum</li>
     <li><b>Universidad de Valencia, Spain</b>: Juan Fabregat</li>
     <li><b>University College London, UK</b>: Mike Barlow</li>
@@ -55,6 +69,21 @@
     Raddi, Danny Steeghs</li>
 </ul>
 
+    <div class="page-header">
+      <h2>PI Contact Details</h2>
+    </div>
+
+<address>
+  <strong>Janet Drew</strong><br>
+  Centre for Astrophysics Research, STRI<br />
+  University of Hertfordshire<br />
+  College Lane Campus<br />
+  Hatfield AL10 9AB<br />
+  United Kingdom<br/><br/>
+  Phone: 44-(0)1707-286576<br/>
+  Fax: 44-(0)1707-284514<br/>
+  E-mail: j.drew at herts.ac.uk
+</address>
 
     <!-- Content ends here -->
     </div><!-- /container -->

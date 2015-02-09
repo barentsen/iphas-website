@@ -14,9 +14,11 @@
       </div>
 
 
-<p>On 9/12/12, before the penultimate world-wide data release, 59 ADS entries have IPHAS mentioned in the title (of
-  which 24 are refereed), while 108 ADS entries include this string in
-  the abstract (of which 47 are refereed)</p>
+<p>On 16/12/14, 71 ADS entries mention IPHAS in the title (31 of
+  which are refereed), while 143 ADS entries mention IPHAS in
+  the abstract (61 of which are refereed)</p>
+<p>IPHAS Data Release 2 took place in September 2014 (paper 3, in the
+  first table below)</p>
 
 <table class="table table-condensed table-striped">
   <thead>
@@ -27,8 +29,7 @@
       <th>Description, reference</th>
     </tr>
     <tr>
-      <td class="subhead" colspan="4">Refereed papers based
-      primarily on IPHAS data</td>
+      <td class="subhead" colspan="4">The core survey papers</td>
     </tr>
   </thead>
   <tbody>
@@ -41,61 +42,7 @@
       2005 MNRAS 362 753</td>
     </tr>
     <tr>
-      <td class="title">2. <a href="http://ukads.nottingham.ac.uk/abs/2006MNRAS.366..387W">The shaping of planetary nebula Sh 2-188 through interaction with the interstellar medium</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">C. E. Wareing,<br />
-      A. A. Zijlstra, et al.</td>
-      <td class="ref">2006 MNRAS 366 387</td>
-    </tr>
-    <tr>
-      <td class="title">3. <a href="http://ukads.nottingham.ac.uk/abs/2006MNRAS.369..581W">The properties of cataclysmic variables in photometric H&alpha; surveys</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">A. R. Witham,<br />
-      C. Knigge, et al.</td>
-      <td class="ref">2006 MNRAS 369 581</td>
-    </tr>
-    <tr>
-      <td class="title">4. <a href="http://ukads.nottingham.ac.uk/abs/2006A%26A...458..203M">The "Principes de Asturias" nebula: a new quadrupolar planetary nebula from the IPHAS survey</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">A. Mampaso,<br />
-      R. Corradi, et al.</td>
-      <td class="ref">2006 A&amp;A 458 203</td>
-    </tr>
-    <tr>
-      <td class="title">5. <a href="http://adsabs.harvard.edu/abs/2007MNRAS.382.1158W">Newly Discovered Cataclysmic Variables from the INT/WFC Photometric H alpha Survey of the Northern Galactic Plane</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">A. R. Witham,<br />
-      C. Knigge, et al.</td>
-      <td class="ref">2007 MNRAS 382 1158</td>
-    </tr>
-    <tr>
-      <td class="title">6. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.384.1277W">The IPHAS Catalogue of H-alpha Emission Line Sources in the Northern Galactic Plane</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">A. R. Witham,<br />
-      C. Knigge, et al.</td>
-      <td class="ref">The first <a href="http://cdsarc.u-strasbg.fr/viz-bin/Cat?J/MNRAS/384/1277">catalogue of high-confidence candidate emission line stars</a> selected from the IPHAS database.<br />
-      2008 MNRAS 384 1277</td>
-    </tr>
-    <tr>
-      <td class="title">7. <a href="http://adsabs.harvard.edu/abs/2008A%26A...480..409C">IPHAS and the symbiotic stars. I. Selection method and first discoveries</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">R. Corradi, et al.</td>
-      <td class="ref">2008 A&amp;A 480 409</td>
-    </tr>
-    <tr>
-      <td class="title">8. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.386.1761D">Early A stars from IPHAS, and their distribution in and around Cyg OB2</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">J. E. Drew, et al.</td>
-      <td class="ref">2008 MNRAS 386 1761</td>
-    </tr>
-    <tr>
-      <td class="title">9. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.387..308V">IPHAS discoveries of young stars towards Cyg OB2 and its southern periphery</a></td>
-      <td class="doctype">ADS</td>
-      <td class="auth">J. S. Vink, et al.</td>
-      <td class="ref">2008 MNRAS 387 308</td>
-    </tr>
-    <tr>
-      <td class="title">10. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.388...89G">Initial Data Release from the INT Photometric H-alpha Survey of the Northern Galactic Plane (IPHAS)</a></td>
+      <td class="title">2. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.388...89G">Initial Data Release from the INT Photometric H-alpha Survey of the Northern Galactic Plane (IPHAS)</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">E. Gonzalez-Solares,<br />
       N. A. Walton, et al.</td>
@@ -103,48 +50,120 @@
       2008 MNRAS 388 89</td>
     </tr>
     <tr>
-      <td class="title">11. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.390..929W">Extremely red stellar objects revealed by IPHAS</a></td>
+      <td class="title">3. <a href="http://adsabs.harvard.edu/abs/2014MNRAS.444.3230B">The
+      Second Data Release of the INT Photometric H-alpha Survey of the
+      Northern Galactic Plane (IPHAS DR2)</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">G. Barentsen,<br />
+      H. J. Farnhill, et al.</td>
+      <td class="ref">A description
+      of <a href="http://idr.iphas.org/dr2/">IPHAS DR2</a>.  It covers 92
+      percent of the survey footprint, and incorporates a global calibration.<br />
+      2014 MNRAS 444 3230</td>
+    </tr>
+    <tr>
+      <td class="subhead" colspan="4">Refereed science papers based
+      primarily on IPHAS data</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="title">1. <a href="http://ukads.nottingham.ac.uk/abs/2006MNRAS.366..387W">The shaping of planetary nebula Sh 2-188 through interaction with the interstellar medium</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">C. E. Wareing,<br />
+      A. A. Zijlstra, et al.</td>
+      <td class="ref">2006 MNRAS 366 387</td>
+    </tr>
+    <tr>
+      <td class="title">2. <a href="http://ukads.nottingham.ac.uk/abs/2006MNRAS.369..581W">The properties of cataclysmic variables in photometric H&alpha; surveys</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">A. R. Witham,<br />
+      C. Knigge, et al.</td>
+      <td class="ref">2006 MNRAS 369 581</td>
+    </tr>
+    <tr>
+      <td class="title">3. <a href="http://ukads.nottingham.ac.uk/abs/2006A%26A...458..203M">The "Principes de Asturias" nebula: a new quadrupolar planetary nebula from the IPHAS survey</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">A. Mampaso,<br />
+      R. Corradi, et al.</td>
+      <td class="ref">2006 A&amp;A 458 203</td>
+    </tr>
+    <tr>
+      <td class="title">4. <a href="http://adsabs.harvard.edu/abs/2007MNRAS.382.1158W">Newly Discovered Cataclysmic Variables from the INT/WFC Photometric H alpha Survey of the Northern Galactic Plane</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">A. R. Witham,<br />
+      C. Knigge, et al.</td>
+      <td class="ref">2007 MNRAS 382 1158</td>
+    </tr>
+    <tr>
+      <td class="title">5. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.384.1277W">The IPHAS Catalogue of H-alpha Emission Line Sources in the Northern Galactic Plane</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">A. R. Witham,<br />
+      C. Knigge, et al.</td>
+      <td class="ref">The first <a href="http://cdsarc.u-strasbg.fr/viz-bin/Cat?J/MNRAS/384/1277">catalogue of high-confidence candidate emission line stars</a> selected from the IPHAS database.<br />
+      2008 MNRAS 384 1277</td>
+    </tr>
+    <tr>
+      <td class="title">6. <a href="http://adsabs.harvard.edu/abs/2008A%26A...480..409C">IPHAS and the symbiotic stars. I. Selection method and first discoveries</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">R. Corradi, et al.</td>
+      <td class="ref">2008 A&amp;A 480 409</td>
+    </tr>
+    <tr>
+      <td class="title">7. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.386.1761D">Early A stars from IPHAS, and their distribution in and around Cyg OB2</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">J. E. Drew, et al.</td>
+      <td class="ref">2008 MNRAS 386 1761</td>
+    </tr>
+    <tr>
+      <td class="title">8. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.387..308V">IPHAS discoveries of young stars towards Cyg OB2 and its southern periphery</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">J. S. Vink, et al.</td>
+      <td class="ref">2008 MNRAS 387 308</td>
+    </tr>
+    <tr>
+      <td class="title">9. <a href="http://adsabs.harvard.edu/abs/2008MNRAS.390..929W">Extremely red stellar objects revealed by IPHAS</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">N. J. Wright,<br />
       R. Greimel, et al.</td>
       <td class="ref">2008 MNRAS 390 929</td>
     </tr>
     <tr>
-      <td class="title">12. <a href="http://adsabs.harvard.edu/abs/2008ApJ...688L..21W">A planetary nebula around nova V458 Vul undergoing flash ionization</a></td>
+      <td class="title">10. <a href="http://adsabs.harvard.edu/abs/2008ApJ...688L..21W">A planetary nebula around nova V458 Vul undergoing flash ionization</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">R. Wesson,<br />
       M. J. Barlow, et al.</td>
       <td class="ref">2008 ApJL 688 L21</td>
     </tr>
     <tr>
-      <td class="title">13. <a href="http://adsabs.harvard.edu/abs/2009MNRAS.392..497S">High Spatial Resolution Galactic 3D Extinction Mapping with IPHAS</a></td>
+      <td class="title">11. <a href="http://adsabs.harvard.edu/abs/2009MNRAS.392..497S">High Spatial Resolution Galactic 3D Extinction Mapping with IPHAS</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">S. E. Sale,<br />
       J. E. Drew, et al.</td>
       <td class="ref">2009 MNRAS 392 497</td>
     </tr>
     <tr>
-      <td class="title">14. <a href="http://adsabs.harvard.edu/abs/2009ApJ...695...75H">IPHAS A-type stars with mid-IR excesses in Spitzer surveys</a></td>
+      <td class="title">12. <a href="http://adsabs.harvard.edu/abs/2009ApJ...695...75H">IPHAS A-type stars with mid-IR excesses in Spitzer surveys</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">A. S. Hales, et al.</td>
       <td class="ref">2009 ApJ 695 75</td>
     </tr>
     <tr>
-      <td class="title">15. <a href="http://adsabs.harvard.edu/abs/2009A%26A...497..973V">An IPHAS-based search for accreting very low-mass objects using VO tools</a></td>
+      <td class="title">13. <a href="http://adsabs.harvard.edu/abs/2009A%26A...497..973V">An IPHAS-based search for accreting very low-mass objects using VO tools</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">L. Valdivieso,<br />
       E. L. Martin et al.</td>
       <td class="ref">2009 A&amp;A 497 973</td>
     </tr>
     <tr>
-      <td class="title">16. <a href="http://adsabs.harvard.edu/abs/2009A%26A...502..113V">New Young Planetary Nebulae in IPHAS</a></td>
+      <td class="title">14. <a href="http://adsabs.harvard.edu/abs/2009A%26A...502..113V">New Young Planetary Nebulae in IPHAS</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">K. Viironen,<br />
       A. Mampaso et al.</td>
       <td class="ref">2009 A&amp;A 502 113</td>
     </tr>
     <tr>
-      <td class="title">19. <a href="http://adsabs.harvard.edu/abs/2009MNRAS.397.1685D">The IPHAS-POSS-I proper motion survey of the Galactic Plane</a></td>
+      <td class="title">15. <a href="http://adsabs.harvard.edu/abs/2009MNRAS.397.1685D">The IPHAS-POSS-I proper motion survey of the Galactic Plane</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">N. R. Deacon,<br />
       P. J. Groot et al.</td>
@@ -152,7 +171,7 @@
       The catalogue is <a href="http://www.astro.ru.nl/~ndeacon/catalogues/">here</a></td>
     </tr>
     <tr>
-      <td class="title">20. <a href="http://adsabs.harvard.edu/abs/2009A%26A...504..291V">Candidate planetary nebulae in the IPHAS photometric catalogue</a></td>
+      <td class="title">16. <a href="http://adsabs.harvard.edu/abs/2009A%26A...504..291V">Candidate planetary nebulae in the IPHAS photometric catalogue</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">K. Viironen,<br />
       R. Greimel et al.</td>
@@ -160,7 +179,7 @@
       </td>
     </tr>
     <tr>
-      <td class="title">21. <a href="http://adsabs.harvard.edu/abs/2009MNRAS.400.1413W">Near-IR spectra of IPHAS extremely red Galactic AGB stars</a></td>
+      <td class="title">17. <a href="http://adsabs.harvard.edu/abs/2009MNRAS.400.1413W">Near-IR spectra of IPHAS extremely red Galactic AGB stars</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">N. J. Wright,<br />
       M. J. Barlow et al.</td>
@@ -168,7 +187,7 @@
       </td>
     </tr>
     <tr>
-      <td class="title">22. <a href="http://adsabs.harvard.edu/abs/2010MNRAS.402..713S">The Structure of the Outer Galactic Disc as revealed by IPHAS early A Stars</a></td>
+      <td class="title">18. <a href="http://adsabs.harvard.edu/abs/2010MNRAS.402..713S">The Structure of the Outer Galactic Disc as revealed by IPHAS early A Stars</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">S. E. Sale,<br />
       J. E. Drew et al.</td>
@@ -176,21 +195,21 @@
       </td>
     </tr>
     <tr>
-      <td class="title">23. <a href="http://adsabs.harvard.edu/abs/2010A%26A...509A..41C">IPHAS and the symbiotic stars. II. New discoveries and a sample of the most common mimics</a></td>
+      <td class="title">19. <a href="http://adsabs.harvard.edu/abs/2010A%26A...509A..41C">IPHAS and the symbiotic stars. II. New discoveries and a sample of the most common mimics</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">R. L. M. Corradi et al.</td>
       <td class="ref">2010 A&amp;A 509 41<br />
       </td>
     </tr>
     <tr>
-      <td class="title">24. <a href="http://adsabs.harvard.edu/abs/2010A%26A...509A...9C">The ongoing outburst of the new symbiotic star IPHASJ190832.31+051226.6</a></td>
+      <td class="title">20.. <a href="http://adsabs.harvard.edu/abs/2010A%26A...509A...9C">The ongoing outburst of the new symbiotic star IPHASJ190832.31+051226.6</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">R. L. M. Corradi et al.</td>
       <td class="ref">2010 A&amp;A 509 L9<br />
       </td>
     </tr>
     <tr>
-      <td class="title">25. <a href="http://adsabs.harvard.edu/abs/2010PASA...27..166S">New candidate planetary nebulae in the IPHAS survey: the case of planetary nebulae with ISM interaction</a></td>
+      <td class="title">21. <a href="http://adsabs.harvard.edu/abs/2010PASA...27..166S">New candidate planetary nebulae in the IPHAS survey: the case of planetary nebulae with ISM interaction</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">L. Sabin, A. A. Zijlstra<br />
       et al.</td>
@@ -198,7 +217,7 @@
       </td>
     </tr>
     <tr>
-      <td class="title">26. <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410.1349C">The Necklace: equatorial and polar outflows from the binary central star of the new planetary nebula IPHASX J194359.5+170901</a></td>
+      <td class="title">22. <a href="http://adsabs.harvard.edu/abs/2011MNRAS.410.1349C">The Necklace: equatorial and polar outflows from the binary central star of the new planetary nebula IPHASX J194359.5+170901</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">R. L. M. Corradi,<br />
       L. Sabin et al.</td>
@@ -206,7 +225,7 @@
       </td>
     </tr>
     <tr>
-      <td class="title">27. <a href="http://adsabs.harvard.edu/abs/2011A%26A...525A..58G">IPHAS extinction distances to planetary nebulae</a></td>
+      <td class="title">23. <a href="http://adsabs.harvard.edu/abs/2011A%26A...525A..58G">IPHAS extinction distances to planetary nebulae</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">C. Giammanco,<br />
       S. E. Sale et al.</td>
@@ -214,41 +233,81 @@
       </td>
     </tr>
     <tr>
-      <td class="title">28. <a href="http://adsabs.harvard.edu/abs/2011A%26A...529A..56C">The new carbon symbiotic star IPHAS J205836.43+503307.2</a></td>
+      <td class="title">24. <a href="http://adsabs.harvard.edu/abs/2011A%26A...529A..56C">The new carbon symbiotic star IPHAS J205836.43+503307.2</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">R. L. M. Corradi et al.</td>
       <td class="ref">2011 A&amp;A 529 56<br />
       </td>
     </tr>
     <tr>
-      <td class="title">29. <a href="http://adsabs.harvard.edu/abs/2011A%26A...530A.107V">A new planetary nebula in the outer reaches of the Galaxy</a></td>
+      <td class="title">25. <a href="http://adsabs.harvard.edu/abs/2011A%26A...530A.107V">A new planetary nebula in the outer reaches of the Galaxy</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">K. Viironen et al.</td>
       <td class="ref">2011 A&amp;A 530 107<br />
       </td>
     </tr>
     <tr>
-      <td class="title">30. <a href="http://adsabs.harvard.edu/abs/2011MNRAS.415..103B">T Tauri candidates and accretion rates using IPHAS: method and application to IC 1396</a></td>
+      <td class="title">26. <a href="http://adsabs.harvard.edu/abs/2011MNRAS.415..103B">T Tauri candidates and accretion rates using IPHAS: method and application to IC 1396</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">G. Barentsen et al.</td>
       <td class="ref">2011 MNRAS 415 103<br />
       </td>
+    <tr>
     </tr>
-      <td class="title">31. <a href="http://adsabs.harvard.edu/abs/2013MNRAS.430.2169R">First
+      <td class="title">27. <a href="http://adsabs.harvard.edu/abs/2013MNRAS.430.2169R">First
       results of an H&alpha;-based search for classical Be stars in
       the Perseus Arm and beyond</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">R. Raddi et al.</td>
       <td class="ref">2013 MNRAS 430 2169<br />
       </td>
+    <tr>
     </tr>
-      <td class="title">32. <a href="http://adsabs.harvard.edu/abs/2013MNRAS.431..279S">New
+      <td class="title">28. <a href="http://adsabs.harvard.edu/abs/2013MNRAS.431..279S">New
       Galactic supernova remnants discovered with IPHAS</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">L. Sabin et al.</td>
       <td class="ref">2013 MNRAS 431 279<br />
       </td>
     </tr>
+    <tr>
+      <td class="title">29. <a href="http://adsabs.harvard.edu/abs/2014A%26A...567A..49R">IPHAS
+      and the symbiotic stars. III New discoveries and their IR
+      spectral energy distributions</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">E. R. Rodriguez-Flores et al.</td>
+      <td class="ref">2014 A&amp;A 567 A49 <br />
+      </td>
+    </tr>
+    <tr>
+      <td class="title">30. <a href="http://adsabs.harvard.edu/abs/2014MNRAS.443.2907S">A
+      3D extinction map of the Northern Galactic Plane based on IPHAS photometry</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">S. E. Sale et al. </td>
+      <td class="ref">The
+      calculation of a full set of <a href="http://idr.iphas.org/extinction/">extinction-distance
+      curves</a> based on IPHAS DR2 are described.
+      <br />2014 MNRAS 443 2907 <br />
+      </td>
+    </tr>
+    <tr>
+      <td class="title">31. <a href="http://adsabs.harvard.edu/abs/2014MNRAS.443.3388S">First
+      release of the IPHAS catalogue of new extended planetary nebulae</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">L. Sabin et al. </td>
+      <td class="ref">2014 MNRAS 443 3388 <br />
+      </td>
+    </tr>
+    <tr>
+      <td class="title">32. <a href="http://adsabs.harvard.edu/abs/2015MNRAS.446..274R">A
+      deep catalogue of classical Be stars in the direction of the
+      Perseus Arm: spectral types and interstellar reddening</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">R. Raddi et al. </td>
+      <td class="ref">2015 MNRAS 446 274 <br />
+      </td>
+    </tr>
+
 
     <tr>
       <td class="subhead" colspan="4">A selection of other refereed papers using
@@ -311,7 +370,8 @@
       et al.</td>
       <td class="ref">2011 ApJ 743 L33</td>
     </tr>
-      <td class="title">10. <a href="http://adsabs.harvard.edu/abs/2012ApJ...746L..21M">Photo-evaporating
+    <tr>
+      <td class="title">10. <a href="http://adsabs.harvard.edu/abs/2012ApJ...746L..21W">Photo-evaporating
       proplyd-like objects in Cygnus OB2</a></td>
       <td class="doctype">ADS</td>
       <td class="auth">N. J. Wright et al.</td>
@@ -325,6 +385,22 @@
       <td class="auth">M. Guarcello, et al.</td>
       <td class="ref">2012 ApJS 202 19</td>
     </tr>
+    <tr>
+      <td class="title">12. <a href="http://adsabs.harvard.edu/abs/2012ApJ...758...79A">IPHAS
+      J062746.41+014811.3: A Deeply Eclipsing Intermediate Polar </a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">A. Aungwerojwit et al.</td>
+      <td class="ref">2012 ApJ 758 79</td>
+    </tr>
+    <tr>
+      <td class="title">13. <a href="http://adsabs.harvard.edu/abs/2014MNRAS.441.2799C">The
+      planetary nebula IPHASX J211420.0+434136 (Ou5): insights into
+      common-envelope dynamical and chemical evolution</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">R. L. M. Corradi et al.</td>
+      <td class="ref">2014 MNRAS 441 2799</td>
+    </tr>
+
     <tr>
       <td class="subhead" colspan="4">Unrefereed contributions and
       telegrams (incomplete)</td>
@@ -442,6 +518,29 @@
       A. Mampaso</td>
       <td class="ref">2011 RMxAC 40 183<br />
       </td>
+    </tr>
+    <tr>
+      <td class="title">18. <a href="http://www.astronomerstelegram.org/?read=4365">The
+      progenitor of Nova Monocerotis 2012</a></td>
+      <td class="doctype">HTML</td>
+      <td class="auth">R. Greimel, et al.</td>
+      <td class="ref">ATEL no. 4365, 10 September 2012</td>
+    </tr>
+    <tr>
+      <td class="title">19. <a href="http://adsabs.harvard.edu/abs/2013msao.confE..67G">Spectral
+      classification and physical parameters of Be stars in the
+      Perseus Arm with the BCD System</a></td>
+      <td class="doctype">ADS</td>
+      <td class="auth">L. Gkouvelis, et al.</td>
+      <td class="ref">in "Massive Stars: from &alpha; to &Omega;" June
+      2013,<br /> 2013msao conf.E 67G </td>
+    </tr>
+    <tr>
+      <td class="title">20. <a href="http://www.astronomerstelegram.org/?read=6751">Pre-outburst
+      photometry of PNV J06483343+0656236 </a></td>
+      <td class="doctype">HTML</td>
+      <td class="auth">B. T. Gaensicke, et al.</td>
+      <td class="ref">ATEL no. 6751, 25 November 2014</td>
     </tr>
     <tr>
       <td class="subhead" colspan="4">Selected theses, proposals and other documents</td>

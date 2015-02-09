@@ -123,7 +123,9 @@
         </div>
         <div class="col-sm-4">
           <a class="about" href="science.shtml"><i class="icon-beaker"></i> Science</a>
-          <p>The IPHAS (r-H&alpha;, r-i) colour-colour plane allows a range of rare and short-lived object types to be identified.</p>
+          <p>The IPHAS (r-H&alpha;, r-i) colour-colour plane enables a
+          broad range of science going beyond the selection of
+          emission line stars.</p>
           <p><a class="btn btn-default" href="science.shtml">More &raquo;</a></p>
         </div>
         <div class="col-sm-4">
@@ -141,12 +143,16 @@
         </div>
         <div class="col-sm-4">
           <a class="about" href="publications.shtml"><i class="icon-book"></i> Publications</a>
-          <p>59 ADS entries have IPHAS mentioned in the title, 108 ADS entries mention IPHAS in the abstract.</p>
+          <p>Over 70 ADS entries mention IPHAS in the title, while
+          over 140 mention IPHAS in the abstract.</p>
           <p><a class="btn btn-default" href="publications.shtml">More &raquo;</a></p>
         </div>
         <div class="col-sm-4">
-          <a class="about" href="people.shtml"><i class="icon-group"></i> People</a>
-          <p>IPHAS is an international collaboration, mainly involving institutes from the UK, Spain, the Netherlands, USA and Australia.</p>
+          <a class="about"
+          href="people.shtml"><i class="icon-group"></i> Getting
+          involved</a>
+          <p>How to get in touch; graduate student opportunities; the names
+          and places involved in IPHAS.</p>
           <p><a class="btn btn-default" href="people.shtml">More &raquo;</a></p>
         </div>
       </div>

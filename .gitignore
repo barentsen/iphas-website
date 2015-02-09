@@ -1,4 +1,10 @@
 *.sublime*
 tmp
-backup
+backup*
+old-website
 *~
+consortium
+data
+images
+*.pdf
+*.gz

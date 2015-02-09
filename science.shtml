@@ -14,18 +14,16 @@
         <h1>Science using IPHAS data</h1>
       </div>
 
-      <h3>IPHAS point sources</h3>
+      <h3>IPHAS point-source selections</h3>
 
-      <p>More than 100 million have been detected at a typical seeing of
-      1.1 arcsec:</p>
-
-      <p>The important object classes that IPHAS data readily
-      distinguishes are:</p>
+      <p>219 million have been detected at a typical seeing of
+      1.1 arcsec and cataloged in DR2.  The important object classes
+      that IPHAS data readily distinguish include:</p>
 
       <ul>
         <li>compact planetary and symbiotic nebulae; rapidly evolving post-AGB stars</li>
         <li>Be stars of all types (including young Herbig stars, and B[e] supergiants)</li>
-        <li>dMe stars; clusters of lower mass young stellar objects</li>
+        <li>lower mass young stellar objects and dMe stars</li>
         <li>a range of interacting binary stars (symbiotics, `supersoft' compact binaries, WD/NS/BH accreting binaries generally)</li>
         <li>H-rich white dwarfs</li>
         <li>large numbers of near-main-sequence A stars and M giants</li>
@@ -33,25 +31,48 @@
 
       <img class="centred" alt="The positions of known objects in the IPHAS colour-colour plane" src="images/corradi_figure1.jpg" />
 
-      <p>This figure is a schematic representation of the (r'-H&alpha;, r'-i') colour-colour plane that IPHAS data define. The points plotted on it are
+      <p>This figure is a schematic representation of the (r-H&alpha;, r-i) colour-colour plane that IPHAS data define. The points plotted are
           the IPHAS colours of already-known objects falling into the object classes specified in the key. The main stellar locus, occupied by the great majority
           of normal stars, is located in between the synthetic tracks drawn in black, corresponding to unreddened (left) and reddened (E(B-V) = 4, right) main
-          sequences. For main sequence stars in this region, there is a one-to-one correspondence between (r'-H&alpha;,r'-i') co-ordinates and (intrinsic colour,
-          interstellar reddening): this provides the jump-off point for extinction mapping. The dotted tracks crossing this area are the unreddened and E(B-V)=4
+          sequences.  The dotted tracks crossing this area are the unreddened and E(B-V)=4
           giant-star sequences.</p>
       <p>The figure is from <a href="http://xxx.lanl.gov/abs/0712.2391">Corradi et al 2008</a>. A discussion of the properties
-        of the colour-colour plane, IPHAS survey methodology and sample data, have been presented by <a href="http://ukads.nottingham.ac.uk/abs/2005MNRAS.362..753D">Drew
-        et al 2005</a>. (See also the <a href="publications.shtml">publications page</a>).</p>
+        of the colour-colour plane, IPHAS survey methodology and
+        sample data, was presented in <a href="http://ukads.nottingham.ac.uk/abs/2005MNRAS.362..753D">Drew
+        et al 2005</a>. (See also
+        the <a href="publications.shtml">publications page</a>).</p>
+
+      <h3>IPHAS and extinction mapping</h3>
+
+      <p>A feature of the IPHAS colour-colour plane that has great
+      utility is the nearly orthogonal dependencies of increasing
+      reddening and intrinsic stellar colour.  For stars located 
+      within the main stellar locus, this bestows a one-to-one
+      correspondence between (r'-H&alpha;,r'-i') co-ordinates and 
+      (intrinsic colour, interstellar reddening).  In turn this 
+      implies that the main stellar locus can be analysed very effectively for
+      constraints on the rise in interstellar extinction with distance
+      into the Galactic disk.  A recent demonstration of this is provided
+      by the comprehensive mapping of the northern Galactic Plane by
+      <a href="http://adsabs.harvard.edu/abs/2014MNRAS.443.2907S">Sale
+      et al (2014)</a>.  Data from this study may be accessed via our 
+      <a href="data.shtml">data pages</a>.</p>
 
 
-      <h3>IPHAS and novae</h3>
+      <h3>IPHAS and transient objects</h3>
 
-      <p>IPHAS has proved to be a valuable resource for identifying nova progenitor objects. The most striking success in this regard has been Nova
-        Vul 2007, or V458 Vul (see <a href="http://adsabs.harvard.edu/abs/2008ApJ...688L..21W">Wesson et al 2008</a>). Most
-        unusually, the progenitor object of V458 Vul has an association with what appears to be a planetary nebula. Previously the progenitor object was found
-        for V2362 Cygnus (nova outburst on 2 April 2006, IAUC No. 8697, and see <a href="http://www.astronomerstelegram.org/?read=795">ATEL
-        No. 795.</a> for a report on the progenitor properties). The consortium also identified the progenitor of V2467 Cyg, which went into outburst on 15
-        March 2007 (see <a href="http://www.astronomerstelegram.org/?read=1031">ATEL No. 1031.</a>).</p>
+      <p>IPHAS has proved to be a valuable resource for identifying
+        nova progenitor objects.  Nova Vul 2007, or V458 Vul
+        (see <a href="http://adsabs.harvard.edu/abs/2008ApJ...688L..21W">Wesson
+        et al 2008</a>) was a particularly striking example. Most
+        unusually, the progenitor object of V458 Vul was seen in IPHAS
+        data to have an association with what appears to be a
+        planetary nebula.  Other examples have been reported via
+        "Astronomers Telegrams" (see e.g. <a href="http://www.astronomerstelegram.org/?read=795">ATEL
+        No. 795.</a>
+        and <a href="http://www.astronomerstelegram.org/?read=1031">ATEL
+        No. 1031.</a>).  There are more examples on the <a
+        href="publications.shtml">publications page</a>.</p>
 
 
     <!-- CONTENT ENDS HERE -->
