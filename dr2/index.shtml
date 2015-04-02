@@ -156,104 +156,30 @@
     is to use the Vizier data portal, which hosts a full copy
     of the catalogue and allows excerpts from the catalogue
     to be downloaded in various formats, including html, ascii and fits.
-    </p>
-
-    <p>To use this service, please head to the Vizier IPHAS2 query interface at:</p>
+    To use this service, please head to the Vizier IPHAS2 page at:</p>
 
     <p><a href='http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=IPHAS2'>http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=IPHAS2</a></p>
 
-<!--
-    <p>The source catalogue has recently been submitted to 
-    <a href='http://vizier.u-strasbg.fr/'>Vizier</a>
-    and is currently in the process of being ingested there.
-    In meanwhile, you can already use the form below to perform simple radial 
-    object searches. For more advanced queries, we recommend downloading 
-    the full catalogue in FITS format (see below).</p><br>
+    <p>
+    You can also query the Vizier service in an automated fashion
+    using their conesearch API.
+    For example, to download and save all the sources located
+    within a 0.1&deg; radius around (RA, Dec) = (324&deg;, 58&deg;),
+    you can use the following Python script:</p>
 
-<div class="row">
-      <div class="col-sm-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-          DR2 Cone Search
-          </div>
-          <div class="panel-body">
-            <form role="form" action="http://iphas.herokuapp.com/conesearch" method="get" class="form-horizontal">
+<pre>
+from astropy.vo.client.conesearch import conesearch
+search = conesearch(center=(324.0, 58.0),
+                    radius=0.1,
+                    verb=3,
+                    catalog_db="http://vizier.u-strasbg.fr/viz-bin/votable/-A?-source=IPHAS2&")
+search.to_table().write('iphas-data.fits', format='fits')
+</pre>
 
-             <div class="form-group">
-                <label for="OUTPUT" class="col-sm-4 control-label">Search by:</label>
-                <div class="col-sm-8">
-                  <select class="form-control" name='SEARCH' id='SEARCH'>
-                    <option value='equ' selected='selected'>equatorial J2000 coordinates</option>
-                    <option value='name'>object name</option>
-                  </select>
-                </div>
-              </div>
+    <p>
+    Note that the script above requires the <a href="http://www.astropy.org">AstroPy</a> package to be installed.
+    </p>
 
-              <div class="form-group" id='RA-GROUP'>
-                <label for="RA" class="col-sm-4 control-label">R.A.:</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" name="RA" id="RA" placeholder="hh:mm:ss or decimal degrees">
-                </div>
-              </div>
-              <div class="form-group" id='DEC-GROUP'>
-                <label for="DEC" class="col-sm-4 control-label">Dec.:</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" name="DEC" id="DEC" placeholder="dd:mm:ss or decimal degrees">
-                </div>
-              </div>
-
-              <div class="form-group hidden" id='GLON-GROUP'>
-                <label for="GLON" class="col-sm-4 control-label">l:</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" name="GLON" id="GLON" placeholder="decimal degrees">
-                </div>
-              </div>
-              <div class="form-group hidden" id='GLAT-GROUP'>
-                <label for="GLAT" class="col-sm-4 control-label">b:</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" name="GLAT" id="GLAT" placeholder="decimal degrees">
-                </div>
-              </div>
-
-              <div class="form-group hidden" id='OBJNAME-GROUP'>
-                <label for="OBJNAME" class="col-sm-4 control-label">Name:</label>
-                <div class="col-sm-8">
-                  <input type="text" class="form-control" name="OBJNAME" id="OBJNAME" placeholder="Identifier known by SIMBAD">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="SR" class="col-sm-4 control-label">Radius:</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" name="SR" id="SR" value="0.01">
-                </div>
-                <div class="col-sm-4">
-                  <span class="help-block">degrees</span>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="OUTPUT" class="col-sm-4 control-label">Output:</label>
-                <div class="col-sm-4">
-                  <select class="form-control" name='OUTPUT'>
-                    <option>html</option>
-                    <option>votable</option>
-                    <option>csv</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-sm-offset-4 col-sm-8">
-                  <button type="submit" class="btn btn-primary">Search</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      </div>
--->
 
 <h3 id='download'>Downloading a full copy (48&thinsp;GB)</h3>
 
@@ -2439,7 +2365,8 @@
     but in DR2 we have decided to focus on providing single-epoch photometry
     based on the highest-quality observations alone.
     Multi-epoch data for a source can nevertheless
-    be obtained by querying the <a href="/images">IPHAS image database</a>.
+    be obtained by querying the <a href="/images">IPHAS image database</a>,
+    or by mining the full set of <a href="/data/dr2/fields/">field-by-field catalogues</a> .
     The variability information has not been compiled into a user-friendly
     catalogue at present.
   </p>
@@ -2574,40 +2501,6 @@
       $('body').scrollspy({
           target: '#sidebarCol',
           offset: 100
-      });
-
-      $("#SEARCH").change(function() {
-        var mode = $(this).val();
-        if (mode == 'equ') {
-          $("#RA-GROUP").show().removeClass('hidden');;
-          $("#DEC-GROUP").show().removeClass('hidden');;
-          $("#GLON-GROUP").hide();
-          $("#GLAT-GROUP").hide();
-          $("#OBJNAME-GROUP").hide();
-          $("#OBJNAME").val("");
-          $("#GLON").val("");
-          $("#GLAT").val("");
-        } else if (mode == 'gal') {
-          $("#RA-GROUP").hide();
-          $("#DEC-GROUP").hide();
-          $("#GLON-GROUP").show().removeClass('hidden');;
-          $("#GLAT-GROUP").show().removeClass('hidden');;
-          $("#OBJNAME-GROUP").hide();
-          $("#OBJNAME").val("");
-          $("#RA").val("");
-          $("#DEC").val("");
-        } else if (mode == 'name') {
-          $("#RA-GROUP").hide();
-          $("#DEC-GROUP").hide();
-          $("#GLON-GROUP").hide();
-          $("#GLAT-GROUP").hide();
-          $("#OBJNAME-GROUP").show().removeClass('hidden');
-          $("#GLON").val("");
-          $("#GLAT").val("");
-          $("#RA").val("");
-          $("#DEC").val("");
-        }
-
       });
     </script>
   </body>
