@@ -172,7 +172,7 @@ from astropy.vo.client.conesearch import conesearch
 search = conesearch(center=(324.0, 58.0),
                     radius=0.1,
                     verb=3,
-                    catalog_db="http://vizier.u-strasbg.fr/viz-bin/votable/-A?-source=IPHAS2&")
+                    catalog_db="http://vizier.u-strasbg.fr/viz-bin/votable/-A?-source=IPHAS2&-out.all&")
 search.to_table().write('iphas-data.fits', format='fits')
 </pre>
 
